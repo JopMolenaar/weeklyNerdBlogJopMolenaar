@@ -1,0 +1,25 @@
+{
+    "name": "11ty-experiment",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "eleventy",
+        "start": "eleventy --serve"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@11ty/eleventy": "^2.0.1",
+        "ejs": "^3.1.10"
+    },
+    "dependencies": {
+        "axios": "^1.6.8",
+        "fs": "^0.0.1-security",
+        "liquidjs": "^10.11.1",
+        "marked": "^12.0.2",
+        "node-fetch": "^3.3.2",
+        "path": "^0.12.7"
+    }
+}
