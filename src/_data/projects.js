@@ -1,49 +1,7 @@
-// const fs = require("fs");
-// const path = require("path");
-// const axios = require("axios");
-// const { marked } = require("marked");
-
-// const fs = require("fs");
-// const marked = require("marked");
-// const express = require("express");
-// const axios = require("axios");
-// const app = express();
-// const path = require("path");
-// let ejs = require("ejs");
-// app.set("view engine", "ejs");
-// app.use(express.static("static"));
-// const notFoundPage = path.join(__dirname, "views", "notFound.ejs");
-
 const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
 const { marked } = require("marked");
-
-
-// app.get("/home", function (req, res) {
-//     res.render("home");
-// });
-
-// Define a route with a dynamic :id parameter
-// app.get("/:id", async function (req, res) {
-//     try {
-// const id = req.params.id;
-// let html;
-
-// for (const item of allLinks) {
-//     if (id === item.paramId && !item.link.startsWith("http")) {
-//         html = await parseToHTML(item.link);
-//     } else if (id === item.paramId) {
-//         html = await parseHTTPmdToHTML(item.link);
-//     }
-// }
-
-// if (!html) {
-//     console.log("notFound");
-//     res.status(404).render(notFoundPage);
-//     return;
-// }
-
 
 function loadJSON(filename) {
     console.log("Get filename:", filename);
@@ -104,39 +62,12 @@ module.exports = async function () {
             if (item.link) {
                 if (!item.link.startsWith("http")) {
                     markdownContent = await parseToHTML(item.link); // Parse markdown file
-                    // console.log("md", markdownContent);
                 } else {
                     markdownContent = await parseHTTPmdToHTML(item.link); // Parse markdown file from HTTP link
-                    // console.log("md", markdownContent);
                 }
-
-                // // Split the markdown content by the <h2> tags
-                // const sections = markdownContent.split(/<h2[^>]*>/);
-
-                // // Find the section with the "Description" header
-
-                // for (const section of sections) {
-                //     if (section.toLowerCase().includes("description")) {
-                //         // Get the content after the "Description" header
-                //         const startIndex = section.indexOf("</h2>") + 5; // End of the header tag
-                //         descriptionContent = section.substring(startIndex).trim();
-
-                //         // Remove <p></p> tags around the content
-                //         descriptionContent = descriptionContent.replace(/^<p>([\s\S]*)<\/p>$/, "$1");
-                //         break;
-                //     }
-                // }
             } else {
                 markdownContent = "Failed to fetch data";
             }
-            // let projectDescription = "";
-            // if (descriptionContent !== "") {
-            //     projectDescription = descriptionContent;
-            //     console.log("yeah", descriptionContent);
-            // } else {
-            //     projectDescription = item.littleDesc;
-            // }
-
             // TODO search all headings
 
             // Add the markdown content and project name to the array
