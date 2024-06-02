@@ -2,9 +2,9 @@ const fs = require("fs");
 const path = require("path");
 const axios = require("axios");
 const { marked } = require("marked");
+const { JSDOM } = require("jsdom");
 
 function loadJSON(filename) {
-    console.log("Get filename:", filename);
     if (fs.existsSync(filename)) {
         // Read file asynchronously and parse JSON data
         return new Promise((resolve, reject) => {
@@ -21,7 +21,6 @@ function loadJSON(filename) {
 
 // Parse local Markdown file to HTML
 const parseToHTML = (markdownFile) => {
-    console.log("PARSE MD");
     return new Promise((resolve, reject) => {
         fs.readFile(markdownFile, "utf8", (err, data) => {
             if (err) {
@@ -38,7 +37,6 @@ const parseToHTML = (markdownFile) => {
 // Parse remote Markdown file to HTML
 const parseHTTPmdToHTML = async (url) => {
     try {
-        console.log("PARSE HTTP", url);
         const response = await axios.get(url);
         const html = marked(response.data);
         return html;
@@ -48,14 +46,33 @@ const parseHTTPmdToHTML = async (url) => {
     }
 };
 
+const generateNav = (htmlContent) => {
+    const dom = new JSDOM(htmlContent);
+    const document = dom.window.document;
+    const headings = document.querySelectorAll("h2, h3");
+    let output = "<ul>";
+
+    headings.forEach((heading) => {
+        const text = heading.textContent.replace(/\s+/g, "-");
+        heading.id = text;
+        const tag = heading.tagName.toLowerCase();
+        output += `<li data-heading="${tag}"><a href="#${text}">${heading.textContent}</a></li>`;
+    });
+
+    output += "</ul>";
+    return {
+        nav: output,
+        content: document.body.innerHTML,
+    };
+};
+
 // Export an asynchronous function to fetch project data
 module.exports = async function () {
     try {
         const projectsFilePath = path.join(__dirname, "../projects/projects.json");
-        console.log("path", projectsFilePath);
         const projects = await loadJSON(projectsFilePath);
-        console.log("projects", projects);
         const markdownContents = []; // Array to store markdown content
+        const headings = [];
         for (const item of projects) {
             let markdownContent;
 
@@ -68,17 +85,17 @@ module.exports = async function () {
             } else {
                 markdownContent = "Failed to fetch data";
             }
-            // TODO search all headings
 
-            // Add the markdown content and project name to the array
+            const { nav, content } = generateNav(markdownContent);
+
             markdownContents.push({
                 name: item.name,
-                html: markdownContent,
+                nav: nav,
+                html: content,
                 img: item.img,
                 id: item.paramId,
             });
         }
-        console.log(markdownContents);
         return {
             projects: markdownContents, // Assuming projects data is an array of objects
         };

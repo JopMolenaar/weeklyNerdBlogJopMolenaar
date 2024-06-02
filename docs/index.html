@@ -227,15 +227,15 @@
                    <div>
                     <h1>Weekly Nerd =&gt; Kilian Valkhof</h1>
 <p>7 Februari 2024</p>
-<h2>Samenvatting van de lezing</h2>
+<h2 id="Samenvatting-van-de-lezing">Samenvatting van de lezing</h2>
 <p>Kilian Valkhof is de oprichter van polypane en is lid van het electron governance team dat Frameworks bouwt voor browsers. </p>
-<p>Hij zei in de lezing dat je bij het bouwen van website de &quot;rule of least power&quot; moet gebruiken. Dit houdt in dat je de programmeer taal kiest die het minst kan maar voldoene is voor je doel. Voor een normale webpagina gebruik je dus eerst html, daarna css, en dan pas Javascript. Zo heb je de meeste kans dat je website overal kan worden gebruikt en minder snel stuk gaat onder bepaalde omstandigheden.</p>
+<p>Hij zei in de lezing dat je bij het bouwen van website de "rule of least power" moet gebruiken. Dit houdt in dat je de programmeer taal kiest die het minst kan maar voldoene is voor je doel. Voor een normale webpagina gebruik je dus eerst html, daarna css, en dan pas Javascript. Zo heb je de meeste kans dat je website overal kan worden gebruikt en minder snel stuk gaat onder bepaalde omstandigheden.</p>
 <p>Een voorbeeld dat hij hierbij gaf was dat als je door en tunnel rijdt en het internet slecht is, dat je Javascript pagina dan niet meer beschikbaar is, maar als het alleen html en css was, was het wel beschikbaar.</p>
 <p>Ook moet je goed kijken of jouw doel kan worden behaald zonder javascript en libraries. Dit moet namelijk allemaal worden gedownload, en veel browsers hebben al heel veel fucntionaliteiten ingebouwd die het misschien wel aleen met html en css kunnen. </p>
 <p>Ook gaf hij een hele goede tip: </p>
 <p>Als je in de komende jaren iets gaat bouwen dat je al eerder hebt gebouwd, en dat wilt hergebruiken, kijk eerst of er een betere manier is om het te bouwen dan dat je al had. Browser funtionaliteiten gaan namelijk heel snel vooruit en er zou zo maar een mogelijke browser oplossing klaar liggen die je eerst met javascript had gebouwd. </p>
 <p>Daarna ging hij door een lijst met html en css code die voor bepaalde doelen kunnen worden gebruikt die eerst vaak met Javascript werden gemaakt. </p>
-<h3>Custom toggles</h3>
+<h3 id="Custom-toggles">Custom toggles</h3>
 <p>Custom toggles worden vaak gebruikt op <code>form</code> <code>img</code> en andere elementen.
 Kan je herkennen aan de <code>::</code> na een element, voor de custom toggle.</p>
 <p>Hij had het over <code>::focus-visible</code> en deze toggle geldt alleen als je geen interactie hebt met de muis, verder wel.</p>
@@ -243,7 +243,7 @@ Kan je herkennen aan de <code>::</code> na een element, voor de custom toggle.</
 en <code>input::track</code> om de achterkant van de switch aan te roepen. </p>
 <p>Ook kwam er een vraag uit het publiek wat het verschil was tussen <code>appearance: none;</code> en <code>all: unset;</code>. Bij <code>appearance: none;</code>  zeg je dat de browser dit element niet hoeft te vervangen en niet de standaard styling wil, waardoor je hem zelf beter kan stylen. 
 Met <code>all: unset;</code> zeg je dat je helemaal geen styling wilt en is minder agressief.</p>
-<h3>Datalist</h3>
+<h3 id="Datalist">Datalist</h3>
 <p>Met het datalist element in html maak je een automatic complete field. Dit hoef je dus niet meer met Javascript te schrijven.</p>
 <pre><code class="language-md">&lt;datalist&gt; 
     &lt;options&gt;&lt;/options&gt;
@@ -252,26 +252,26 @@ Met <code>all: unset;</code> zeg je dat je helemaal geen styling wilt en is mind
 &lt;/datalist&gt;
 </code></pre>
 <p>Je kan hem alleen nog niet stylen. Als je dat echt wilt zul je hem wel moeten maken met javascript. Maar het stylen van dit element zou best wel snel in de toekomst kunnen worden toegev=oegd aan browsers. </p>
-<h3>Color pickers</h3>
-<p>Hij zei ook wat over color pickers. Met <code>input-type=&quot;color&quot;</code> op het input element krijg je een heleboel colorpicker functionaliteiten van de browser, en je krijgt zelfs meer dan je zelf kan maken met Javascript.</p>
+<h3 id="Color-pickers">Color pickers</h3>
+<p>Hij zei ook wat over color pickers. Met <code>input-type="color"</code> op het input element krijg je een heleboel colorpicker functionaliteiten van de browser, en je krijgt zelfs meer dan je zelf kan maken met Javascript.</p>
 <p>Ook kan je met <code>color-scheme: dark;</code> op de input, het element dark laten stylen door de browsers. </p>
-<h3>In-page transitions</h3>
+<h3 id="In-page-transitions">In-page transitions</h3>
 <p>Met In-page transitions vervang je honderden regels js + jquery met 1 regel html en dan heb je ook nog een betere ervaring. </p>
 <!-- wat is die regel html? -->
 <p>Maar bij scrollen op de pagina kan t ook met 2 regels js.</p>
 <!-- welke twee reges? -->
 
-<h3>Accessibility</h3>
+<h3 id="Accessibility">Accessibility</h3>
 <p>Accessibility is heel belangrijk en je zou animaties moeten kunnen uitzetten voor mensen die dat willen. Dit kan met <code>@media {prefers-reduced-motion:no-preference}</code>.</p>
 <p>Als je links hebt die verwijzen naar een kopje op de zelfde pagina dan springt dat daar zo naar toe. De gebruiker weet dan niet waar ze zijn en hoeveel content ze hebben gemist. 
 Met <code>scroll-behavior: smooth;</code> ga je dat tegen en ziet de gebruiker een mooie scroll animatie. Deze moet je dus wel in de <code>@media (prefers-reduced-motion:no-preference)</code> zetten. </p>
 <p>Ook heb je <code>scroll-margin</code>, dit is een margin tot waar die naar boven scrolled, zo kan je bepalen waar dat gelinkte kopje op je scherm komt als je op die link klikt. </p>
 <p>Als je op de link klikt en je springt naar het gelinkte kopje op de pagina kan je dit een styling geven met <code>:target</code>. Dit geeft dan styling weer als dat element getarget wordt. </p>
-<h3>Carousels</h3>
-<p>scroll-snap api&#39;s</p>
-<p>adam argyle snap video&#39;s</p>
-<h3>Accordions and modals</h3>
-<p>Accordions of ook wel details and summary&#39;s genoemd hoef je ook niet met Javascript te maken. </p>
+<h3 id="Carousels">Carousels</h3>
+<p>scroll-snap api's</p>
+<p>adam argyle snap video's</p>
+<h3 id="Accordions-and-modals">Accordions and modals</h3>
+<p>Accordions of ook wel details and summary's genoemd hoef je ook niet met Javascript te maken. </p>
 <pre><code class="language-md">&lt;details&gt;
   &lt;summary&gt;Titel&lt;/summary&gt;
   &lt;p&gt;Text over die titel dat uitklapt als je op de titel klikt.&lt;/p&gt;
@@ -281,18 +281,18 @@ Met <code>scroll-behavior: smooth;</code> ga je dat tegen en ziet de gebruiker e
 Met [open] kun je de details en summary een andere styling geven als die open is</p>
 <p>Ook is het handig om een de muis een pointer te maken en hover styling toe te voegen op de :hover van een details en summary. Want dit gebeurt niet automatisch</p>
 <p>Ook gaf hij als tip dat je de details en summary niet moet dichtmaken als je op een andere klikt. Soms willen mensen vergelijken en dan moet de gebruiker er heel vaak op klikken om zijn/haar doel te behalen. </p>
-<h3>Dialog</h3>
+<h3 id="Dialog">Dialog</h3>
 <p>In plaats van zelf een goeie popup te bouwen met Javascript kan je ook het html element <code>&lt;dialog&gt;&lt;dialog/&gt;</code> gebruiken. Een dialog blokeert de javascript daar achter niet maar een <code>&lt;alert&gt;&lt;/alert&gt;</code> wel. </p>
-<p>In de dialog kan je een button zetten met <code>type=&quot;submit&quot;</code> om de dialog te sluiten. En als je data terug wilt sturen zet je de submit button in een form in de dialog.
+<p>In de dialog kan je een button zetten met <code>type="submit"</code> om de dialog te sluiten. En als je data terug wilt sturen zet je de submit button in een form in de dialog.
 Je kan de value in Javascript dan ophalen met <code>dialog.returnValue</code>.
 Om de dialog aan te roepen moet je wel Javascript schrijven, maar dat kan je doen met <code>jeDialogElement.showModal()</code>. </p>
 <p>De dialog komt boven alles want het komt in de top layer. En je kan ook dialogs in/over dialogs plaatsen.</p>
 <p>Om alles rondom de dialog (achter de modal) te kunnen stylen kan je met <code>::backdrop</code> dat aanroepen en stylen. </p>
-<h3>Container queries</h3>
+<h3 id="Container-queries">Container queries</h3>
 <p>Container queries werken als een soort media queries, maar dan in plaats van hoe breed mijn vp is, is het: hoe breed is mijn container? Dus dan kan je hoe de childs in die container zich moeten gedragen. Hierdoor hoef je dus niet extra media queries toe te voegen. </p>
 <p>Je kan dit doen met <code>container-type:</code> en <code>@container (min-width: ...em)</code>
 En 50cqw container units is dus 50% van de container breedte. </p>
-<h3>:has()</h3>
+<h3 id=":has()">:has()</h3>
 <p>:has() is een parent selector, dit kan je bijvoorbeeld zo gebruiken:</p>
 <pre><code class="language-css">h1:has(+ p) {
   margin-bottom: 0;
@@ -300,13 +300,13 @@ En 50cqw container units is dus 50% van de container breedte. </p>
 </code></pre>
 <p>Hier zeg je: als een h1 meteen een p eronder heeft, geef het dan een <code>margin-bottom: 0;</code>.
 Voor meer info: <a href="https://polypane.app/blog/where-is-has-new-css-selectors-that-make-your-life-easier/">polypane.app/blog/where-is-has/</a></p>
-<h3>Features van browsers en css waar nog aan wordt gewerkt</h3>
+<h3 id="Features-van-browsers-en-css-waar-nog-aan-wordt-gewerkt">Features van browsers en css waar nog aan wordt gewerkt</h3>
 <p>Hier noemde hij een lijstje van browser functionaliteiten die in weinig browsers al zitten, maar dit aankomende tijd wel wordt toegevoegd aan veel browsers. </p>
 <ul>
 <li><code>field-sizing: content;</code>:  styling op een input element die dan mee schaalt met de content.</li>
 <li>masonry grid: een gird dat zichzelf opvult</li>
 <li>selectlist (html element): selectlist heeft alle semantics en interactie van een gewone select, maar die kan je stijlen.<ul>
-<li>div met slot=&quot;listbox&quot;</li>
+<li>div met slot="listbox"</li>
 <li>:parts</li>
 <li>[popover]</li>
 </ul>
@@ -314,10 +314,10 @@ Voor meer info: <a href="https://polypane.app/blog/where-is-has-new-css-selector
 <li>scroll driven animations: animatie koppelen aan een scroll ergens op de pagina</li>
 </ul>
 <p>Voor meer info over scroll driven animations: <a href="https://www.bram.us/2023/02/12/scroll-driven-animations-cover-flow-2022-10-06-full-stack-europe/">bram.us/scroll-driven-animations-cover-flow</a></p>
-<h3>Conclusie</h3>
+<h3 id="Conclusie">Conclusie</h3>
 <p>De conclusie uit Kilians lezing was dat je moet proberen om zo min mogelijk Javascript te gebruiken en vooral te kijken naar wat er al mogelijk is in de browser met html en css. 
 Als je zo min mogelijk javascript gebruikt en het meeste kan behalen met html en css wordt je website sneller en gaat minder snel kapot.</p>
-<h2>Reflectie</h2>
+<h2 id="Reflectie">Reflectie</h2>
 <p>Ik vond de persentatie van Kilian heel interessant, confronterend en hij heeft zeker indruk op mij gemaakt. Ik ben het helemaal met hem eens dat je niet Javascript moet gebruiken als je met html en css het zelfde doel kan behalen. Een aantal css selectoren die hij besprak kende ik al wel maar veel ook niet. Dit waren namelijk:</p>
 <ul>
 <li><code>::focus-visible</code></li>
@@ -336,13 +336,9 @@ Ik was hier aardig trots op maar Kilian noemde tijdens zijn presentatie het html
 Ik gebruik veel chatGPT om mijn code sneller te schrijven, maar dit kijk ik altijd na, documenteer het, en als het niet werkt los ik het zelf op. Maar aangezien er een kans is dat ik geen AI mag gebruiken in het begin van mijn carrière, zal ik er op letten dat ik het meeste zelf schrijf. </p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Samenvatting-van-de-lezing">Samenvatting van de lezing</a></li><li data-heading="h3"><a href="#Custom-toggles">Custom toggles</a></li><li data-heading="h3"><a href="#Datalist">Datalist</a></li><li data-heading="h3"><a href="#Color-pickers">Color pickers</a></li><li data-heading="h3"><a href="#In-page-transitions">In-page transitions</a></li><li data-heading="h3"><a href="#Accessibility">Accessibility</a></li><li data-heading="h3"><a href="#Carousels">Carousels</a></li><li data-heading="h3"><a href="#Accordions-and-modals">Accordions and modals</a></li><li data-heading="h3"><a href="#Dialog">Dialog</a></li><li data-heading="h3"><a href="#Container-queries">Container queries</a></li><li data-heading="h3"><a href="#:has()">:has()</a></li><li data-heading="h3"><a href="#Features-van-browsers-en-css-waar-nog-aan-wordt-gewerkt">Features van browsers en css waar nog aan wordt gewerkt</a></li><li data-heading="h3"><a href="#Conclusie">Conclusie</a></li><li data-heading="h2"><a href="#Reflectie">Reflectie</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
@@ -351,7 +347,7 @@ Ik gebruik veel chatGPT om mijn code sneller te schrijven, maar dit kijk ik alti
                    <div>
                     <h1>Weekly Nerd =&gt; Fenna ...</h1>
 <p>7 Februari 2024</p>
-<h2>Samenvatting van de lezing</h2>
+<h2 id="Samenvatting-van-de-lezing">Samenvatting van de lezing</h2>
 <p>Fenna ...  is
 Wat zij gebruikt:
 Next.js
@@ -360,9 +356,9 @@ Sanity
 Ze heeft hele leuke en mooie dingen gemaakt als creative front-end developer.</p>
 <p>Haar lezing ging over toegankelijkheid. Ze zei dat het bedrijfsleven nog heel veel toegankelijkheid mist. En dat veel developers, designers en opdrachtgevers weinig geven om toegankelijkheid. </p>
 <p>Ze kwam met een lijst bestaande uit html attributen en css selectors</p>
-<h3>focus state voor keyboard gebruikers</h3>
+<h3 id="focus-state-voor-keyboard-gebruikers">focus state voor keyboard gebruikers</h3>
 <p>Met <code>:focus-visible</code> kan je een focus state voor keyboard gebruikers stylen. En daarbij zei ze ook dat als je een focus state vormgeeft, het het beste is om elk element apart te stylen.</p>
-<h3>aria attributen</h3>
+<h3 id="aria-attributen">aria attributen</h3>
 <p>Ook had ze een hele lijst met aria attributen:</p>
 <ul>
 <li><p>aria-label voor images, of button met en icon, logo in de nav</p>
@@ -380,9 +376,9 @@ Ze heeft hele leuke en mooie dingen gemaakt als creative front-end developer.</p
 </li>
 <li><p>aria-atomic, true =&gt; ik wil dat deze hele groep opniew wordt geannounced</p>
 </li>
-<li><p>role=&quot;&quot;</p>
+<li><p>role=""</p>
 </li>
-<li><p>aria-role-description=&quot;&quot;</p>
+<li><p>aria-role-description=""</p>
 </li>
 <li><p>aria-labelledby, geef de id mee</p>
 </li>
@@ -393,8 +389,8 @@ Ze heeft hele leuke en mooie dingen gemaakt als creative front-end developer.</p
 </ul>
 <p>Nog een tip: 
 Gebruik geen li elements voor slides</p>
-<p>Carousel controls moet je groeperen met <code>role=&quot;group&quot;</code> op de parent, een <code>aria-label</code> toevoegen want de screen reader kan geen icoontjes herkennen, die ziet alleen een button met een svg. En wanneer je niet verder kan navigeren in de carousel, zet dan op de buttons: <code>aria-disabled=“true”</code>.</p>
-<h3>Kleur contrasten</h3>
+<p>Carousel controls moet je groeperen met <code>role="group"</code> op de parent, een <code>aria-label</code> toevoegen want de screen reader kan geen icoontjes herkennen, die ziet alleen een button met een svg. En wanneer je niet verder kan navigeren in de carousel, zet dan op de buttons: <code>aria-disabled=“true”</code>.</p>
+<h3 id="Kleur-contrasten">Kleur contrasten</h3>
 <p>1/21
 Zwart op wit is 21:1</p>
 <p>Lighthouse-audit om contrast te testen</p>
@@ -405,23 +401,19 @@ Ch unit in css : 1ch is de breedte van de 0 </p>
 <p>Alt text 
 Correcte semantiek 
 Nav, h1 tot en met h6, button of a</p>
-<h3>Wat kan je nog meer doen:</h3>
+<h3 id="Wat-kan-je-nog-meer-doen:">Wat kan je nog meer doen:</h3>
 <p>Skip to content button
 Prefers reduce motion
 Autoplay moeten gepauzeerd kunnen worden
 Zelf een screen reader gebruiken</p>
-<h2>Reflectie</h2>
+<h2 id="Reflectie">Reflectie</h2>
 <p>Deze lezing vond ik ook interessant en belangrijk om ook deze kennis te gebruikein in mijn projecten. 
 Heel veel aria attributen waren nieuw voor mij.</p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Samenvatting-van-de-lezing">Samenvatting van de lezing</a></li><li data-heading="h3"><a href="#focus-state-voor-keyboard-gebruikers">focus state voor keyboard gebruikers</a></li><li data-heading="h3"><a href="#aria-attributen">aria attributen</a></li><li data-heading="h3"><a href="#Kleur-contrasten">Kleur contrasten</a></li><li data-heading="h3"><a href="#Wat-kan-je-nog-meer-doen:">Wat kan je nog meer doen:</a></li><li data-heading="h2"><a href="#Reflectie">Reflectie</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
@@ -429,36 +421,36 @@ Heel veel aria attributen waren nieuw voor mij.</p>
                 <li id="processWAFS"> 
                    <div>
                     <h1>Proces verslag Jop Molenaar</h1>
-<h2>Intro</h2>
-<h2>Dag 1</h2>
+<h2 id="Intro">Intro</h2>
+<h2 id="Dag-1">Dag 1</h2>
 <p>Begonnen met mijn website
 Json content gemaakt, en al ingeladen op de webpagina. </p>
-<h2>Dag 2</h2>
+<h2 id="Dag-2">Dag 2</h2>
 <p>Verder met mijn website, meer gefocust op de content en UI. 
 Ook heb ik die dag de backend opgezet maar wist nog niet precies wat ik er mee moest.</p>
-<h2>Dag 3</h2>
+<h2 id="Dag-3">Dag 3</h2>
 <p>Deze dag heb ik de flip kaartjes werkend gekregen en als je omlaag scrollt dan beweegt de header img van japan omlaag.</p>
-<h2>Dag 4</h2>
+<h2 id="Dag-4">Dag 4</h2>
 <p>Deze dag ging ik verder met mijn website en vandaag viel het kwartje met template engines en backend ipv createElements met js.</p>
 <p>Ik dacht de heleboel om te gooien maar bedacht bij mezelf dat dat meer backend is en ik dan minder vanilla js schrijf terwijl dat de opdracht is. Ook is het meer werk en wil ook genoeg andere dingen nog doen. Het is fijn dat het kwartje viel want dat betekent dat ik weer een extra inzicht heb over hoe het web kan werken.</p>
 <p>Ook heb ik deze dag feedback gekregen en deze punten waren:</p>
 <ul>
 <li>Dat ik het font direct moest veranderen. Ik gebruikte het default font nog en had het uitgesteld.</li>
-<li>Prio geven aan &quot;Make it work&quot; en daarna mooi maken, en daarna pas snel.</li>
+<li>Prio geven aan "Make it work" en daarna mooi maken, en daarna pas snel.</li>
 <li>Er werd mij aangeraden om een api te gebruiken die iets met landen had.</li>
 </ul>
-<h2>Dag 5</h2>
+<h2 id="Dag-5">Dag 5</h2>
 <p>Vandaag ging ik bezig met de scroll animaties. Ik had dit al eerder gedaan maar kon de code niet meer terug vinden. Ik was begin deze week al bezig met zoeken naar de juiste code maar kon ik niet vinden, totdat ik deze video tegen kwam:</p>
 <p><a href="https://www.youtube.com/watch?v=UmzFk68Bwdk">Incredible scroll-based animations with CSS-only</a></p>
 <p>Dit kwam echt super goed uit want het gebruikt geen js, had de scroll animaties die ik nodig had, en uit kilians presentatie kwam dat we zo min mogelijk javascript moesten gebruiken.</p>
 <p>Wel kwam ik tegen een groot probleem. Dit was namelijk dat ik een scroll snap heb gebruikt voor mijn 2 secties, als je omlaag scrollde snap je op de tweede section en omhoog op de eerste. Dit is leuk, maar kan niet op het <code>main</code> element worden gedaan. Daarom had ik een div gebruikt maar dan scroll je niet op de pagina, maar op de div, dus dan werkt <code>animation-timeline: view();</code> niet.
 En aangezien ik de js code al had voor de header img was het best makkwlijk om dat dan ook te doen voor de andere images. Wel ga ik <code>animation-timeline: view();</code> gebruiken voor mijn persoonlijke blog. </p>
 <p>De code die ik had moest wel even omschrijven zodat het wat dynamischer werd. dus ik had dit:</p>
-<pre><code class="language-js">const div = document.querySelector(&quot;main &gt; div&quot;);
+<pre><code class="language-js">const div = document.querySelector("main &gt; div");
 
 let visible;
 const element = document.querySelector(
-    &quot;main div &gt; section:nth-child(2) img:nth-child(4)&quot;
+    "main div &gt; section:nth-child(2) img:nth-child(4)"
 );
 
 const isInViewport = function (ele) {
@@ -472,34 +464,34 @@ const isInViewport = function (ele) {
     );
 };
 
-div.addEventListener(&quot;scroll&quot;, function () {
+div.addEventListener("scroll", function () {
     visible = isInViewport(element);
     if (visible === true) {
-        element.classList.add(&quot;inViewPort&quot;);
+        element.classList.add("inViewPort");
     } else {
-        element.classList.remove(&quot;inViewPort&quot;);
+        element.classList.remove("inViewPort");
     }
 });
 </code></pre>
 <p>Naar dit geschreven:</p>
-<pre><code class="language-js">const div = document.querySelector(&quot;main &gt; div&quot;);
+<pre><code class="language-js">const div = document.querySelector("main &gt; div");
 
 let visible;
 
 const imagesToAnimate = [
     {
-        img: &quot;main div &gt; section:nth-child(2) img:nth-child(4)&quot;,
-        topOrBottom: &quot;bottom&quot;,
+        img: "main div &gt; section:nth-child(2) img:nth-child(4)",
+        topOrBottom: "bottom",
     },
     {
-        img: &quot;main &gt; div &gt; section:nth-child(2) img:nth-child(5)&quot;,
-        topOrBottom: &quot;top&quot;,
+        img: "main &gt; div &gt; section:nth-child(2) img:nth-child(5)",
+        topOrBottom: "top",
     },
 ];
 
 const isInViewport = (element, topOrBottom) =&gt; {
     const rect = element.getBoundingClientRect();
-    if (topOrBottom === &quot;top&quot;) {
+    if (topOrBottom === "top") {
         return (
             rect.left &gt;= 0 &amp;&amp;
             rect.top &lt;=
@@ -518,21 +510,21 @@ const isInViewport = (element, topOrBottom) =&gt; {
     }
 };
 
-div.addEventListener(&quot;scroll&quot;, () =&gt; {
+div.addEventListener("scroll", () =&gt; {
     imagesToAnimate.forEach((object) =&gt; {
         const element = document.querySelector(`${object.img}`);
         visible = isInViewport(element, object.topOrBottom);
         if (visible === true) {
-            element.classList.add(&quot;inViewPort&quot;);
+            element.classList.add("inViewPort");
         } else {
-            element.classList.remove(&quot;inViewPort&quot;);
+            element.classList.remove("inViewPort");
         }
     });
 });
 </code></pre>
-<h2>Weekend</h2>
+<h2 id="Weekend">Weekend</h2>
 <p>In het weekend heb ik gewerkt aan de styling van mijn eigen site. Dit deed ik in een rustig tempo en liep nergens echt tegen aan. </p>
-<h2>Dag 6</h2>
+<h2 id="Dag-6">Dag 6</h2>
 <p>Deze maandag begon ik met de laatste dingen afvinken. Ik moest nog wat states toevoegen en toegangelijkheid verbeteren. Ook was ik bezig met het efficient inladen van de afbeelding op mijn pagina. Dit lukte niet echt. Ik probeerde iets met:</p>
 <pre><code class="language-js">/// generate a unique cache-busting parameter
 const cacheBuster = new Date().getTime();
@@ -541,28 +533,28 @@ const cacheBuster = new Date().getTime();
 imgElement.srcset = `low-res.jpg?${cacheBuster} 200w, medium-res.jpg?${cacheBuster} 500w, high-res.jpg?${cacheBuster} 1000w`;
 </code></pre>
 <p>Maar dit werkte voor geen meter. Verder kwam ik er niet uit dus besloot ik het om het te laten, en later pas te proberen het sneller te maken. </p>
-<h2>Dag 7</h2>
+<h2 id="Dag-7">Dag 7</h2>
 <p>Deze dag ben ik de heletijd bezig geweest met de main feature van de team website. De bedoeling was dat als je op een naam klikte, de kleuren van die persoon op het land kwamen waar die nog naar toe wilde gaan en al geweest was. Dit was relatief makkelijk. Maar de uitdaging daarna om een gradient op de svg paths te zetten was wat moeilijker. Na wat research kwam ik op dit element:</p>
 <pre><code class="language-md">  &lt;defs&gt;
-    &lt;linearGradient id=&quot;grad1&quot; x1=&quot;0%&quot; x2=&quot;100%&quot; y1=&quot;0%&quot; y2=&quot;0%&quot;&gt;
-      &lt;stop offset=&quot;0%&quot; stop-color=&quot;yellow&quot; /&gt;
-      &lt;stop offset=&quot;100%&quot; stop-color=&quot;red&quot; /&gt;
+    &lt;linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%"&gt;
+      &lt;stop offset="0%" stop-color="yellow" /&gt;
+      &lt;stop offset="100%" stop-color="red" /&gt;
     &lt;/linearGradient&gt;
   &lt;/defs&gt;
 </code></pre>
 <p><a href="https://www.w3schools.com/graphics/svg_grad_linear.asp">www.w3schools.com/graphics/svg_grad_linear</a></p>
-<p>De id van de linearGradient kon je toevoegen aan het <code>fill:</code> attribuut van de path door <code>fill=&quot;url(#grad1)&quot;</code> te zeggen. </p>
+<p>De id van de linearGradient kon je toevoegen aan het <code>fill:</code> attribuut van de path door <code>fill="url(#grad1)"</code> te zeggen. </p>
 <p>Daarna knaw nog een uitdaging, logica zo schrijven dat als het land al een gradient heeft, je de gradient aanpast aan de hand van de nieuwe kleuren die bij het land horen.</p>
 <p>Dit ging niet zo goed, en koste mij veel tijd om erachter te komen wat het probleem nou was. Het werkte in theorie prima, en soms kreeg ik een extra kleur bij de gradient. Maar als ik een andere volgorde van de namen aan klikte waar Eefje de eerste was die werd aangeklikt, ging het fout. Haar kleur werd 2 keer in de gradient gegooid. Ik had aan Marten hulp gevraagd en die zei dat ik het op een andere, meer overzichtelijke manier moest doen. </p>
 <p>Die avond heb ik nog gekeken of ik het nog kon fixen maar toen kwam ik erachter dat het probleem al best wel hoog in de functie zat, en dus besloot ik het om het om te gooien. Namelijk om eerst door de namen te loopen, dan de matchende data van die naam te pakken. Dat land toe te voegen aan een array met die naam. And als het land al bestaat, de naam toe te voegen aan het land naast de naam/namen die er al staan. </p>
 <p>Daarna geef ik die array aan de functie die de gradient voor dat land aanmaakt, en de kleuren van dat land in een array stopt en doorgeeft aan een functie die de gradient maakt en het <code>linearGradient</code> element toevoegd aan <code>&lt;defs&gt;&lt;/defs&gt;</code>. Aan het begin is de <code>&lt;defs&gt;&lt;/defs&gt;</code> al geleegd. </p>
-<h2>Dag 8</h2>
+<h2 id="Dag-8">Dag 8</h2>
 <p>De laaste dag heb ik de functie van gisteren nog wat korter geschreven en gedocumenteerd. Heb ik dit verslag uitgeschreven, en nog wat laaste documentatie geregeld.</p>
 <p>Ook opende ik mijn site op mobiel, en die was niet heel mooi. Dit moest ik ook gaan fixen met super kleine media queries. </p>
 <p>Ook heb ik de code door de validator gehaald en nog de laatste dingen gefixed. Een van die dingen die cruciaal was voor de styling gaf een error. Namelijk het gebruik van <code>svh</code>, small viewport height. Dit heb ik toen terug moeten veranderen naar vh, maar zorgt er dus wel voor dat de viewport onder de browser balk gaat op mobiel. </p>
-<h3>Toegankelijkheids testje</h3>
-<p>Ik kwam er vandaag wel achter dat ik niet kon tabben op mijn kaartjes, en dit moest ik wel snel fixen. Ik was een beetje bezig om een button of linkje in the cards te zetten en dan met js te zorgen dat het dan omdraaid als je erop klikt. Maar dit lukte mij niet. Toen zei Joppe uit mijn groepje opeens dat tab-index bestond, had ik al wel een keer van gehoord maar was ik allang weer vergeten. Dit voegde ik toe op de div&#39;s en met deze code hieronder zorgde ik ervoor dat je erop kon klikken met enter. </p>
-<pre><code class="language-js">document.body.addEventListener(&quot;keydown&quot;, (event) =&gt; {
+<h3 id="Toegankelijkheids-testje">Toegankelijkheids testje</h3>
+<p>Ik kwam er vandaag wel achter dat ik niet kon tabben op mijn kaartjes, en dit moest ik wel snel fixen. Ik was een beetje bezig om een button of linkje in the cards te zetten en dan met js te zorgen dat het dan omdraaid als je erop klikt. Maar dit lukte mij niet. Toen zei Joppe uit mijn groepje opeens dat tab-index bestond, had ik al wel een keer van gehoord maar was ik allang weer vergeten. Dit voegde ik toe op de div's en met deze code hieronder zorgde ik ervoor dat je erop kon klikken met enter. </p>
+<pre><code class="language-js">document.body.addEventListener("keydown", (event) =&gt; {
     if (event.keyCode === 13) {
         flipTheCards(event.target);
     }
@@ -570,20 +562,16 @@ imgElement.srcset = `low-res.jpg?${cacheBuster} 200w, medium-res.jpg?${cacheBust
 </code></pre>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Intro">Intro</a></li><li data-heading="h2"><a href="#Dag-1">Dag 1</a></li><li data-heading="h2"><a href="#Dag-2">Dag 2</a></li><li data-heading="h2"><a href="#Dag-3">Dag 3</a></li><li data-heading="h2"><a href="#Dag-4">Dag 4</a></li><li data-heading="h2"><a href="#Dag-5">Dag 5</a></li><li data-heading="h2"><a href="#Weekend">Weekend</a></li><li data-heading="h2"><a href="#Dag-6">Dag 6</a></li><li data-heading="h2"><a href="#Dag-7">Dag 7</a></li><li data-heading="h2"><a href="#Dag-8">Dag 8</a></li><li data-heading="h3"><a href="#Toegankelijkheids-testje">Toegankelijkheids testje</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
                 <li id="notesJeffry"> 
                    <div>
-                    <h2>Weekly Nerd =&gt; Jeffry Arts</h2>
+                    <h2 id="Weekly-Nerd-=>-Jeffry-Arts">Weekly Nerd =&gt; Jeffry Arts</h2>
 <p>dev = creation and creativty</p>
 <p>vertellen hoe hij werkt etc</p>
 <p>kunstenaar, designer, fe dev</p>
@@ -611,28 +599,24 @@ bioler plate met alles wat je graag gebruikt en werkt
 snel opzetten van proojecten zodat je kan doen wat je wilt doen. </p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Weekly-Nerd-=>-Jeffry-Arts">Weekly Nerd => Jeffry Arts</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
                 <li id="notesNils"> 
                    <div>
-                    <h2>Nils Binder</h2>
+                    <h2 id="Nils-Binder">Nils Binder</h2>
 <p>frontend designer</p>
 <p>3 units in company =&gt; </p>
 <ul>
-<li>communication design (logo&#39;s print work, non coding)</li>
+<li>communication design (logo's print work, non coding)</li>
 <li>product dev (developing big apps, data visualitzation)</li>
 <li>web development (web dev, small-medium size websites)</li>
 </ul>
-<h3>wrapper element</h3>
+<h3 id="wrapper-element">wrapper element</h3>
 <p>(container)
 does:</p>
 <ul>
@@ -647,12 +631,12 @@ does:</p>
 <li>padding 0 1.5rem</li>
 </ul>
 <p>new way:
-    width: min(100% - 3rem, 75rem); &quot;&quot;
-    margin-inline auto &quot;left and right&quot;</p>
+    width: min(100% - 3rem, 75rem); ""
+    margin-inline auto "left and right"</p>
 <p>shorter way:
     magin-inine max(1.5rem, ((100/75rem)/2));</p>
 <p>why are we making containers?
-posters don&#39;t have it</p>
+posters don't have it</p>
 <p>in the past we used photoshop but now we use figma wich has many features from css
 and you can make variables and use them in the code</p>
 <p>figma came in time where many websites looked the same, to make these kind of websites</p>
@@ -660,29 +644,25 @@ and you can make variables and use them in the code</p>
 <p>but figma has so many less units then we have in css</p>
 <p>with grid and 1fr you can make cool dynamic layouts with different white space<br>1fr only gets content when it is big enough
 2fr 3fr auto 1fr
-minmax(0, clamp(24rem, 75%, 44rem)); &quot;explanation:  min 24rem, desirded 75% and max 44rem&quot;</p>
+minmax(0, clamp(24rem, 75%, 44rem)); "explanation:  min 24rem, desirded 75% and max 44rem"</p>
 <p>conclusion:
 use more playfull layouts
 and experiment with the white space use
-don&#39;t center everything</p>
+don't center everything</p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Nils-Binder">Nils Binder</a></li><li data-heading="h3"><a href="#wrapper-element">wrapper element</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
                 <li id="notesJeremy"> 
                    <div>
-                    <h2>Jeremy Keith</h2>
-<h3>Declarative Design</h3>
-<h3>music</h3>
+                    <h2 id="Jeremy-Keith">Jeremy Keith</h2>
+<h3 id="Declarative-Design">Declarative Design</h3>
+<h3 id="music">music</h3>
 <p>ways to approch</p>
 <ul>
 <li>classic: notes in a list</li>
@@ -697,7 +677,7 @@ don&#39;t center everything</p>
 <ul>
 <li>html (Declarative) domain specific</li>
 <li>css (Declarative) you giving a suggestion</li>
-<li>js (imperative)  lot more power, but if you make a mistake it doesn&#39;t ignore, you can you use it in more places then only the web</li>
+<li>js (imperative)  lot more power, but if you make a mistake it doesn't ignore, you can you use it in more places then only the web</li>
 </ul>
 <p>its about mindset
 imperative: 
@@ -707,7 +687,7 @@ giving up control</p>
 <p>people use js to create a button for instance because of control.
 imperative way of thinking</p>
 <p>he means js on the client side
-&quot;js should only do what only js can do&quot;</p>
+"js should only do what only js can do"</p>
 <p>mindset css</p>
 <ul>
 <li><p>imperative: </p>
@@ -734,7 +714,7 @@ his answer: it depends
 it depends on: the culture of the nevirioment of the design its happening: management, (culture of the company)</p>
 <p>design systems: the design system is the things we do around here
 imperative en decl approach</p>
-<h3>thinking</h3>
+<h3 id="thinking">thinking</h3>
 <p>analytical thinking
 we analize the whole by breaking it apart en understanding that (zooming in)</p>
 <p>systems thinking
@@ -745,34 +725,30 @@ you look at the whole (zooming out)</p>
 <p>designing a button with colors, hexcodes are imperative
 the border should be 10% lighter is decl</p>
 <p>declearative team? work declearative en andersom</p>
-<h3>the medium</h3>
+<h3 id="the-medium">the medium</h3>
 <p>print design, native apps, os-specific: needs maybe imperative approuch
 but he doesnt think that approuch will work on the www</p>
-<p>&quot;the more you tighten your grip, the more ww slips through your fingers&quot;</p>
+<p>"the more you tighten your grip, the more ww slips through your fingers"</p>
 <p>in the first years of the www it was more a imperative approuch </p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Jeremy-Keith">Jeremy Keith</a></li><li data-heading="h3"><a href="#Declarative-Design">Declarative Design</a></li><li data-heading="h3"><a href="#music">music</a></li><li data-heading="h3"><a href="#thinking">thinking</a></li><li data-heading="h3"><a href="#the-medium">the medium</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
                 <li id="notesMarieke"> 
                    <div>
-                    <h2>Digitaal toegankelijk</h2>
+                    <h2 id="Digitaal-toegankelijk">Digitaal toegankelijk</h2>
 <p>pim en marieke van Digitaal toegankelijk
  3 jaar geleden begonnen.</p>
 <p>8 mensen</p>
 <p>Marieke heeft een Eindproduct over toeganklijkheid gemaakt. </p>
 <p>Wie wordt er graag buitengesloten en wie sluit er graag mensen buiten zijn vragen zie je tijdens het design process moet stellen. 
 Elke keuze die je maakt kan andere mensen uitsluiten. </p>
-<h2>Wat is digitale toegankelijkheid.</h2>
+<h2 id="Wat-is-digitale-toegankelijkheid.">Wat is digitale toegankelijkheid.</h2>
 <p>WCAG: Web content accessibility guidelines
 richtlijnen</p>
 <ul>
@@ -792,7 +768,7 @@ robust</p>
 <li>Kan deze content door iedereen begrepen worden?</li>
 <li>Is de techniek achter mijn digitale product semantisch correct opgebouwd.</li>
 </ul>
-<h3>belangrijke tips!</h3>
+<h3 id="belangrijke-tips!">belangrijke tips!</h3>
 <ul>
 <li>Luister een keer met je schermlezer. </li>
 <li>Gebruik een keer je toetsenbord.</li>
@@ -804,13 +780,9 @@ Websites controleren en roasten
 helpen organistaties en geven trainingen.</p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Digitaal-toegankelijk">Digitaal toegankelijk</a></li><li data-heading="h2"><a href="#Wat-is-digitale-toegankelijkheid.">Wat is digitale toegankelijkheid.</a></li><li data-heading="h3"><a href="#belangrijke-tips!">belangrijke tips!</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
@@ -824,7 +796,7 @@ helpen organistaties en geven trainingen.</p>
 nu: MFA xpub aan piet zwart
 workshop, synthesizers, radio, websites bouwen</p>
 <p>circuit bending 
-Circuit bending is the creative, chance-based customization of the circuits within electronic devices such as low-voltage, battery-powered guitar effects, children&#39;s toys and digital synthesizers to create new musical or visual instruments and sound generators.</p>
+Circuit bending is the creative, chance-based customization of the circuits within electronic devices such as low-voltage, battery-powered guitar effects, children's toys and digital synthesizers to create new musical or visual instruments and sound generators.</p>
 <p>ombuigen van bestaande frameworks, 
 bestaat sinds de jaren 70
 begin van elektronische kunst
@@ -852,21 +824,17 @@ maar frameworks maakt niemand wat uit</p>
 <p>omring je zelf met mensen die je inspireren</p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
                 <li id="processCSS"> 
                    <div>
-                    <h2>Proces CSS to the rescue</h2>
-<h3>Week 1</h3>
+                    <h2 id="Proces-CSS-to-the-rescue">Proces CSS to the rescue</h2>
+<h3 id="Week-1">Week 1</h3>
 <p>De dinsdag van week 1 kon ik beginnen aan mijn controlepaneel voor CSS to the Rescue, aangezien we daarvoor een andere kleine opdracht kregen om dingen van CSS te onderzoeken.</p>
 <p>Ik had in gedachten om een controlepaneel te maken voor een voertuig dat kan vliegen. Na wat experimenteren besloot ik om een UFO te maken, omdat ik dat het leukst vond om mee te experimenteren, en het hoefde er niet zo realistisch uit te zien. De features die mij heel gaaf leken om te maken waren:</p>
 <ul>
@@ -920,16 +888,16 @@ main &gt; div:nth-child(2) &gt; div:nth-child(2) {
     }
 }
 </code></pre>
-<h3>Week 2</h3>
+<h3 id="Week-2">Week 2</h3>
 <p>Totdat ik in week twee op CodePen iets heel cools zag. Daar had iemand een ruimte gemaakt waar je doorheen kon bewegen, bestaande uit vier vlakken met afbeeldingen erop. De vlakken bewogen naar je toe, waardoor het leek alsof je aan het bewegen was. Ik heb dat toen gekopieerd, uitgepluisd, aangepast en ermee geëxperimenteerd totdat het er goed uitzag.</p>
 <p>Daarna heb ik de snelheidshendel gekoppeld aan een eigenschap die met wat berekeningen de duur van de animatie beïnvloedde, waardoor het leek alsof je sneller of langzamer ging.</p>
 <p>Ook heb ik de joystick gemaakt die de bestemming verandert waar je naartoe gaat en de ufo deels roteert, zodat het lijkt alsof je beweegt.</p>
 <p>Op vrijdag hadden we een beoordelingsgesprek en toen zei Sanne dat ik beter de perspectief kon verkleinen in plaats van de duur van de animatie, omdat je het dan kunt animeren en het er vloeiender uitziet als je van snelheid verandert. Hier heb ik ook mee geëxperimenteerd. Ik wilde de range-input niet instellen op 0 tot 500px, omdat dan het einde van het bereik veel meer invloed heeft dan de rest. Dus vermenigvuldigde ik de waarde met 5. Dit was al iets beter, maar nog niet helemaal. Ook zie je vaak in films met een ruimteschip dat ze een bepaalde modus moeten activeren voordat ze op hun topsnelheid zitten. Dit heb ik toen ook gedaan, zodat ik weer een extra knop had op mijn bedieningspaneel en het beter werkte. Ook heb ik toen de overgang op 1 seconde gezet, waardoor je een lichte vertraging hebt omdat de ufo natuurlijk op gang moet komen voordat hij echt de ruimte ingezogen wordt.</p>
-<h3>Week 3</h3>
+<h3 id="Week-3">Week 3</h3>
 <p>Deze week was ik bezig met de joystick en de repsonsiveness van mijn ufo. Op kleine schermen is het dashboard namelijk slecht zichtbaar en overlapte de elementen elkaar. Ook werd de border heel rond waardoor de elementen uit het dashboard uit de ufo staken. Dit heb ik opgelost met wat media queries. De joystick was wel een uitdaging. Ik begon met buttons die op click de ufo kantelde en de omgeving verplaatste. Daarna begon ik met het maken van de joystick. Ik begon met 2 divjes en later werden het de <code>:before</code> en <code>:after</code> van een div want ik wilde oefenen met <code>:before</code> en <code>:after</code>.
 Ik heb geprobeerd om het als geheel te kantelen en los, en daarbij zag los er beter uit. Wel lijkt het stokje soms niet echt aan de bol vast te zitten maar dit zijn kleine momenten en ook alleen als je naar links of rechts stuurt. Wel zit de joystick er goed uit als je hem naar je toe trekt en van je af duwt.
 Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat voelde niet echt chill en realistisch. Toen kreeg ik een idee van een klasgenoot die active ophet element in het midden en dan hover op de buttons had om de joystick te bewegen. Dit geeft je het gevoel dat je de joystick vast moet houden en dan kan bewegen. Dit heb ik toen toegepast en het werkte prima. Het enige probleem was dat de joystick tripte als je naar rechts wilde sturen. Ik heb geprobeerd dit op te lossen door de bol kleiner te maken, de buttons groter en de buttons verder weg van de joystick maar niks leek te werken.</p>
-<h3>Week 4</h3>
+<h3 id="Week-4">Week 4</h3>
 <p>Deze week ging ik de radar maken, propeerde ik een sound toe te voegen van een opstartende ufo als je de power aanzet. En experimenteerde ik met verschillende afbeelingen van de ruimte. Ook voegde ik een titel toe met een kleine animatie in de ufo. En voegde ik bepaalde cursors toe met handjes die dingen kunnen grijpen waardoor de gebruiker weet wat hij kan aanklikken en vastpakken etc.</p>
 <p>Ook probeerde ik op hover van het dashboard, het ruimte schip met de achtergrond een beetje te laten bewegen. Dit lukte natuurlijk wel met de achtergrond maar met het ruimte schip lukte dat niet. Dit komt omdat het ruimte schip natuurlijk niet 3D is en de achtergrond wel. Uiteindelijk heb ik alleen de achtergrond een beetje laten bewegen en niet het ruimte schip. De volgende keer maak ik de cockpit wel 3D en dan zou dit wel moeten lukken. </p>
 <p>Ook heb ik deze week @layers toegoegd aan een aantal css files. Dit deed ik omdat het een requirement was van de opdracht. @layers kan je goed gebruiken om lagen zoals: basis, layout, stylingComponents, specialStyling te definieren en zo iets overzichtelijkere code kan schrijven. Ook kan je het gebruiken om specificity problemen op te lossen. Helaas heb ik dit niet mijn code voor zien komen, maar als het voorkomt kan je bijvoorbeeld zo: <code>@layer base, special;</code> de volgorde van de layers definieren. </p>
@@ -966,13 +934,9 @@ Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat v
 <p>Het afspelen van geluid is mij niet gelukt deze weken. Wel heb ik het geprobeerd, en door alle webkit attributen op het audio element op display none te zetten, en de playbutton een hoge z-index te geven kan je dus alleen de playbutton zien. Als je die dan een <code>opacity: 0;</code> geeft en hem boven op de button zet kan je dus een geluid afspelen. Alleen dan kan je niet met <code>:has()</code> de button erachter zogenaamd op acitve zetten. Dus ik besloot om dit te laten, en de button te disabelen.  </p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Proces-CSS-to-the-rescue">Proces CSS to the rescue</a></li><li data-heading="h3"><a href="#Week-1">Week 1</a></li><li data-heading="h3"><a href="#Week-2">Week 2</a></li><li data-heading="h3"><a href="#Week-3">Week 3</a></li><li data-heading="h3"><a href="#Week-4">Week 4</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
@@ -981,54 +945,46 @@ Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat v
                    <div>
                     Failed to fetch data
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
                 <li id="Hackathon"> 
                    <div>
-                    <h2>Hackathon</h2>
+                    <h2 id="Hackathon">Hackathon</h2>
 <p>hackathon process and learnings</p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Hackathon">Hackathon</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
                 <li id="processAPI"> 
                    <div>
-                    <h2>api</h2>
-<h3>Week 1</h3>
+                    <h2 id="api">api</h2>
+<h3 id="Week-1">Week 1</h3>
 <p>Deze week begonnen we met het vak API. Het doel van het vak was om meer te leren  over de mogelijkheden die er zijn op het web. Na een introductie mochten we kiezen wat voor applicatie we wilde maken en na wat twijfelen koos ik om een chat applicatie te maken.
 Ik twijfelde een beetje om een chat applicatie te maken omdat ik het al een keer eerder had geprobeerd en er toen niet uitkwam, maar na wat research en nadat Declan ‘server send request’ had genoemd wist ik het zeker. Mij leek dit echt super cool en leuk om te doen. 
 Ik had al meteen ideeën om mijn applicatie beter te maken met de … api en de … api. Met de … api kan je namelijk je website op je begin scherm van je mobiel zetten zonder dat de browser balk erboven komt. Hierdoor voelt het dan echt aan als een app. Ik had dit al eerder gezien maar wist nooit hoe mensen dat deden. En met de … api wil ik push notificaties kunnen sturen als je een appje binnen krijgt. Dit leek mij wel passend bij een chat app en leuk om in te duiken. </p>
 <p>Die dinsdag ging ik aan de slag met het opzetten van mijn chat app. Dit ging best heel soepel en kreeg die zelfde dag de chat aan de praat.  Dit deed ik door middel van ‘server send events’. Ik heb hiervoor gekozen omdat het makkelijke code is, makkelijk te begrijpen is en je niks hoeft te downloaden kwa websockets en socket.io. </p>
 <p>Vrijdag had ik het feedback gesprek bent Declan. Hij zei dat ik erg goed op weg was, dat ik in de juiste volgorde aan het coderen was (logica eerst, daarna design), en vertelde mij dat ik gewoon de data mag opslaan op de server ipv mongoDB proberen op te zetten. Dit valt namelijk buiten de opdracht en is zonde van m’n tijd. 
 Die zaterdag heb ik een hoop logica geschreven zoals het maken van accounts, contacten toevoegen, chats aanmaken etc. </p>
-<h3>Week 2</h3>
+<h3 id="Week-2">Week 2</h3>
 <p>Veel logica nog proberen te schrijven met het elke keer fetchen van je contacten en als er een contact extra is, die toevoegen aan je contacten lijst met js. Dit klonk makkelijk in mijn hooft maar had er een voor gezeten en het lukte niet helemaal perfect. Uiteindelijk heb ik deze functionaliteit uitgesteld. </p>
-<p>Ik ben deze week bezig geweest met service workers, ik wilde het kunnen downloaden op m&#39;n mobiel en door een servcie worker, een manifest en een goegekeurde lighthouse check is het een PWA. Nu kon ik het downloaden op m&#39;n mobiel en dit was uiteindelijk veel makkelijker dan gedacht.
-Ook ben ik bezig geweest met push notifications, ik had het artikel gelezen dat Declan mij had gestuurd en het zag er best overzichtelijk en te bergijpen uit. Ik probeerde dit toe te passen op m&#39;n website en kreeg een aantal errors, na wat trial and error, kijken op de github van de demo, en het lezen van het artikel kon ik push notifactions sturen. Dit ging dan wel naar iedereen die een account had op mijn website en dat is natuurlijk niet de bedoeling. Ik schreef wat logica en het lukte mij om alleen de receiver van de message de popup te laten zien. Voor localhost werkt dit op Chrome naar Chrome, mobiel naar Firefox, en Chrome naar Cirefox. De rest van de opties laat het niks zien. Terwijl al mijn settings voor de browsers en system settings goed staan.  </p>
+<p>Ik ben deze week bezig geweest met service workers, ik wilde het kunnen downloaden op m'n mobiel en door een servcie worker, een manifest en een goegekeurde lighthouse check is het een PWA. Nu kon ik het downloaden op m'n mobiel en dit was uiteindelijk veel makkelijker dan gedacht.
+Ook ben ik bezig geweest met push notifications, ik had het artikel gelezen dat Declan mij had gestuurd en het zag er best overzichtelijk en te bergijpen uit. Ik probeerde dit toe te passen op m'n website en kreeg een aantal errors, na wat trial and error, kijken op de github van de demo, en het lezen van het artikel kon ik push notifactions sturen. Dit ging dan wel naar iedereen die een account had op mijn website en dat is natuurlijk niet de bedoeling. Ik schreef wat logica en het lukte mij om alleen de receiver van de message de popup te laten zien. Voor localhost werkt dit op Chrome naar Chrome, mobiel naar Firefox, en Chrome naar Cirefox. De rest van de opties laat het niks zien. Terwijl al mijn settings voor de browsers en system settings goed staan.  </p>
 <p>Die vrijdag had ik feedback gesprekken. Daar kwam uit dat ik de styling nog moest doen (mag best styling van een bestaande app) en animaties zijn een leuke toevoegin. 
 Ik had ook een vraag over de push notifications maar daarvoor moest ik naar Declan. En ik had vragen voor een bundler en daarvoor moest ik kijken naar bun. 
 Na het feedback gesprek van Cyd ben ik naar Declan geweest voor mijn vraag over push notificaties, hij zei dat ik de subscriptions moest opslaan in een json bestand ipv op de server. Dit zou mogelijk mijn probleem oplossen. </p>
 <p>Ik heb het dezelfde middag voor melkaar gekregen om de subscriptions op push notifications in een json file op te slaan met <code>fs</code>. En ook heb ik mijn UX flow anderes gebouwd zodat het vragen van toestemming voor notifactions achter een melding zit van mijn website die vraagt of je meldingen wilt inschakelen. Dit zorgde ervoor dat de notifations op Chrome en Firefox het goed deden, en ik eindelijk ook een melding kreeg van safari op mobiel om toestemming te kunnen geven voor meldingen van mijn website. Dit komt waarschijnlijk doordat Safari of Apple het meteen vragen van notificaties onderdrukt. </p>
-<h3>Week 3</h3>
-<p>Deze week ben ik druk bezig geweest met het beetje stylen van de webpagina, ik vindt het nog steeds erg moeilijk om zomaar even css te schrijven zonder er een design naast mij ligt en ik ben ook niet zo van het eerst desginen van mijn website. Ik ondervond problemen met de styling op mobiel, dit leek erg te verschillen met wat ik op mijn macbook had gemaakt. Dit kwam uiteindelijk doordat deze regel miste in de head van mijn pagina: <code>&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</code>. </p>
+<h3 id="Week-3">Week 3</h3>
+<p>Deze week ben ik druk bezig geweest met het beetje stylen van de webpagina, ik vindt het nog steeds erg moeilijk om zomaar even css te schrijven zonder er een design naast mij ligt en ik ben ook niet zo van het eerst desginen van mijn website. Ik ondervond problemen met de styling op mobiel, dit leek erg te verschillen met wat ik op mijn macbook had gemaakt. Dit kwam uiteindelijk doordat deze regel miste in de head van mijn pagina: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>. </p>
 <p>Na een beetje styling te hebben toegevoegd, notifications werkend te hebben gekregen, een idle detection te hebben toegevoegd om de status van de contacten te laten zien, en je account te onthouden en dus automatisch in te loggen met localstorage, had ik nog een aantal dingen op mijn lijstje die ik nog graag wilde doen. En uit het feedback gesprek op vrijdag kwam voornamelijk dat ik prioriteiten moest stellen met wat ik nog ga doen, en dat moest kiezen wat mijn aplicatie ten goede zou komen. Dit was vooral:</p>
 <ul>
 <li>De flow iets verbeteren met contacten toevoegen</li>
@@ -1037,20 +993,16 @@ Na het feedback gesprek van Cyd ben ik naar Declan geweest voor mijn vraag over 
 <li>Kleine styling dingen.</li>
 </ul>
 <p>Dit allemaal zonder de styling dingentjes heb ik allemaal die vrijdag middag verwerkt. Ik had vorige week moeite met het fetchen van de contactenlijst want in mijn vorige concept had ik dat je contacten kon toevoegen en dat je niet meteen een chat met elkaar kreeg. De manier hoe ik het deed was ook niet logisch en uiteinelijk had ik het uitgesteld naar een later moment. Deze vrijdag begon ik weer vanaf het begin met het schrijven van de feature, en binnen een korte tijd werkte het goed. </p>
-<h3>Week 4</h3>
+<h3 id="Week-4">Week 4</h3>
 <p>Deze week ben ik bezig geweest met het opruimen en zorgvuldig testen van mijn code. Ik heb die maandag geprobeerd om met multer files te kunnen uploaden zodat gebruikers hun eigen profiel foto kunne uitkiezen. Aangezien ik de plaatjes opsla op de server, moet de server restarten om zo de changes te kunnen zien, ook kwam ik erachter dat de json files waartoe ik data schrijf leeg worden gemaakt door render. Dit zorgt ervoor dat de berichten en aangemaakte accounts weg zijn als de server wordt herstart. Dit is natuurlijk niet handig bij een chatapp.
-Aangezien het opzetten van een database niet echt in de opdracht viel en experimenteren wel, was ik aan het brainstormen over nieuwe oplossingen. Waar ik eigenlijk meteen aan dacht is dat de files op een aparte omgeving moesten staan. Met dat in gedachte maakte ik een private github repo, genereerde ik een key om zo de data uit de repository te kunnen halen, en er data naar toe te kunnen schrijven. Ik wist niet dat dit kon en vond het wel grappig om te maken. Ik kwam uiteindelijk wel tegen wat dingen aan en dit was dat de data soms nog niet was geupdate wanneer het al werd opgehaald. Dit gaf bijvoorbeeld een &quot;page not found&quot; wanneer je net een account hebt aangemaakt. Om dit op te lossen moest ik een aantal <code>await</code>&#39;s voor de saveJSON functie zetten, en dit loste het op. Wel werd de applicatie er heel erg traag van omdat hij elke keer weer data moest mergen met wat er op github stond. Uiteindelijk heb ik het iets sneller kunnen maken dan dat het was door wat awaits op niet nodige plekken weg te halen zoals het sturen van berichten. 
+Aangezien het opzetten van een database niet echt in de opdracht viel en experimenteren wel, was ik aan het brainstormen over nieuwe oplossingen. Waar ik eigenlijk meteen aan dacht is dat de files op een aparte omgeving moesten staan. Met dat in gedachte maakte ik een private github repo, genereerde ik een key om zo de data uit de repository te kunnen halen, en er data naar toe te kunnen schrijven. Ik wist niet dat dit kon en vond het wel grappig om te maken. Ik kwam uiteindelijk wel tegen wat dingen aan en dit was dat de data soms nog niet was geupdate wanneer het al werd opgehaald. Dit gaf bijvoorbeeld een "page not found" wanneer je net een account hebt aangemaakt. Om dit op te lossen moest ik een aantal <code>await</code>'s voor de saveJSON functie zetten, en dit loste het op. Wel werd de applicatie er heel erg traag van omdat hij elke keer weer data moest mergen met wat er op github stond. Uiteindelijk heb ik het iets sneller kunnen maken dan dat het was door wat awaits op niet nodige plekken weg te halen zoals het sturen van berichten. 
 En als de app groter zou worden zou het een probleem zijn dat je steeds moet mergen met dezelfde file, dit zou gegarandeerd fout gaan. Als oplossing daarvoor zou je dan dynamisch files moeten aanmaken met een beetje data erin waar niet iedereen hun data instopt. </p>
 <p>Uiteindelijk ben ik er dus achtergekomen dat je data kan ophalen en schrijven naar een private github repo en die als mini database kan gebruiken. Efficient, schaalbaar, snel en betrouwbaar is het niet, maar ik vond het een leuk experiment. </p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#api">api</a></li><li data-heading="h3"><a href="#Week-1">Week 1</a></li><li data-heading="h3"><a href="#Week-2">Week 2</a></li><li data-heading="h3"><a href="#Week-3">Week 3</a></li><li data-heading="h3"><a href="#Week-4">Week 4</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
@@ -1058,9 +1010,9 @@ En als de app groter zou worden zou het een probleem zijn dat je steeds moet mer
                 <li id="processHCD"> 
                    <div>
                     <h1>HCD</h1>
-<h2>Intro</h2>
+<h2 id="Intro">Intro</h2>
 <p>Dit vak gaat over het maken van een prototype voor een specifiek persoon. In plaats van een inclusive design te maken, geen we in dit vak aan de slag met exclusive designen en gaan wij testen met een aangegeven persoon met een beperking. Door een interview en 3 tests probeer ik een zo goed mogenlijk prototype te maken voor de testpersoon. De opdracht voor mij was om iets te maken voor Marie van Driessche. Marie is doof en is docent bij CMD en werkt als ontwerper bij Unc Inc. Marie wil graag dat ze geluid in films net zo kan ervaren als mensen die wel geluid horen en ook graag podcasts wil luisteren en die net zo aantrekkelijk en net zo veel details horen als mensen die wel kunnen horen. </p>
-<h2>💬 Interview 1 vragen met bevindingen (Week 1)</h2>
+<h2 id="💬-Interview-1-vragen-met-bevindingen-(Week-1)">💬 Interview 1 vragen met bevindingen (Week 1)</h2>
 <p>Wij mochten Marie gaan interviewen</p>
 <ul>
 <li>Bent u doof geboren of doof geworden?</li>
@@ -1075,13 +1027,13 @@ En als de app groter zou worden zou het een probleem zijn dat je steeds moet mer
 Begrijpt u de huidige muziek/effecten die worden omschreven in de ondertiteling zoals [spannende muziek] of [Er wordt geklopt]?</li>
 <li>Zou u de extra informatie uit de video het liefst in tekst zien of zouden animaties of afbeeldingen als overlay bij de video ook helpen?</li>
 </ul>
-<h3>💡 Bevindingen</h3>
+<h3 id="💡-Bevindingen">💡 Bevindingen</h3>
 <p>Marie is doof geboren, ze heeft dus een tolk nodig om met mensen die geen gebaren taal kunnen te communiceren. </p>
 <p>Marie vindt podcasts saai. Ze heeft er niet veel ervaring mee want het is niet toegankelijk. Dit komt omdat ze niet kan horen, en daardoor moet zij er echt de tijd voor nemen om te kijken naar mensen die met elkaar praten terwijl ze op een bank zitten. Zonder geluid een podcast kijken is erg saai want het beeld is gewoon saai. Soms als ze het echt heel interressant vindt kan ze het transscript lezen van de podcast als die er is. Maar dat is vaak een hele grote lap tekst zonder intonatie, onoverzichtelijk, en een goed geschreven artikel is veel fijner om te lezen. </p>
-<p>Films vindt ze leuker omdat beeld daar een grotere rol in speelt. Maar ook bij films is de ondertiteling platte tekst en daar mist ze ook veel informatie. Ze noemde wat voorbeelden zoals hoe mensen praten en waar de geluiden vandaan komen. Ze gaf ook wat voorbeelden van wat ze had gezien wat ze fijn vond en noemde &quot;The dodo&quot; op youtube als voorbeeld. Hier worden bepaaalde geluiden als bepaalde streepjes gevisualiseerd om aan te geven wat voor emotie je hoort, en ook waar je het hoort.<br>Zelf beeld ze heel veel in over wat ze niet mee krijgt en heeft dit dus ook veel getraind. </p>
+<p>Films vindt ze leuker omdat beeld daar een grotere rol in speelt. Maar ook bij films is de ondertiteling platte tekst en daar mist ze ook veel informatie. Ze noemde wat voorbeelden zoals hoe mensen praten en waar de geluiden vandaan komen. Ze gaf ook wat voorbeelden van wat ze had gezien wat ze fijn vond en noemde "The dodo" op youtube als voorbeeld. Hier worden bepaaalde geluiden als bepaalde streepjes gevisualiseerd om aan te geven wat voor emotie je hoort, en ook waar je het hoort.<br>Zelf beeld ze heel veel in over wat ze niet mee krijgt en heeft dit dus ook veel getraind. </p>
 <p>Teon we vroegen of trillingen konden helpen om het geluid beter te begrijpen zei ze dat dat wel zou kunnen helpen om de ervaring te verbeteren, zeker in de bioscoop. Maar trillingen zijn heel algemeen en er zijn veel soorten geluiden en trillingen dus dat moet wel goed worden gemaakt. Verder wil ze ook wel een keer naar IMAX of 4D in de bios om te ervaren of dat wat is.</p>
 <p>Animaties zouden kunnen helpen om bijvoorbeeld te laten merken waar geluid vandaan komt. Dit geeft meer duidelijkheid en informatie over naar wat je kijkt. Ook zou dit kunnen helpen om te laten zien wie praat en hoe die praat. 
-Met verschillende font&#39;s en kleuren zouden we ook kunnen spelen om verschillende personen en intonatie aan te geven maar het moet niet te druk worden en wel consistent blijven. </p>
+Met verschillende font's en kleuren zouden we ook kunnen spelen om verschillende personen en intonatie aan te geven maar het moet niet te druk worden en wel consistent blijven. </p>
 <p>Muziek kan ze niet horen en krijgt ze helaas dus ook niet mee, dit geeft vaak wel de spanning weer in de film. Ook weet ze hoe muziek impact kan hebben op mensen hun emoties doordat ze dat heeft gezien op een begrafenis. Dit gevoel wil zij ook ervaren of in ieder geval dichter bij in de buurt komen. Over de huidige closed captions is ze opzich wel enthausiast, maar ze krijgt gewoon niet alle info en het gevoel mee van de platte tekst, dus dat kan zeker beter. </p>
 <p>Verder heeft ze wat films opgenoemd die ze vaak kijkt, waar ze voorbeelden uit noemde, en waar wij ook wat van konden kijken om te vergelijken.</p>
 <h4>Begin onderzoek en begin van prototype</h4>
@@ -1116,16 +1068,16 @@ Met verschillende font&#39;s en kleuren zouden we ook kunnen spelen om verschill
 <li>Dat de vloer kraakt zie je niet</li>
 </ul>
 <p>Dit gaf mij een eerste goede houvast over wat ik zal maken. Ik had het idee om een video in te laden op de html pagina en niet via een vtt bestand maar gewoon vrij via een json file alle subtitles te generenen, dit zou mij meer opties geven om een background image te animeren, de subtitles te stylen en mogenlijk plaatjes in het beeld te plaatsen. Ik begon meteen met het maken van een prototype omdat ik dan iets bewegends kan laten zien i.p.v een wireframe met het idee. </p>
-<h2>📝 Feedback moment (Week 1)</h2>
+<h2 id="📝-Feedback-moment-(Week-1)">📝 Feedback moment (Week 1)</h2>
 <p>Die vrijdag had ik voortgang gesprek waarbij we de opdracht even bespraken en onze bevindingen van het interview, plus wat we nu voor het eerste prototype gaan maken. Ik had het idee om iets te maken met Javascript maar wist nog niet precies hoe, dus als tweede optie dacht ik een wireframe te maken zodat ik in iedergeval iets had om te laten zien die woensdag. Eric adviseerde mij om iniedergeval iets werkent en bewegends te laten zien, ook al is het maar iets kleins. Dus dat heb ik gedaan en heb geen wireframe gemaakt. Verder was ik was op de goede weg en alles ging goed. </p>
-<h2>🔎 (Testronde 1, Week 2)</h2>
+<h2 id="🔎-(Testronde-1,-Week-2)">🔎 (Testronde 1, Week 2)</h2>
 <p>Bij mijn eerste test van mijn prototype had ik het eerste stuk van de onderititling in de json kunnen zetten gezet, en dit automatisch kunenn animeren onder het video element in de html. Ook had ik iets geprobeerd om een opbouwende spanning te visualiseren. Ik had namelijk wanneer het spannend werd, de achtergrondkleur de hele tijd van grijs naar zwart laten animeren. Ook had ik iets gedaan met streepjes in beeld om geluid te visualiseren. Ik was tijdens de test heel benieuwd of de bewegende achtergrond kleur het iets spannender zou maken, en of ik het goed had gedaan met het plaatje. </p>
 <p>Tijdens de test was ze erg enthausiast en ik heb wat duidelijke tips gekregen namelijk:</p>
-<h3>💡 Bevindingen</h3>
+<h3 id="💡-Bevindingen">💡 Bevindingen</h3>
 <ul>
 <li>De ondertiteling staat te ver van de persoon in beeld.</li>
 <li>De achtergrond visualiseerd nog niet genoeg de opbouwende spanning en muziek, want Marie snapte niet was het moest voorstellen. Ik moet hier nog meer de aard van het geluid en het gevoel proberen te visualiseren. </li>
-<li>De hierarchie van de ondertiteling klopt niet. De tekst van de mevrouw aan de telefoon lijkt belangerijker dan de politie agent z&#39;n tekst, ik moet de hierarchie overeen laten komen met wat er op het beeld afspeelt.</li>
+<li>De hierarchie van de ondertiteling klopt niet. De tekst van de mevrouw aan de telefoon lijkt belangerijker dan de politie agent z'n tekst, ik moet de hierarchie overeen laten komen met wat er op het beeld afspeelt.</li>
 <li>Marie vroeg waarom ik geen animaties/plaatjes heb gemaakt voor geluiden die niet in beeld gebeuren. ik zei dat ik daar nog niet over na had gedacht. Zij zei toen van wat ik ook doe, blijf consistent in wat je kiest. </li>
 <li>De een malige closed caption voor geluid afbeelding werkt goed. Want de volgede keer weet ze wat het plaatje moet voorstellen.</li>
 </ul>
@@ -1144,10 +1096,10 @@ Met verschillende font&#39;s en kleuren zouden we ook kunnen spelen om verschill
 <li>Later in de film kan je eventueel de naam ervoor zetten aangezien je niet perse meteen weet wie die persoon is.</li>
 </ul>
 </blockquote>
-<h2>📝 Feedback moment met Tamara (Week 2)</h2>
+<h2 id="📝-Feedback-moment-met-Tamara-(Week-2)">📝 Feedback moment met Tamara (Week 2)</h2>
 <p>Op donderdag had ik een gesprek met Tamara. Zij zei vooral dat ik moest vragen aan Marie wat spanning voor haar betekent en waardoor dat gecreëerd wordt. Niet heel persoonlijk maar meer visueel, wat maakt iets spannend voor haar. Ook zei ze dat ik meerdere versies moest gaan maken van de opbouwende spanning en dit aan haar later zien zodat ik kan kijken wat zij het best vindt werken. </p>
 <p>Uiteindelijk ben ik niet toegekomen aan de meerdere versies van de achtergrond spannings opbouw, maar heb wel twee keer de vraag over wat iets visueels spannend maakt voor haar.</p>
-<h3>Todo&#39;s voor week 3</h3>
+<h3 id="Todo's-voor-week-3">Todo's voor week 3</h3>
 <p>Uiteindelijk had ik duidelijke doelen voor de komende test namelijk:</p>
 <ul>
 <li>Op de opbouw itereren en varieren. (Verschillende versies maken en testen welke het best werkt)</li>
@@ -1155,13 +1107,13 @@ Met verschillende font&#39;s en kleuren zouden we ook kunnen spelen om verschill
 <li>Feedback toevoegen</li>
 <li>Spelen met intonatie van de ondertiteling</li>
 </ul>
-<h2>📝 Feedback moment (Week 2)</h2>
+<h2 id="📝-Feedback-moment-(Week-2)">📝 Feedback moment (Week 2)</h2>
 <p>Op vrijdag had ik een gesprek met Vasilis. Daar kwam uit dat ik goed op weg was en vooral zo door moest gaan, wel zei hij dat irritante geluiden echt visueel pijn mogen doen. Dit deed mij denken aan andere ideen en gaf mij extra inspiratie voor mijn project. Zo heb ik dit proberen te doen door een witte flits te laten zien op de climax van de spanningsboog na een lange tijd donker beeld te hebben laten zien.</p>
-<h2>🔎 (Testronde 2, Week 3)</h2>
+<h2 id="🔎-(Testronde-2,-Week-3)">🔎 (Testronde 2, Week 3)</h2>
 <p>Bij deze test had ik zo goed als alle feedback verwerkt van vorige week. Ook had ik een andere oplossing van het visualiseren van de achtergrond. Ik had namelijk een achtergrond afbeelding achter en wegtrekkende gradient geplaatst waardoor het leek alsof de scheuren van de afbeelding steeds groter werden. Ik vond deze versie al heel veel beter dan de vorige omdat ik dit beeld van wat er gebeurde op de achtergrond echt meer de audio vond uitbeelden en vond het wel een spannende visualisatie.</p>
 <p>Wat ik wilde testen was of mijn ideeen die ik nog heb, de goede weg op gaan, of zij nog feedback punten heeft die ze vorige week niet heeft gezegd, wat ze van mijn nieuwe opbouw en visualisatie van het geluid vindt en of de hierarchie van de tekst beter is. </p>
 <p>Ik had helaas niet meerdere versies kunnen maken van de opbouwende spanning omdat mijn eerste versie/idee na de feedback al heel veel tijd kostte. </p>
-<h3>💡 Bevindingen</h3>
+<h3 id="💡-Bevindingen">💡 Bevindingen</h3>
 <p>Ze was erg enthausiast over de achtergrond afbeelding bij het grimmige muziekje dat afspeelde als de kastanjemannen in beeld komen in de kelder. </p>
 <p>Wel had ze nog wat feedback voor mij en dat was:</p>
 <ul>
@@ -1176,7 +1128,7 @@ Met verschillende font&#39;s en kleuren zouden we ook kunnen spelen om verschill
 <p><strong>Aantekeningen van andere tests:</strong></p>
 <ul>
 <li>Alleen kleuren als geluid doen haar niets</li>
-<li>&quot;Pulp function as typography&quot; is een goed voorbeeld van intonatie, dat de tekst hevig wordt geanimeerd is leuk en werkt goed.</li>
+<li>"Pulp function as typography" is een goed voorbeeld van intonatie, dat de tekst hevig wordt geanimeerd is leuk en werkt goed.</li>
 <li>Ondertiteling moet niet achter lopen</li>
 <li>Woord voor woord animeren wordt iets te druk</li>
 <li>Ook zei ze dat ze ook wel kan zien waar het geluid vandaan komt. </li>
@@ -1196,9 +1148,9 @@ Met verschillende font&#39;s en kleuren zouden we ook kunnen spelen om verschill
 <li><input checked="" disabled="" type="checkbox"> Verluister font toegevoegd</li>
 </ul>
 <p>Ik had nog een idee om het laatste stuk te laten bounchen samen met de achtergrond afbeelding. Dit wilde ik doen omdat de wind dat bounche geluid maakt maar dit heb ik helaas niet kunnen maken.</p>
-<h2>📝 Feedback moment (Week 3)</h2>
+<h2 id="📝-Feedback-moment-(Week-3)">📝 Feedback moment (Week 3)</h2>
 <p>Die vrijdag had ik weer een voortgangs gesprek en daarbij had ik geen vragen, en geen feedback. Alles ging goed en ik was op de goede weg. </p>
-<h2>🔎 (Testronde 3, Week 4)</h2>
+<h2 id="🔎-(Testronde-3,-Week-4)">🔎 (Testronde 3, Week 4)</h2>
 <p>Voor de test 3 had ik een aantal vragen opgesteld en dingen opgeschreven die ik wilde testen Namelijk.</p>
 <ul>
 <li>Is het te veel tekst van de omschrijving, moet het uitgebreider, of moet het meer in steekwoorden?</li>
@@ -1207,47 +1159,43 @@ Met verschillende font&#39;s en kleuren zouden we ook kunnen spelen om verschill
 <li>De vorige keer had ik gevraagd wat jij visueel eng vind en daar had je geen antwoord op. Hieruit nam ik de conclusie dat wij een enge scene niet perse eng voor jou hoeven te maken maar ons best moeten doen om de sfeer zo goed mogelijk over te brengen. Heb ik hier de juiste conclusie uit getrokken?</li>
 <li>Heb je verder nog tips?</li>
 </ul>
-<h3>💡 Bevindingen</h3>
+<h3 id="💡-Bevindingen">💡 Bevindingen</h3>
 <p>De omschrijving van de muziek en geluiden waren inderdaad iets aan de lange kant. Ik zou dit kunnen opknippen in stukken om dit leesbaarder te maken. 
 Ze wist niet zeker of de tekst tussen deze ♫ iconen een songtekst was of de achtergond moest omschrijven. </p>
 <p>Op de vraag of mijn conclusie klopte die ik had getrokken van haar antwoord over wat visueel eng was die vorige week, zei ze dat dat klopte. Maar ze zei wel dat de spanning aan de context ligt. En dat ze wel een keer een enge film heeft bekeken toen ze 6 of 7 jaar oud was waar ze nachten van wakker heeft gelegen. Dit kwam omdat wat er op het beeld afspeelde eng was en je niet zag wat mensen in de film nou zo eng vonden. De ontwetendheid was de factor die het zo spannend maakte. 
-Verder had ze geen tips, en was weer erg enthausiast en zelfs een beetje verbaasd van hoeveel geluiden wij horen in zo&#39;n scene.</p>
+Verder had ze geen tips, en was weer erg enthausiast en zelfs een beetje verbaasd van hoeveel geluiden wij horen in zo'n scene.</p>
 <blockquote>
 <p><strong>Aantekeningen van andere tests:</strong></p>
 <p>Ze wil het ritme van de muziek graag meekrijgen. </p>
 <p>Het trillen van de telefoon past niet echt bij het kloppen op de deur in de film, geluid bestaat uit trillingen maar trillingen zijn ook altijd weer anders, daarom als je met trillingen werkt moet het wel passen bij het geluid wat je zou horen. Wel vindt ze de trillingen goed passen bij de laatste scene van de chestnutmen.</p>
 <p>Iemand had een sound bar/ frequentie meter gemaakt maar die moet iets precieser gemaakt worden en accurater. Als dat zo is dan zou het wel kunnen werken, en een goeie toevoeging zijn. </p>
 </blockquote>
-<h3>🔜 Wat ik zou doen voor de volgende test</h3>
+<h3 id="🔜-Wat-ik-zou-doen-voor-de-volgende-test">🔜 Wat ik zou doen voor de volgende test</h3>
 <p>De closed captions van de muziek en andere achtergrond geluiden opdelen in stukjes, zo wordt het leesbaarder. Ook zou ik kijken wat voor iconen ik zou kunnen gebruiken voor achtergrond geluid i.p.v ♫. Het moet duidelijk zijn of het wordt gezongen of dat het de muziek omschrijft. Ook zou ik het laatste stuk nog willen laten bounchen met de achtergrond afbeelding zodat het meer lijkt op wat voor een geluid er afspeelt. En verder zou ik de javascript code opschonen, zodat je het makkelijker voor andere scenes kan invullen en maken. </p>
-<h2>👤 Exclusive design principles:</h2>
+<h2 id="👤-Exclusive-design-principles:">👤 Exclusive design principles:</h2>
 <p>Bij het maken van een exclusief prototype voor een aangewezen persoon, gebruik je niet inclusive design principles maar exclusive design principles. Dit zijn: study situation, ignore conventions, prioritise identity en add nonsense.</p>
-<h3>🧐 Study situation</h3>
+<h3 id="🧐-Study-situation">🧐 Study situation</h3>
 <p>Study situation is vooral terug gekomen tijdens het interview en het verdere onderzoek na het interview. Wij mochten namelijk aan Marie een aantal vragen stellen en daarna ben ik met deze kennis verder in haar rol gestapt door het kijken van series zonder geluid en zonder closed captions, zonder geluid en met closed captions, en met geluid en met closed captions om te kijken wat Marie nou meekrijgt en wat er nou echt allemaal gebeurt.
 Ook vindt ik study situation horen bij het testen van de prototypes, want daar studeer je eigenlijk haar situatie steeds opnieuw alleen dan met jouw gemaakte prototype. Ook heb ik tijdens de tests af en toe nog meer vragen gesteld over haar situatie zoals de vraag over wat iets visueels spannend maakt voor haar. Vragen blijven stellen in het process is belangrijk want je gaat nooit iemand helemaal meteen kennen in het eerste uurtje interview.</p>
-<h3>🫣 Ignore conventions</h3>
+<h3 id="🫣-Ignore-conventions">🫣 Ignore conventions</h3>
 <p>Nadat ik haar situatie had bestudeerd heb ik een beetje gebrainstormd en dingen gemaakt die haar zouden helpen zonder aan andere mensen gedacht te hebben. Ik heb bijvoorbeeld dingen snel laten knipperen en normaal zou je dat niet mogen of moeten doen om zo mensen met epilepsie te beschermen. Maar aangezien Marie dat niet heeft en het prototype alleen voor haar is, kon dat nu wel. </p>
-<h3>🫵 Prioritise identity</h3>
+<h3 id="🫵-Prioritise-identity">🫵 Prioritise identity</h3>
 <p>Prioritise identity heb ik meerdere malen laten zien in mijn proces. Tijdens het proces heb ik namelijk 3 keer mijn prototype kunnen testen met Marie. Hieruit heb ik steeds nieuwe inzichten gekregen die ik later weer heb toegevoegd aan mijn prototype om zo het prototype steeds beter voor haar te maken en meer naar haar wensen toe te brengen. ZO gaf ze bijvoorbeeld aan dat iets wat ik had geprobeerd totaal werkte en ik daar dus iets nieuws voor moest verzinnen, ik had daar natuurlijk meteen wat vragen na gesteld zodat dat mij weer in een goede richting zou lijden. </p>
-<h3>🃏 Add nonsense</h3>
+<h3 id="🃏-Add-nonsense">🃏 Add nonsense</h3>
 <p>Add nonsense heb ik in zekere maten doorgevoerd in mijn prototype. Ik ben verder gegaan dan wat er al was. Closed captions en geanimeerde tekst waren er namelijk al, maar ik heb ook gebrainstormd en geexperimenteerd met afbeeldingen in beeld, de tekst op verschillende plaatsen in beeld achtergrond plaatjes en achtergrond kleuren. Ik ben niet over de top gegaan met add nonsense omdat ze tijdens haar interview ook al had gezegd dat het niet te druk moet worden en consistent moet blijven, en natuurlijk gaat het om de film met als hulpmiddel de closed captions etc, en niet alleen om de ondertiteling. </p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Intro">Intro</a></li><li data-heading="h2"><a href="#💬-Interview-1-vragen-met-bevindingen-(Week-1)">💬 Interview 1 vragen met bevindingen (Week 1)</a></li><li data-heading="h3"><a href="#💡-Bevindingen">💡 Bevindingen</a></li><li data-heading="h2"><a href="#📝-Feedback-moment-(Week-1)">📝 Feedback moment (Week 1)</a></li><li data-heading="h2"><a href="#🔎-(Testronde-1,-Week-2)">🔎 (Testronde 1, Week 2)</a></li><li data-heading="h3"><a href="#💡-Bevindingen">💡 Bevindingen</a></li><li data-heading="h2"><a href="#📝-Feedback-moment-met-Tamara-(Week-2)">📝 Feedback moment met Tamara (Week 2)</a></li><li data-heading="h3"><a href="#Todo's-voor-week-3">Todo's voor week 3</a></li><li data-heading="h2"><a href="#📝-Feedback-moment-(Week-2)">📝 Feedback moment (Week 2)</a></li><li data-heading="h2"><a href="#🔎-(Testronde-2,-Week-3)">🔎 (Testronde 2, Week 3)</a></li><li data-heading="h3"><a href="#💡-Bevindingen">💡 Bevindingen</a></li><li data-heading="h2"><a href="#📝-Feedback-moment-(Week-3)">📝 Feedback moment (Week 3)</a></li><li data-heading="h2"><a href="#🔎-(Testronde-3,-Week-4)">🔎 (Testronde 3, Week 4)</a></li><li data-heading="h3"><a href="#💡-Bevindingen">💡 Bevindingen</a></li><li data-heading="h3"><a href="#🔜-Wat-ik-zou-doen-voor-de-volgende-test">🔜 Wat ik zou doen voor de volgende test</a></li><li data-heading="h2"><a href="#👤-Exclusive-design-principles:">👤 Exclusive design principles:</a></li><li data-heading="h3"><a href="#🧐-Study-situation">🧐 Study situation</a></li><li data-heading="h3"><a href="#🫣-Ignore-conventions">🫣 Ignore conventions</a></li><li data-heading="h3"><a href="#🫵-Prioritise-identity">🫵 Prioritise identity</a></li><li data-heading="h3"><a href="#🃏-Add-nonsense">🃏 Add nonsense</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
                 <li id="Meesterproef"> 
                    <div>
-                    <h2>Meesterproef Product Biografie</h2>
-<h3>📖 Intro</h3>
+                    <h2 id="Meesterproef-Product-Biografie">Meesterproef Product Biografie</h2>
+<h3 id="📖-Intro">📖 Intro</h3>
 <p>Product bio (process)</p>
 <ul>
 <li><p><a href="https://github.com/JopMolenaar/Meesterproef-SNSimulation">Link naar onze Website</a></p>
@@ -1257,7 +1205,7 @@ Ook vindt ik study situation horen bij het testen van de prototypes, want daar s
 <li><p><a href="https://github.com/JopMolenaar/Meesterproef-SNSimulation">Link naar onze code</a></p>
 </li>
 </ul>
-<h3>🛫 Week 1</h3>
+<h3 id="🛫-Week-1">🛫 Week 1</h3>
 <p><strong>Maandag</strong> hadden we een kickoff van dit vak en kregen we te horen wat voor project we hadden gekregen. Dit was Social Network Simulator geworden. Hiervoor zijn we meteen aan de slag gegaan en hebben de eerste dingen alvast kunnen doen zoals OOP alvast een beetje uitschrijven en onderzoek er naar gedaan. Ook hebben we moglijke eerste designs uitgezocht. Ik had vier leerdoelen, maar hiervan waren er 2 minder bruikbaar van geworden. Uiteindelijk heb ik mijn drie leerdoelen iets aangepast.</p>
 <p><strong>Dinsdag</strong> hebben we ons verder ingelezen in het project. Ook hebben we de code die er al was kunnen inzien. We hebben kunnen brainstormen over het eerste design en de features. En hebben dieper in object oriented programming gekeken. </p>
 <p><strong>Woensdag</strong> begonnen we met tech reviews.Daar kregen we een tip om een korte recap bij de klant te geven van de opdracht zodat de opdrachtgever eventueel misvattingen eruit kan halen. Daarna hadden we onze eeste meeting met Yuri. Bij deze meeting hebben we de gelegenheid gekregen om vragen te kunnen stellen en dit hielp ons erg om de opdracht beter te snappen. Verder zijn we bezig geweest met ons eerste design en hebben een start gemaakt met het design te programmeren en wat er al geschreven is te begrijpen en te ordenen.</p>
@@ -1268,7 +1216,7 @@ Feedback gegeven aan Bart over jQuery en hem geholpen om het te fixen. Ook heb i
 <p>Ook ben ik met ideeen gekomen om bepaalde smooth feels te geven aan de applicatie zoals het verschuiven van de focus balk in de selects, en het eerst openen van de info van de node, en daarna de informatie infaden. Dit hebben we niet meteen gebouwd want we hadden eerst namelijk andere prioriteiten. </p>
 <p>Die prioriteiten waren het vervangen van het canvas. We wilde niet steeds gaan tekenen in het canvas als er iets zou veranderen, en het canavs interactief te proberen te maken dus we hebben besloten om het canvas te vervangen door divs in een section. Dit gaf ook andere voordelen namelijk het makkelijker toegankelijk en responsive kunnen maken. Dit was redelijk snel gedaan en daarnaast hebben we heel veel onnodige javascript kunnen weghalen. De divs die de connecties moeten voorstellen hebben we uiteindelijk met wiskunde en wat hulp van Sanne de juiste lengte en hoek kunnen geven. </p>
 <p><strong>Vrijdag</strong> Design en eerste dingen programmeren</p>
-<h3>🔄 Week 2</h3>
+<h3 id="🔄-Week-2">🔄 Week 2</h3>
 <p><strong>Dinsdag</strong> Meeting met Marten verder gegaan met het laten werken van functies</p>
 <p><strong>Woensdag</strong> Tech reveiw met Marten, vooral gehad over het concept en code. Dit was allemaal ok en ik had geen vragen. We hadden het een beetje over performance en dit ook getest. </p>
 <p>nieuwe functie van Rick erin gegooid. </p>
@@ -1281,7 +1229,7 @@ Namelijk door een telefoon te simuleren met social media. En daaraan dus de kaar
 <p><strong>Vrijdag</strong> </p>
 <p>Verder vrijdag bezig geweest met het omschrijven naar object oriënted en maandag ook. Verder maandag het verder geoptimaliseerd en toen kwamen we ook tegen iets aan dat het misschien korter zou kunnen maken maar wel veel onoverzichtelijk. Namelijk om alle variabelen in een object te gooien en dit steeds meegeven aan de volgende functies. Dit hebben we uiteindelijk niet gedaan. </p>
 <p>Hebben het werkend gekregen behalve de tools en dat de bolletjes groeien</p>
-<h3>🔧 Week 3</h3>
+<h3 id="🔧-Week-3">🔧 Week 3</h3>
 <p><strong>Maandag</strong> ben ik bezig geweest met het omschrijven van de code naar object oriented, (classes and constructors). We hebben de tools werkend gekregen, de nodes groeien weer, hebben de forward buttons laten spawnen als je mensen linked en hebben wat code duplications eruit gehaald. </p>
 <p><strong>Dinsdag</strong> zijn we bezig geweest met de design rationale. Deze hebben we opgezet en content voor gemaakt. Ook heb ik wat comments kunnen toevoegen aan de code.  </p>
 <p><strong>Woensdag</strong> hadden we tech reviews, een meeting met Marten en weer een client meeting met Yuri. 
@@ -1295,29 +1243,25 @@ Bij de tech reviews heb ik laten zien waar we waren en heb ik de code kunnen lat
 <p>De layout was snel gefixed. En verder was ik bezig meet meer optimalisatie van de code. </p>
 <p><strong>Vrijdag</strong> ben ik bezig geweest om de laatste dingentjes in het design te optimaliseren. Zo was het idee om het logo te laten verdwijnen als je erover heen hoverde, zodat je bij de nodes kan die erachter spawnen en zo het canvas zo groot mogelijk kan blijven. Toen ik dit aan het maken was lukte het niet helemaal zoals in mn gedachte, de header was aan het glitchen en dit kwam doordat de cursor aan het varanderen was naar de select cursor. Ik had een aantal dingen geprobeerd zoals display none, user-select op none, maar dat werkte allemaal niet. Uiteindelijk vond ik deze regel code dat het glitch effect oploste: <code>filter:alpha(opacity=0);</code>. Deze regel code had ik nog nooit gezien maar het werkte wel. </p>
 <p>Ook ben ik bezig geweest om de data in de telefoon in te laden aan de hand van welke node je hebt geselecteerd. </p>
-<h3>🎬 Week 4</h3>
-<h3>🔬 Week 5</h3>
-<h3>⏱️ Week 6</h3>
+<h3 id="🎬-Week-4">🎬 Week 4</h3>
+<h3 id="🔬-Week-5">🔬 Week 5</h3>
+<h3 id="⏱️-Week-6">⏱️ Week 6</h3>
 <p><strong>Donderdag</strong> presentation at client (June 20)
 <strong>Vrijdag</strong> expo at CMD (June 21) </p>
-<h3>Week 7</h3>
+<h3 id="Week-7">Week 7</h3>
 <p><strong>Dinsdag</strong> final assessment (ca. June 25) (Groepsgesprek en cijfer)</p>
 <!-- Emoji's to use: 📖🛫👏🔄🔧 🎬(simulation) ⏱️ 🤳 🧪 🔬| 🤩 -->
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Meesterproef-Product-Biografie">Meesterproef Product Biografie</a></li><li data-heading="h3"><a href="#📖-Intro">📖 Intro</a></li><li data-heading="h3"><a href="#🛫-Week-1">🛫 Week 1</a></li><li data-heading="h3"><a href="#🔄-Week-2">🔄 Week 2</a></li><li data-heading="h3"><a href="#🔧-Week-3">🔧 Week 3</a></li><li data-heading="h3"><a href="#🎬-Week-4">🎬 Week 4</a></li><li data-heading="h3"><a href="#🔬-Week-5">🔬 Week 5</a></li><li data-heading="h3"><a href="#⏱️-Week-6">⏱️ Week 6</a></li><li data-heading="h3"><a href="#Week-7">Week 7</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
                 <li id="Q42"> 
                    <div>
-                    <h2>Q42</h2>
+                    <h2 id="Q42">Q42</h2>
 <p>Woensdag 22 mei gingen we naar het ontwikkelingsbedrijf Q42 </p>
 <p>Dit bedrijf focused zich op het gebruiken van nieuwe technologieen, toegankelijkheid, en gebruikers. </p>
 <p>Ik vond het verassend dat dat dit bedrijf kijkt naar nieuwe technologien en dan pas bedenken wat zei er mee zouden kunnen bereiken. Ze willen echt vee spelen met techniek. Maar ik kijk juist naar wat er gemaakt moet worden en daarna pas kijkt hoe je dat moet doen. Zo ben je niet snel aan het over engenieren, verzin je makkelijker concepten/opdrachten, geeft je meer vrijheid en zit je dus niet vast aan bepaalde technieken die je moet gebruiken. Wel leer je veel omdat je altijd nieuwe dingen gebruikt.</p>
@@ -1326,7 +1270,7 @@ Dit om de learningcurve te stimuleren en elkaar uit te dagen.</p>
 <p>Verder gaven ze een presentatie over een paar projecten. </p>
 <ul>
 <li><p>Sensemath
-Sensemath is een app voor een specifieke voor 1 doelgroep namelijk blinde leerlingen in het voortgezet onderwijs. Dit project is samen gedaan met &quot;visio&quot; en zorgt ervoor dat de gebruikers grafieken kunnen begrijpen door ernaar te luisteren i.p.v te voelen. Zo&#39;n fragment duurt ongeveer 12 seconden en dan snappen ze de formule waar een grafiek van is gemaakt. Terwijl voelen van een grafiek soms wel 5 minuten duurde totdat ze het begrepen. </p>
+Sensemath is een app voor een specifieke voor 1 doelgroep namelijk blinde leerlingen in het voortgezet onderwijs. Dit project is samen gedaan met "visio" en zorgt ervoor dat de gebruikers grafieken kunnen begrijpen door ernaar te luisteren i.p.v te voelen. Zo'n fragment duurt ongeveer 12 seconden en dan snappen ze de formule waar een grafiek van is gemaakt. Terwijl voelen van een grafiek soms wel 5 minuten duurde totdat ze het begrepen. </p>
 </li>
 <li><p>appt.org
 Dit is een gids voor het maken van toegankelijke apps. Er werder wat vragen gesteld over of het duurder is om toegankelijkheid als klant te willen. En hier kwam uit dat als het een simpele website is, is het niet duurder. Een iets ingewikkeldere website is iets duurder. Maar het is altijd duurder om het achteraf te laten doen. </p>
@@ -1338,13 +1282,9 @@ Oculi mundi is een website van een engelse familie die kaarten in hun bezit hebb
 <p>Verder vond ik het een heel hip kantoor. Het had een ladder, schommel, een glijbaan, leuke flexplekken, mooie vergader zaal, grote werkplekken, veel licht, en bevond zich op een leuke locatie aan het water. </p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Q42">Q42</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
@@ -1353,20 +1293,16 @@ Oculi mundi is een website van een engelse familie die kaarten in hun bezit hebb
                    <div>
                     Failed to fetch data
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
                 <li id="Robert"> 
                    <div>
-                    <h2>Robert Spier</h2>
+                    <h2 id="Robert-Spier">Robert Spier</h2>
 <p>Is nu creative technoligist bij de digital factory</p>
 <p>Veel meetings op teams schrijft obscure wiskunde</p>
 <p>creative technoligist = met de nieuwste technologien creative dingen doen
@@ -1384,14 +1320,14 @@ En doet vooral: </p>
 <li>html css js</li>
 <li>vite, svelte kit</li>
 <li>angular, .net, node.js, azure</li>
-<li>Rest api&#39;s, npm modules</li>
+<li>Rest api's, npm modules</li>
 </ul>
 <p>Bouwt </p>
 <ul>
 <li>De interface van de chatgpt in deloitte</li>
 <li>Deepfakes van de oprichter van deloitte als hobby</li>
 </ul>
-<h3>Na cmd kan je werken bij een:</h3>
+<h3 id="Na-cmd-kan-je-werken-bij-een:">Na cmd kan je werken bij een:</h3>
 <ul>
 <li>Design agency</li>
 <li>Startup</li>
@@ -1399,7 +1335,7 @@ En doet vooral: </p>
 <li>Freelance
 etc etc</li>
 </ul>
-<h3>Onderzoekje naar stereo type CMD:</h3>
+<h3 id="Onderzoekje-naar-stereo-type-CMD:">Onderzoekje naar stereo type CMD:</h3>
 <p>2022
 detachering (@ energy)
 angular + tailwind
@@ -1416,7 +1352,7 @@ react next + sanity
 full service agency
 sveltekit + vite
 2600 euro</p>
-<h3>5 punten die meespelen als je zoekt naar een baan</h3>
+<h3 id="5-punten-die-meespelen-als-je-zoekt-naar-een-baan">5 punten die meespelen als je zoekt naar een baan</h3>
 <ul>
 <li>landscape (sector)
  2017 vs 2025
@@ -1434,7 +1370,7 @@ enjoy discovering</p>
 </ul>
 <p>je kan alles leren wanneer je de bascis hebt</p>
 <ul>
-<li>Geld en extra&#39;s
+<li>Geld en extra's
 3800 naar 2900 vanwege belasting</li>
 <li>fulltime vs parttime
 x0.8</li>
@@ -1451,28 +1387,23 @@ minimale bedrag is 300 + 300</p>
 extras lijstje / salaris</p>
 </li>
 <li><p>Vibe
-leuke collega&#39;s
+leuke collega's
 vroeg weg op vrijdag 
 etc etc</p>
 </li>
 </ul>
-<h3>Belangrijkste les:</h3>
+<h3 id="Belangrijkste-les:">Belangrijkste les:</h3>
 <p>Doe iets wat je leuk vindt en waar je plezier uithaalt.
-Ook zijn softskills belangrijk om goed te netwerken. Lekker praten met andere mensen. En ook: &quot;nee heb je, ja kan je krijgen.&quot; </p>
+Ook zijn softskills belangrijk om goed te netwerken. Lekker praten met andere mensen. En ook: "nee heb je, ja kan je krijgen." </p>
 
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <ul><li data-heading="h2"><a href="#Robert-Spier">Robert Spier</a></li><li data-heading="h3"><a href="#Na-cmd-kan-je-werken-bij-een:">Na cmd kan je werken bij een:</a></li><li data-heading="h3"><a href="#Onderzoekje-naar-stereo-type-CMD:">Onderzoekje naar stereo type CMD:</a></li><li data-heading="h3"><a href="#5-punten-die-meespelen-als-je-zoekt-naar-een-baan">5 punten die meespelen als je zoekt naar een baan</a></li><li data-heading="h3"><a href="#Belangrijkste-les:">Belangrijkste les:</a></li></ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             
-
         </ul>
     </section>
 </main>

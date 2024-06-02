@@ -27,18 +27,13 @@ title: My Eleventy Blog
                    <div>
                     <%- content.html %>
                    </div>
+         
                    <nav class="nav">
-                        <ul>
-                            <li>Heading one</li>
-                            <li>Heading two</li>
-                            <li>Heading three</li>
-                            <li>Heading four</li>
-                        </ul>
+                       <%- content.nav %>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
             <% }); %>
-
         </ul>
     </section>
 </main>
