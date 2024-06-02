@@ -1,73 +1,103 @@
 [
     {
-        "dataName": "IoT-check-in-system-for-the-HvA-(Team)",
-        "name": "IoT check-in system for the HvA (Team)",
-        "descLink": "",
-        "linkToRepo": "",
-        "linkToWebsite": "",
-        "images": ["images/IoTTeamEnclosure.JPG"],
-        "usedSkills": ["PHP & MySQL", "C++", "HTML, CSS & Javascript", "Scrum"],
-        "grade": "10",
-        "date": "26-01-2024",
-        "img": "images/enclosureWithWebsite.webp",
-        "imgAlt": "A photo of the device we made, it is a white 3D printed case with a card slot on the front, a square on the top that is lighten up with blue leds, and an angled screen behind that to show the event details.",
-        "littleDesc": "We made an Internet of Things check-in system that consists out of an embedded system and a web environment for a real client from the HvA. We used a Raspberry Pi 4, esp32, a display, a camera to read the details from the student card and a NFC reader to make checking in and out fast after the first time you have registered your student card. On the website the teachers could link devices to events by linking the event with the mac address of the device. They could see upcoming, open and closed events, they could link student to events, they could see which student is/was present or not at the event, and we build some more nice UX features to meet the users needs. The client was very enthusiastic and was planning to use the device next school year.",
-        "prize": "At the end of the 9 weeks we had an expo where we won the `Best business opportunity` out of all projects from all minors and masters at the HBO-ICT."
+        "paramId": "notesKilian",
+        "link": "src/projects/notesKilian.md",
+        "img": "",
+        "name": "Kilian"
     },
     {
-        "dataName": "cssUfo",
-        "name": "CSS only UFO",
-        "descLink": "https://jopmolenaar.github.io/CSS-cockpit-control/README.md",
-        "linkToRepo": "https://github.com/JopMolenaar/CSS-cockpit-control",
-        "linkToWebsite": "https://jopmolenaar.github.io/CSS-cockpit-control/",
-        "images": ["images/ufoCockpit.webp"],
-        "usedSkills": ["CSS"],
-        "grade": "9",
-        "date": "20-03-2024",
-        "img": "images/ufoCockpit.webp",
-        "imgAlt": "A picture of the website that looks like that you are in a UFO in space.",
-        "littleDesc": "This project was about learning and discovering the true power of CSS by only using css selectors and no Javascript."
+        "paramId": "notesFenna",
+        "link": "src/projects/notesFenna.md",
+        "img": "",
+        "name": "Fenna"
     },
     {
-        "dataName": "cssDayTa",
-        "name": "10 years of CSS day",
-        "descLink": "https://raw.githubusercontent.com/JopMolenaar/css-day-ta-JJJM/main/README.md",
-        "linkToRepo": "https://github.com/JopMolenaar/css-day-ta-JJJM",
-        "linkToWebsite": "https://jopmolenaar.github.io/css-day-ta-JJJM/",
-        "images": ["images/cssDayTaWebsite.webp"],
-        "usedSkills": ["accessible html", "CSS", "Javascript"],
-        "date": "28-03-2024",
+        "paramId": "processWAFS",
+        "link": "https://jopmolenaar.github.io/web-app-from-scratch-2324/process.md",
+        "img": "",
+        "name": "WAFS"
+    },
+    {
+        "paramId": "notesJeffry",
+        "link": "src/projects/notesJeffry.md",
+        "img": "",
+        "name": "Jeffry"
+    },
+    {
+        "paramId": "notesNils",
+        "link": "src/projects/notesNils.md",
+        "img": "",
+        "name": "Nils"
+    },
+    {
+        "paramId": "notesJeremy",
+        "link": "src/projects/notesJeremy.md",
+        "img": "",
+        "name": "Jeremy"
+    },
+    {
+        "paramId": "notesMarieke",
+        "link": "src/projects/notesMarieke.md",
+        "img": "",
+        "name": "Marieke"
+    },
+    {
+        "paramId": "notesRosa",
+        "link": "src/projects/notesRosa.md",
+        "img": "",
+        "name": "Rosa"
+    },
+    {
+        "paramId": "processCSS",
+        "link": "https://jopmolenaar.github.io/CSS-cockpit-control/process.md",
+        "img": "images/ufoCockpitCss.webp",
+        "name": "CSS"
+    },
+    {
+        "paramId": "processBT",
+        "img": "",
+        "name": "Browser tech"
+    },
+    {
+        "paramId": "Hackathon",
+        "link": "src/projects/hackathon.md",
         "img": "images/cssDayTaMockup.webp",
-        "imgAlt": "A picture of the website on three different devices.",
-        "littleDesc": "",
-        "prize": "This website is made in a hackathon where we competed against other groups. The judges were Peter Paul Koch and Krijn Hoetmer. Ultimately, our team won the hackathon, earning free tickets to CSS Day along with another group."
+        "name": "Hackathon"
     },
     {
-        "dataName": "chatPWebApp",
-        "name": "Chat PWA",
-        "descLink": "https://raw.githubusercontent.com/JopMolenaar/API-JopMolenaar/main/README.md",
-        "linkToRepo": "https://github.com/JopMolenaar/API-JopMolenaar",
-        "linkToWebsite": "https://api-jopmolenaar.onrender.com/login",
-        "images": ["images/pwaChat.webp"],
-        "usedSkills": ["Service workers", "Node.js", "Javascript & CSS", "Liquid"],
-        "grade": "9",
-        "date": "26-04-2024",
+        "paramId": "processAPI",
+        "link": "https://raw.githubusercontent.com/JopMolenaar/API-JopMolenaar/main/processAPI.md",
         "img": "images/pwaChat.webp",
-        "imgAlt": "",
-        "littleDesc": ""
+        "name": "API"
     },
     {
-        "dataName": "IoT-check-in-system",
-        "name": "IoT check-in system",
-        "descLink": "https://raw.githubusercontent.com/JopMolenaar/IoT-check-in-project/main/README.md",
-        "linkToRepo": "https://github.com/JopMolenaar/IoT-check-in-project",
-        "linkToWebsite": "",
-        "images": ["images/indCheckInDevice.png"],
-        "usedSkills": ["PHP & MySQL", "C++", "HTML, CSS & Javascript"],
-        "grade": "8.5",
-        "date": "21-11-2023",
-        "img": "images/indCheckInDevice.png",
-        "imgAlt": "A photo of the device I made, it is a gray 3D printed case with an angled side towards you including a little screen, a place to put your card underneath that, a button in the bottom right corner and two leds, red and green, above the screen to show the status of your check in.",
-        "littleDesc": "I made a check in device at my minor Internet of Things on the HBO-ICT. I had no experience with embedded systems and many more things when starting this minor. But I managed to build an embedded system with a website where I could check the data. "
+        "paramId": "processHCD",
+        "link": "https://raw.githubusercontent.com/JopMolenaar/HCD-videoExperienceForMarie/main/README.md",
+        "img": "",
+        "name": "HCD"
+    },
+    {
+        "paramId": "Meesterproef",
+        "link": "src/projects/meesterproef.md",
+        "img": "",
+        "name": "Meesterproef"
+    },
+    {
+        "paramId": "Q42",
+        "link": "src/projects/q42.md",
+        "img": "",
+        "name": "Q42"
+    },
+    {
+        "paramId": "LeerdoelenJop",
+        "link": "",
+        "img": "",
+        "name": "Leerdoelen Jop"
+    },
+    {
+        "paramId": "Robert",
+        "link": "src/projects/notesRobert.md",
+        "img": "",
+        "name": "Robert"
     }
 ]

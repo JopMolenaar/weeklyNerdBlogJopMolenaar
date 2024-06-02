@@ -6,150 +6,44 @@ title: My Eleventy Blog
     <h1>Blog</h1>
     <ul>
         <!-- TODO add here all the li's of the projects with name, img and little text -->
-        <li class="flip-card">
-            <a class="flip-card-inner" href="#leerdoelen">
-                <div class="flip-card-front">
-                    <p>Leerdoelen Jop Minor Web</p>
-                </div>
-                <div class="flip-card-back">
-                    <p>Samenvatting en leerdoelen van de minor web</p>
-                </div>
-            </a>
-        </li>
-        <li><a href="/notesFenna">
-                <div class="flip-card-front">
-                    <p>Fenna de Wilde</p>
-                </div>
-                <div class="flip-card-back">
-                    <p>Over...</p>
-                </div>
-            </a>
-        </li> 
-        <li><a href="/notesKilian">
-            <div class="flip-card-front">
-                <p>Kilian Valkhof</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
-        <li><a href="/notesNils">
-            <div class="flip-card-front">
-                <p>Nils Binder</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
-        <li><a href="/notesMarieke">
-            <div class="flip-card-front">
-                <p>Marieke en Pim</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
-        <li><a href="/notesRosa">
-            <div class="flip-card-front">
-                <p>Rosa Schuurman</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
-        <li><a href="/notesJeffry">
-            <div class="flip-card-front">
-                <p>Jeffry Arts</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
-        <li><a href="/notesJeremy">
-            <div class="flip-card-front">
-                <p>Jeremy Keith</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div></a></li>
-        <li><a href="#robert">
-            <div class="flip-card-front">
-                <p>Robert</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
-        <li><a href="/">
-            <div class="flip-card-front">
-                <p>Q42</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div></a></li>
-        <li><a href="/processWAFS">
-            <div class="flip-card-front">
-                <p>Web App From Scratch</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div></a></li>
-        <li><a href="/processCSS">
-            <div class="flip-card-front">
-                <p>CSS to the rescue</p>
-                <img src="images/ufoCockpitCss.webp" alt="">
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
-        <li><a href="#">
-            <div class="flip-card-front">
-                <p>Browser Technologies</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
-        <li><a href="#hackathon">
-            <div class="flip-card-front">
-                <p>Hackathon</p>
-                <img src="images/cssDayTaMockup.webp" alt="">
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
-        <li><a href="/processAPI">
-            <div class="flip-card-front">
-                <p>API</p>
-                <img src="images/pwaChat.webp" alt="">
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
-        <li><a href="/processHCD">
-            <div class="flip-card-front">
-                <p>Human Centered Design</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div></a></li>
-        <li><a href="#meesterproef">
-            <div class="flip-card-front">
-                <p>meesterproef</p>
-            </div>
-            <div class="flip-card-back">
-                <p>Over...</p>
-            </div>
-        </a></li>
+
+        <% projects.projects.forEach((content) => { %>
+            <li class="flip-card">
+                <a class="flip-card-inner" href="#<%= content.id %>">
+                    <div class="flip-card-front">
+                        <p><%= content.name %></p>
+                        <img src="<%= content.img %>" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                        <p>...</p>
+                    </div>
+                </a>
+            </li>      
+        <% }); %>
     </ul>
     <section class="articles">
         <h2>Artikelen</h2>
         <ul>
+            <% projects.projects.forEach((content) => { %>
+                <li id="<%= content.id %>"> 
+                   <div>
+                    <%- content.html %>
+                   </div>
+                   <nav class="nav">
+                        <ul>
+                            <!-- TODO place all the headings of the html in here -->
+                            <li>Heading one</li>
+                            <li>Heading two</li>
+                            <li>Heading three</li>
+                            <li>Heading four</li>
+                        </ul>
+                    </nav>
+                    <a href="#">⇧<span class="visually-hidden">Back</span></a>
+                </li>      
+            <% }); %>
+
             <!-- Make li's that comes from the projects out of the data -->
-            <li id="robert">  
+            <!-- <li id="robert">  
                 <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sagittis libero a rutrum bibendum. Duis condimentum risus eu massa posuere, sodales pellentesque nisl tempor. In molestie justo at orci tristique congue. In elementum cursus velit, eu lacinia urna tincidunt in. Integer id velit facilisis, efficitur nulla quis, ultrices mi. Donec at vulputate elit. Duis consectetur ut nulla nec maximus. Maecenas ullamcorper erat sit amet tortor euismod fringilla. Donec placerat interdum orci et consequat. Ut ante dui, molestie mollis semper nec, efficitur sed leo.
 
@@ -194,7 +88,6 @@ title: My Eleventy Blog
                 </div>
                 <nav class="nav">
                     <ul>
-                        <!-- TODO place all the headings of the html in here -->
                         <li>Heading one</li>
                         <li>Heading two</li>
                         <li>Heading three</li>
@@ -226,7 +119,7 @@ title: My Eleventy Blog
                         List of headings
                     </ul>
                 </nav>
-            </li>
+            </li> -->
         </ul>
     </section>
 </main>
