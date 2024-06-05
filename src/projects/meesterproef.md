@@ -81,6 +81,15 @@ Ook ben ik bezig geweest om de data in de telefoon in te laden aan de hand van w
 
 ### 🎬 Week 4
 
+**Maandag** ben ik weer bezig geweest met het fixen van de step functie die Rick mij gegeven had. Ook hadden we een meeting met Marten en daar hadden we het over het vorige gesprek met Yuri, en ik zei dat ik van plan was om met Rick even samen te zitten om naar zijn functie te kijken. 
+Dit vond Marten een goed idee. Later heb ik dus Rick een bericht gestuurd en afgesproken om woensdag na onze meeting even samen te zitten om het te fixen. Hetzekfde moment zat ik de code weer te bekijken en zag waar het op verschillende plekken mis ging. Rick gebruikte de hele node als `key()` in de `map()` en wij de node.id. Vervolgends gooien wij de node in de value van de map, en rick gooide daar de score in. Uiteindelijk hebben we als groepje besloten om het zo op te slaan: nodes.set(node.id, {node, score}). We kunnen namelijk niet de score in de node gooien aangezien het een pointer is en dus kan veranderen. Elke relatie heeft weer een unieke score, zelfs al is het dezelfde node. 
+
+**Dinsdag** ben ik hier weer verder mee geweest en heb ik de functie werkend kunnen krijgen. De geselecteerde node, maakt steeds kleine stapjes en ik krijg geen errors meer. Wel is de code nog super rommelig en zouden er nog dingen misschien worden aangepast. Ook gaat er nog iets niet goed maar dat los ik nu op met 3 if statements. Dit moet er ook uit worden gehaald. Verder ben ik bezig geweest met het fixen van de data in de telefoon en wat bugs op gelost. 
+
+**Woensdag** Tech reviews, client meeting, pre css day
+**Donderdag** css day
+**Vrijdag** css day
+
 ### 🔬 Week 5
 
 ### ⏱️ Week 6
