@@ -29,7 +29,12 @@ title: My Eleventy Blog
                    </div>
          
                    <nav class="nav">
-                       <%- content.nav %>
+                       <!-- <%- content.nav %> -->
+                        <ul>
+                            <% content.nav.forEach((heading) => { %>
+                                <li data-tag="<%= heading.tag %>"><%= heading.text %></li>
+                            <% }); %>
+                        </ul>
                     </nav>
                     <a href="#">⇧<span class="visually-hidden">Back</span></a>
                 </li>      
