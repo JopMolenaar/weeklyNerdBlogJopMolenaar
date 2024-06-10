@@ -12,10 +12,11 @@ module.exports = function (eleventyConfig) {
     //     return await collectionApi.getFilteredByGlob("_data/projects.js");
     // });
     // Add projects collection
-    // eleventyConfig.addCollection("projects", async () => {
-    //     const projects = await projectsData();
-    //     return projects.projects;
-    // });
+    eleventyConfig.addCollection("projects", async () => {
+        const projects = await projectsData();
+        // console.log(projects);
+        return projects.projects;
+    });
 
     return {
         dir: {

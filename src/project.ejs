@@ -1,0 +1,41 @@
+---
+layout: detail.ejs
+pagination:
+  data: collections.projects
+  size: 1
+  alias: project
+  permalink: "/projects/<%= project.name %>/index.html"
+---
+
+
+<header>
+  <!-- <h1>My Site</h1> -->
+  <nav>
+      <!-- <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li> -->
+          <!-- Add other navigation links as needed -->
+      </ul>
+  </nav>
+</header>
+<main>
+  <article>
+    <h2><%= project.name %></h2>
+    <!-- <img src="<%= project.img %>" alt="<%= project.name %>"> -->
+    <div class="content">
+      <%- project.html %>
+    </div>
+    <nav class="nav">
+      <ul>
+          <% project.nav.forEach((heading) => { %>
+              <li data-tag="<%= heading.tag %>">
+                  <a href="#<%= heading.target %>">
+                      <%= heading.text %>
+                  </a>
+              </li>
+          <% }); %>
+      </ul>
+  </nav>
+  <a href="/">⇧<span class="visually-hidden">Back</span></a>
+  </article>
+</main>

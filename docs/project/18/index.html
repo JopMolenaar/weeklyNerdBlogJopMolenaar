@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/flipcard.css">
+    <link rel="stylesheet" href="styles/articles.css">
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body>
+
+    
+
+<header>
+  <!-- <h1>My Site</h1> -->
+  <nav>
+      <!-- <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li> -->
+          <!-- Add other navigation links as needed -->
+      </ul>
+  </nav>
+</header>
+<main>
+  <article>
+    <h2>pre css day</h2>
+    <!-- <img src="" alt="pre css day"> -->
+    <div class="content">
+      <h2>Pre CSS day</h2>
+<h3>Bramus van Damme</h3>
+<p>Was een lecurer</p>
+<p>view transitions for MPA&#39;s are here</p>
+<p>fe developer
+working at google</p>
+<p>run a blog he said, expose your work, write about it or something</p>
+<p>helpfull for ux</p>
+<p>view transistion api (spa same doucment page)</p>
+<pre><code>document.startViewTransition(()=&gt;{
+
+})
+</code></pre>
+<p>it takes snapshots and pauses the rendering of the new page</p>
+<p>user agent stylesheet, is the stylesheet of the browser, if vewtransitions are supporten is says: view-transistion: root</p>
+<h4>tweak the animations:</h4>
+<p>with css  but you cant use the elements in de snap shots, </p>
+<p>view-transition-name: box
+box is in a different layer</p>
+<p>view-transition-name: none doesnt capture the element</p>
+<p>::view-transistion {
+    pointer events: none
+}</p>
+<p>interrupted view transistions skip to the end (for now)</p>
+<p>identify elements, set the names</p>
+<p>.page1 h2 {
+view-transition-name: name1
+}
+page2 h1{
+view-transition-name: name1
+}
+same element I think</p>
+<p>view-transition-class 
+nmae needs to be unique, class is schared on these elements, </p>
+<p>cross document view transition chrome 126</p>
+<p>screenshot way ()</p>
+<p>two conditions: same site, same origin &amp; both pages need to have it opt in: @view-transition {navigation: auto}</p>
+<p>they will implement cross origin in the future</p>
+<p> @view-transition {
+    navigation: auto
+    types: // could assign types here
+ }</p>
+<p> if you dont know the tyopes up front: </p>
+<p> pageswap and pagereveal on the window.addEventlistener
+ and then you can add the type</p>
+<p> a (link) blocking=&quot;render&quot; ??? use with caution</p>
+<h3>Miriam Suzanne</h3>
+<p>container queries</p>
+<p>problems etc</p>
+<p>it was asked for a decade, but they were scared it would cause layout loops</p>
+<p>interinsic and extrinisic
+pushing out and pushing in</p>
+<p>content on the inside need to set the size of the parent and the parent set the sizes of the children = loop</p>
+<p>contain: inline-size and not contain: size
+but it could go wrong if you do display grid and justify-content: center</p>
+<p>container style queries </p>
+
+    </div>
+    <nav class="nav">
+      <ul>
+          
+              <li data-tag="h2">
+                  <a href="#PreCSSday">
+                      Pre CSS day
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#BramusvanDamme">
+                      Bramus van Damme
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#MiriamSuzanne">
+                      Miriam Suzanne
+                  </a>
+              </li>
+          
+      </ul>
+  </nav>
+  <a href="/">⇧<span class="visually-hidden">Back</span></a>
+  </article>
+</main>
+<!-- This is where the page content will be injected -->
+   
+
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <script src="js/cards.js"></script>
+    <script src="js/pageTransition.js"></script>
+    <!-- <script src="nav.js"></script> -->
+    <!-- <script src="cursor.js"></script> -->
+</body>
+</html>

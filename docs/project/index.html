@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/cards.css">
+    <link rel="stylesheet" href="styles/flipcard.css">
+    <link rel="stylesheet" href="styles/articles.css">
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body>
+
+    
+
+<header>
+  <!-- <h1>My Site</h1> -->
+  <nav>
+      <!-- <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/projects">Projects</a></li> -->
+          <!-- Add other navigation links as needed -->
+      </ul>
+  </nav>
+</header>
+<main>
+  <article>
+    <h2>Kilian</h2>
+    <!-- <img src="" alt="Kilian"> -->
+    <div class="content">
+      <h1>Weekly Nerd =&gt; Kilian Valkhof</h1>
+<p>7 Februari 2024</p>
+<h2>Samenvatting van de lezing</h2>
+<p>Kilian Valkhof is de oprichter van polypane en is lid van het electron governance team dat Frameworks bouwt voor browsers. </p>
+<p>Hij zei in de lezing dat je bij het bouwen van website de &quot;rule of least power&quot; moet gebruiken. Dit houdt in dat je de programmeer taal kiest die het minst kan maar voldoene is voor je doel. Voor een normale webpagina gebruik je dus eerst html, daarna css, en dan pas Javascript. Zo heb je de meeste kans dat je website overal kan worden gebruikt en minder snel stuk gaat onder bepaalde omstandigheden.</p>
+<p>Een voorbeeld dat hij hierbij gaf was dat als je door en tunnel rijdt en het internet slecht is, dat je Javascript pagina dan niet meer beschikbaar is, maar als het alleen html en css was, was het wel beschikbaar.</p>
+<p>Ook moet je goed kijken of jouw doel kan worden behaald zonder javascript en libraries. Dit moet namelijk allemaal worden gedownload, en veel browsers hebben al heel veel fucntionaliteiten ingebouwd die het misschien wel aleen met html en css kunnen. </p>
+<p>Ook gaf hij een hele goede tip: </p>
+<p>Als je in de komende jaren iets gaat bouwen dat je al eerder hebt gebouwd, en dat wilt hergebruiken, kijk eerst of er een betere manier is om het te bouwen dan dat je al had. Browser funtionaliteiten gaan namelijk heel snel vooruit en er zou zo maar een mogelijke browser oplossing klaar liggen die je eerst met javascript had gebouwd. </p>
+<p>Daarna ging hij door een lijst met html en css code die voor bepaalde doelen kunnen worden gebruikt die eerst vaak met Javascript werden gemaakt. </p>
+<h3>Custom toggles</h3>
+<p>Custom toggles worden vaak gebruikt op <code>form</code> <code>img</code> en andere elementen.
+Kan je herkennen aan de <code>::</code> na een element, voor de custom toggle.</p>
+<p>Hij had het over <code>::focus-visible</code> en deze toggle geldt alleen als je geen interactie hebt met de muis, verder wel.</p>
+<p>Ook heb je <code>input::thumb</code> om het rondje in de switch aan te roepen.
+en <code>input::track</code> om de achterkant van de switch aan te roepen. </p>
+<p>Ook kwam er een vraag uit het publiek wat het verschil was tussen <code>appearance: none;</code> en <code>all: unset;</code>. Bij <code>appearance: none;</code>  zeg je dat de browser dit element niet hoeft te vervangen en niet de standaard styling wil, waardoor je hem zelf beter kan stylen. 
+Met <code>all: unset;</code> zeg je dat je helemaal geen styling wilt en is minder agressief.</p>
+<h3>Datalist</h3>
+<p>Met het datalist element in html maak je een automatic complete field. Dit hoef je dus niet meer met Javascript te schrijven.</p>
+<pre><code class="language-md">&lt;datalist&gt; 
+    &lt;options&gt;&lt;/options&gt;
+    &lt;options&gt;&lt;/options&gt;
+    &lt;options&gt;&lt;/options&gt;
+&lt;/datalist&gt;
+</code></pre>
+<p>Je kan hem alleen nog niet stylen. Als je dat echt wilt zul je hem wel moeten maken met javascript. Maar het stylen van dit element zou best wel snel in de toekomst kunnen worden toegev=oegd aan browsers. </p>
+<h3>Color pickers</h3>
+<p>Hij zei ook wat over color pickers. Met <code>input-type=&quot;color&quot;</code> op het input element krijg je een heleboel colorpicker functionaliteiten van de browser, en je krijgt zelfs meer dan je zelf kan maken met Javascript.</p>
+<p>Ook kan je met <code>color-scheme: dark;</code> op de input, het element dark laten stylen door de browsers. </p>
+<h3>In-page transitions</h3>
+<p>Met In-page transitions vervang je honderden regels js + jquery met 1 regel html en dan heb je ook nog een betere ervaring. </p>
+<!-- wat is die regel html? -->
+<p>Maar bij scrollen op de pagina kan t ook met 2 regels js.</p>
+<!-- welke twee reges? -->
+
+<h3>Accessibility</h3>
+<p>Accessibility is heel belangrijk en je zou animaties moeten kunnen uitzetten voor mensen die dat willen. Dit kan met <code>@media {prefers-reduced-motion:no-preference}</code>.</p>
+<p>Als je links hebt die verwijzen naar een kopje op de zelfde pagina dan springt dat daar zo naar toe. De gebruiker weet dan niet waar ze zijn en hoeveel content ze hebben gemist. 
+Met <code>scroll-behavior: smooth;</code> ga je dat tegen en ziet de gebruiker een mooie scroll animatie. Deze moet je dus wel in de <code>@media (prefers-reduced-motion:no-preference)</code> zetten. </p>
+<p>Ook heb je <code>scroll-margin</code>, dit is een margin tot waar die naar boven scrolled, zo kan je bepalen waar dat gelinkte kopje op je scherm komt als je op die link klikt. </p>
+<p>Als je op de link klikt en je springt naar het gelinkte kopje op de pagina kan je dit een styling geven met <code>:target</code>. Dit geeft dan styling weer als dat element getarget wordt. </p>
+<h3>Carousels</h3>
+<p>scroll-snap api&#39;s</p>
+<p>adam argyle snap video&#39;s</p>
+<h3>Accordions and modals</h3>
+<p>Accordions of ook wel details and summary&#39;s genoemd hoef je ook niet met Javascript te maken. </p>
+<pre><code class="language-md">&lt;details&gt;
+  &lt;summary&gt;Titel&lt;/summary&gt;
+  &lt;p&gt;Text over die titel dat uitklapt als je op de titel klikt.&lt;/p&gt;
+&lt;/details&gt;
+</code></pre>
+<p>Met <code>::marker</code> kun je de marker naast een list item of het summary element stylen
+Met [open] kun je de details en summary een andere styling geven als die open is</p>
+<p>Ook is het handig om een de muis een pointer te maken en hover styling toe te voegen op de :hover van een details en summary. Want dit gebeurt niet automatisch</p>
+<p>Ook gaf hij als tip dat je de details en summary niet moet dichtmaken als je op een andere klikt. Soms willen mensen vergelijken en dan moet de gebruiker er heel vaak op klikken om zijn/haar doel te behalen. </p>
+<h3>Dialog</h3>
+<p>In plaats van zelf een goeie popup te bouwen met Javascript kan je ook het html element <code>&lt;dialog&gt;&lt;dialog/&gt;</code> gebruiken. Een dialog blokeert de javascript daar achter niet maar een <code>&lt;alert&gt;&lt;/alert&gt;</code> wel. </p>
+<p>In de dialog kan je een button zetten met <code>type=&quot;submit&quot;</code> om de dialog te sluiten. En als je data terug wilt sturen zet je de submit button in een form in de dialog.
+Je kan de value in Javascript dan ophalen met <code>dialog.returnValue</code>.
+Om de dialog aan te roepen moet je wel Javascript schrijven, maar dat kan je doen met <code>jeDialogElement.showModal()</code>. </p>
+<p>De dialog komt boven alles want het komt in de top layer. En je kan ook dialogs in/over dialogs plaatsen.</p>
+<p>Om alles rondom de dialog (achter de modal) te kunnen stylen kan je met <code>::backdrop</code> dat aanroepen en stylen. </p>
+<h3>Container queries</h3>
+<p>Container queries werken als een soort media queries, maar dan in plaats van hoe breed mijn vp is, is het: hoe breed is mijn container? Dus dan kan je hoe de childs in die container zich moeten gedragen. Hierdoor hoef je dus niet extra media queries toe te voegen. </p>
+<p>Je kan dit doen met <code>container-type:</code> en <code>@container (min-width: ...em)</code>
+En 50cqw container units is dus 50% van de container breedte. </p>
+<h3>:has()</h3>
+<p>:has() is een parent selector, dit kan je bijvoorbeeld zo gebruiken:</p>
+<pre><code class="language-css">h1:has(+ p) {
+  margin-bottom: 0;
+}
+</code></pre>
+<p>Hier zeg je: als een h1 meteen een p eronder heeft, geef het dan een <code>margin-bottom: 0;</code>.
+Voor meer info: <a href="https://polypane.app/blog/where-is-has-new-css-selectors-that-make-your-life-easier/">polypane.app/blog/where-is-has/</a></p>
+<h3>Features van browsers en css waar nog aan wordt gewerkt</h3>
+<p>Hier noemde hij een lijstje van browser functionaliteiten die in weinig browsers al zitten, maar dit aankomende tijd wel wordt toegevoegd aan veel browsers. </p>
+<ul>
+<li><code>field-sizing: content;</code>:  styling op een input element die dan mee schaalt met de content.</li>
+<li>masonry grid: een gird dat zichzelf opvult</li>
+<li>selectlist (html element): selectlist heeft alle semantics en interactie van een gewone select, maar die kan je stijlen.<ul>
+<li>div met slot=&quot;listbox&quot;</li>
+<li>:parts</li>
+<li>[popover]</li>
+</ul>
+</li>
+<li>scroll driven animations: animatie koppelen aan een scroll ergens op de pagina</li>
+</ul>
+<p>Voor meer info over scroll driven animations: <a href="https://www.bram.us/2023/02/12/scroll-driven-animations-cover-flow-2022-10-06-full-stack-europe/">bram.us/scroll-driven-animations-cover-flow</a></p>
+<h3>Conclusie</h3>
+<p>De conclusie uit Kilians lezing was dat je moet proberen om zo min mogelijk Javascript te gebruiken en vooral te kijken naar wat er al mogelijk is in de browser met html en css. 
+Als je zo min mogelijk javascript gebruikt en het meeste kan behalen met html en css wordt je website sneller en gaat minder snel kapot.</p>
+<h2>Reflectie</h2>
+<p>Ik vond de persentatie van Kilian heel interessant, confronterend en hij heeft zeker indruk op mij gemaakt. Ik ben het helemaal met hem eens dat je niet Javascript moet gebruiken als je met html en css het zelfde doel kan behalen. Een aantal css selectoren die hij besprak kende ik al wel maar veel ook niet. Dit waren namelijk:</p>
+<ul>
+<li><code>::focus-visible</code></li>
+<li><code>input::thumb</code></li>
+<li><code>input::track</code></li>
+<li><code>appearance: none;</code></li>
+<li><code>:target</code></li>
+<li><code>scroll-margin</code></li>
+<li><code>:has()</code></li>
+</ul>
+<p>Ook wist ik niet dat er een <code>&lt;dialog&gt;&lt;dialog/&gt;</code> element was terwijl ik zelf al we eerder had gewerkt met modals. Dus die ga ik zeker later gebruiken. Container queries kende ik ook niet. </p>
+<p>En laatst bij mijn vorige project had ik met Javascript een automatic complete field gemaakt. Dit koste mij een uurtje om te maken en had 120 regels Javascript. Ik fetchte alle data, plaatste die in een ul onder de input balk met en een display none. Als je iets typte in de input balk dan zocht hij in de list op wat je had getypt. En zo werd de input een soort searchbar. En wanneer je op de li klikte werd dat de value van de input. 
+Ik was hier aardig trots op maar Kilian noemde tijdens zijn presentatie het html element <code>&lt;datalist&gt;&lt;/datalist&gt;</code> met options erin. Als ik dat had geweten had ik de vorige keer alleen de data moeten fetchen en die in de datalist moeten stoppen. De volgende keer doe ik dat.</p>
+<p>Al deze nieuwe informatie is wel wat veel dus ik ga af dit terug lezen om te kijken of ik zo mijn code en projecten kan verbeteren.</p>
+<p>Op het laatst was er nog een vraag over AI in het werkveld en daarbij gaf hij een goeie tip want hij zei: juniors worden waarschijnlijk bij bepaalde bedrijven verboden om AI te gebruiken, dit komt doordat als je AI steeds je code laat schrijven, je minder goed snapt wat de code doet. En hoe je dus fouten van de AI kan corrigeren. 
+Ik gebruik veel chatGPT om mijn code sneller te schrijven, maar dit kijk ik altijd na, documenteer het, en als het niet werkt los ik het zelf op. Maar aangezien er een kans is dat ik geen AI mag gebruiken in het begin van mijn carrière, zal ik er op letten dat ik het meeste zelf schrijf. </p>
+
+    </div>
+    <nav class="nav">
+      <ul>
+          
+              <li data-tag="h2">
+                  <a href="#Samenvattingvandelezing">
+                      Samenvatting van de lezing
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Customtoggles">
+                      Custom toggles
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Datalist">
+                      Datalist
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Colorpickers">
+                      Color pickers
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#In-pagetransitions">
+                      In-page transitions
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Accessibility">
+                      Accessibility
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Carousels">
+                      Carousels
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Accordionsandmodals">
+                      Accordions and modals
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Dialog">
+                      Dialog
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Containerqueries">
+                      Container queries
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#:has()">
+                      :has()
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Featuresvanbrowsersencsswaarnogaanwordtgewerkt">
+                      Features van browsers en css waar nog aan wordt gewerkt
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Conclusie">
+                      Conclusie
+                  </a>
+              </li>
+          
+              <li data-tag="h2">
+                  <a href="#Reflectie">
+                      Reflectie
+                  </a>
+              </li>
+          
+      </ul>
+  </nav>
+  <a href="/">⇧<span class="visually-hidden">Back</span></a>
+  </article>
+</main>
+<!-- This is where the page content will be injected -->
+   
+
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <script src="js/cards.js"></script>
+    <script src="js/pageTransition.js"></script>
+    <!-- <script src="nav.js"></script> -->
+    <!-- <script src="cursor.js"></script> -->
+</body>
+</html>
