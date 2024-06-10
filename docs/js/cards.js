@@ -16,8 +16,8 @@ const positionValues = [
         left: "70vw",
     },
     {
-        top: "10vh",
-        left: "105vw",
+        top: "8vh",
+        left: "108vw",
     },
     {
         top: "37vh",
@@ -28,8 +28,8 @@ const positionValues = [
         left: "36vw",
     },
     {
-        top: "38vh",
-        left: "89vw",
+        top: "35vh",
+        left: "90vw",
     },
     {
         top: "46vh",
@@ -41,15 +41,15 @@ const positionValues = [
     },
     {
         top: "72vh",
-        left: "39vw",
+        left: "31vw",
     },
     {
-        top: "45vh",
+        top: "38vh",
         left: "62vw",
     },
     {
-        top: "76vh",
-        left: "81vw",
+        top: "69vh",
+        left: "88vw",
     },
     {
         top: "78vh",
@@ -65,11 +65,19 @@ const positionValues = [
     },
     {
         top: "110vh",
-        left: "70vw",
+        left: "82vw",
     },
     {
         top: "107vh",
         left: "105vw",
+    },
+    {
+        top: "70vh",
+        left: "63vw",
+    },
+    {
+        top: "100vh",
+        left: "61vw",
     },
 ];
 

@@ -99,5 +99,17 @@
         "link": "src/projects/notesRobert.md",
         "img": "",
         "name": "Robert"
+    },
+    {
+        "paramId": "CSS-DAY",
+        "link": "src/projects/cssDay.md",
+        "img": "",
+        "name": "CSS DAY"
+    },
+    {
+        "paramId": "pre-css-day",
+        "link": "src/projects/preCssDay.md",
+        "img": "",
+        "name": "pre css day"
     }
 ]
