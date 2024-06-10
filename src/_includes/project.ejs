@@ -1,0 +1,16 @@
+---
+layout: detail.ejs
+pagination:
+  data: collections.projects
+  size: 1
+  alias: project
+  permalink: "/projects/<%= project.paramId %>/index.html"
+---
+
+<article>
+    <h1><%= project.name %></h1>
+    <img src="<%= project.img %>" alt="<%= project.name %>">
+    <div class="content">
+      <%- project.html %>
+    </div>
+  </article>

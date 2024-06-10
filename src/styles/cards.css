@@ -1,17 +1,4 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: "Rajdhani", sans-serif;
-}
 
-body {
-    height: 100vh;
-    animation: fade-in 700ms linear;
-}
-::-webkit-scrollbar {
-    display: none;
-}
 main > h1 {
     /* display: none; */
     position: absolute;

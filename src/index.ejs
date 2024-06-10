@@ -32,7 +32,11 @@ title: My Eleventy Blog
                        <!-- <%- content.nav %> -->
                         <ul>
                             <% content.nav.forEach((heading) => { %>
-                                <li data-tag="<%= heading.tag %>"><%= heading.text %></li>
+                                <li data-tag="<%= heading.tag %>">
+                                    <a href="#<%= heading.target %>">
+                                        <%= heading.text %>
+                                    </a>
+                                </li>
                             <% }); %>
                         </ul>
                     </nav>

@@ -55,7 +55,8 @@ const generateHeadingsArray = (htmlContent) => {
     headings.forEach((heading) => {
         const text = heading.textContent.trim();
         const tag = heading.tagName.toLowerCase();
-        headingsArray.push({ tag: tag, text: text });
+        const target = text.replace(/\s+/g, "");
+        headingsArray.push({ tag: tag, text: text, target });
     });
 
     return headingsArray;
@@ -91,6 +92,7 @@ module.exports = async function () {
                 id: item.paramId,
             });
         }
+
         return {
             projects: markdownContents, // Assuming projects data is an array of objects
         };

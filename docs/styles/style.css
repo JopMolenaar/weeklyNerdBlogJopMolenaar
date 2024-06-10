@@ -1,0 +1,103 @@
+:root {
+    --color-header-nav: rgb(100, 102, 172);
+    --color-link-bg: rgb(160, 162, 211);
+    --color-link-hover: rgb(166, 167, 200);
+    --color-body: rgb(165, 197, 160);
+    --color-text-nav: black;
+    --color-main: rgb(248, 248, 248);
+    --color-mix: rgb(0, 0, 0);
+    --color-code-bg: #dadada;
+    --color-code: rgb(22, 22, 22);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    animation: fade-in 700ms linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Rajdhani", sans-serif;
+}
+
+p,
+a,
+li,
+button,
+summary,
+label {
+    font-family: "Montserrat", sans-serif;
+}
+
+button,
+summary {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+:target {
+    scroll-margin-top: 2em;
+}
+
+p, li {
+    max-width: 40em;
+}
+
+/* The hide class */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Code pieces // TODO use libraries or something for colors */
+pre {
+    background-color: var(--color-code-bg);
+    color: var(--color-code);
+    width: fit-content;
+    max-width: 50em;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    margin: 1rem 0 2rem;
+    padding: 1rem 2.5rem 1rem 1rem;
+    white-space:  break-spaces;
+    word-break: break-word;
+}
+
+p > code {
+    background-color: color-mix(in srgb, var(--color-code-bg)90%, white);
+    color: var(--color-code);
+    padding: 0.15rem;
+    border-radius: 4px;
+}
+
+/* Links */
+p a {
+    color: color-mix(in srgb, currentColor 60%, var(--color-body));
+}
+
+
+@media (prefers-reduced-motion:no-preference){
+    html {
+        scroll-behavior: smooth;
+    }
+}
