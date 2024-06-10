@@ -86,7 +86,7 @@ Dit vond Marten een goed idee. Later heb ik dus Rick een bericht gestuurd en afg
 
 **Dinsdag** ben ik hier weer verder mee geweest en heb ik de functie werkend kunnen krijgen. De geselecteerde node, maakt steeds kleine stapjes en ik krijg geen errors meer. Wel is de code nog super rommelig en zouden er nog dingen misschien worden aangepast. Ook gaat er nog iets niet goed maar dat los ik nu op met 3 if statements. Dit moet er ook uit worden gehaald. Verder ben ik bezig geweest met het fixen van de data in de telefoon en wat bugs op gelost. 
 
-**Woensdag** Tech reviews, client meeting, pre css day
+**Woensdag** Tech reviews ging over code vragen aan Rick , client meeting over de code gehad met Rick, pre css day
 **Donderdag** css day
 **Vrijdag** css day
 
