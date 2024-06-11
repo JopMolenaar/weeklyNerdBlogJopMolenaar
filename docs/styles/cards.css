@@ -78,6 +78,9 @@ main div > ul:nth-of-type(1) {
     height: 140vh;
     padding: 0;
     margin: 0;
+    /* min-width: 100em;
+    min-height: 100em; */
+    /* TODO make min width */
 }
 
 main div > ul:nth-of-type(1) > li {
@@ -86,6 +89,9 @@ main div > ul:nth-of-type(1) > li {
     list-style: none;
     height: 28vh;
     width: 22vw;
+    /* TODO MAKE % */
+    /* height: 17%;
+    width: 18%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,6 +200,15 @@ main  div > ul:nth-of-type(1) > li:nth-of-type(16){
     left: 70vw;
 }
 main  div > ul:nth-of-type(1) > li:nth-of-type(17){
+    top: 107vh;
+    left: 105vw;
+}
+main  div > ul:nth-of-type(1) > li:nth-of-type(18){ 
+     /* TODO change all values again */
+    top: 107vh;
+    left: 105vw;
+}
+main  div > ul:nth-of-type(1) > li:nth-of-type(19){
     top: 107vh;
     left: 105vw;
 }
