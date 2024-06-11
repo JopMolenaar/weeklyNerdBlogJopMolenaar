@@ -31,8 +31,8 @@
     <h2>CSS</h2>
     <!-- <img src="images/ufoCockpitCss.webp" alt="CSS"> -->
     <div class="content">
-      <h2>Proces CSS to the rescue</h2>
-<h3>Week 1</h3>
+      <html><head></head><body><h3 id="ProcesCSStotherescue">Proces CSS to the rescue</h3>
+<h3 id="Week1">Week 1</h3>
 <p>De dinsdag van week 1 kon ik beginnen aan mijn controlepaneel voor CSS to the Rescue, aangezien we daarvoor een andere kleine opdracht kregen om dingen van CSS te onderzoeken.</p>
 <p>Ik had in gedachten om een controlepaneel te maken voor een voertuig dat kan vliegen. Na wat experimenteren besloot ik om een UFO te maken, omdat ik dat het leukst vond om mee te experimenteren, en het hoefde er niet zo realistisch uit te zien. De features die mij heel gaaf leken om te maken waren:</p>
 <ul>
@@ -86,16 +86,16 @@ main &gt; div:nth-child(2) &gt; div:nth-child(2) {
     }
 }
 </code></pre>
-<h3>Week 2</h3>
+<h3 id="Week2">Week 2</h3>
 <p>Totdat ik in week twee op CodePen iets heel cools zag. Daar had iemand een ruimte gemaakt waar je doorheen kon bewegen, bestaande uit vier vlakken met afbeeldingen erop. De vlakken bewogen naar je toe, waardoor het leek alsof je aan het bewegen was. Ik heb dat toen gekopieerd, uitgepluisd, aangepast en ermee geëxperimenteerd totdat het er goed uitzag.</p>
 <p>Daarna heb ik de snelheidshendel gekoppeld aan een eigenschap die met wat berekeningen de duur van de animatie beïnvloedde, waardoor het leek alsof je sneller of langzamer ging.</p>
 <p>Ook heb ik de joystick gemaakt die de bestemming verandert waar je naartoe gaat en de ufo deels roteert, zodat het lijkt alsof je beweegt.</p>
 <p>Op vrijdag hadden we een beoordelingsgesprek en toen zei Sanne dat ik beter de perspectief kon verkleinen in plaats van de duur van de animatie, omdat je het dan kunt animeren en het er vloeiender uitziet als je van snelheid verandert. Hier heb ik ook mee geëxperimenteerd. Ik wilde de range-input niet instellen op 0 tot 500px, omdat dan het einde van het bereik veel meer invloed heeft dan de rest. Dus vermenigvuldigde ik de waarde met 5. Dit was al iets beter, maar nog niet helemaal. Ook zie je vaak in films met een ruimteschip dat ze een bepaalde modus moeten activeren voordat ze op hun topsnelheid zitten. Dit heb ik toen ook gedaan, zodat ik weer een extra knop had op mijn bedieningspaneel en het beter werkte. Ook heb ik toen de overgang op 1 seconde gezet, waardoor je een lichte vertraging hebt omdat de ufo natuurlijk op gang moet komen voordat hij echt de ruimte ingezogen wordt.</p>
-<h3>Week 3</h3>
+<h3 id="Week3">Week 3</h3>
 <p>Deze week was ik bezig met de joystick en de repsonsiveness van mijn ufo. Op kleine schermen is het dashboard namelijk slecht zichtbaar en overlapte de elementen elkaar. Ook werd de border heel rond waardoor de elementen uit het dashboard uit de ufo staken. Dit heb ik opgelost met wat media queries. De joystick was wel een uitdaging. Ik begon met buttons die op click de ufo kantelde en de omgeving verplaatste. Daarna begon ik met het maken van de joystick. Ik begon met 2 divjes en later werden het de <code>:before</code> en <code>:after</code> van een div want ik wilde oefenen met <code>:before</code> en <code>:after</code>.
 Ik heb geprobeerd om het als geheel te kantelen en los, en daarbij zag los er beter uit. Wel lijkt het stokje soms niet echt aan de bol vast te zitten maar dit zijn kleine momenten en ook alleen als je naar links of rechts stuurt. Wel zit de joystick er goed uit als je hem naar je toe trekt en van je af duwt.
 Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat voelde niet echt chill en realistisch. Toen kreeg ik een idee van een klasgenoot die active ophet element in het midden en dan hover op de buttons had om de joystick te bewegen. Dit geeft je het gevoel dat je de joystick vast moet houden en dan kan bewegen. Dit heb ik toen toegepast en het werkte prima. Het enige probleem was dat de joystick tripte als je naar rechts wilde sturen. Ik heb geprobeerd dit op te lossen door de bol kleiner te maken, de buttons groter en de buttons verder weg van de joystick maar niks leek te werken.</p>
-<h3>Week 4</h3>
+<h3 id="Week4">Week 4</h3>
 <p>Deze week ging ik de radar maken, propeerde ik een sound toe te voegen van een opstartende ufo als je de power aanzet. En experimenteerde ik met verschillende afbeelingen van de ruimte. Ook voegde ik een titel toe met een kleine animatie in de ufo. En voegde ik bepaalde cursors toe met handjes die dingen kunnen grijpen waardoor de gebruiker weet wat hij kan aanklikken en vastpakken etc.</p>
 <p>Ook probeerde ik op hover van het dashboard, het ruimte schip met de achtergrond een beetje te laten bewegen. Dit lukte natuurlijk wel met de achtergrond maar met het ruimte schip lukte dat niet. Dit komt omdat het ruimte schip natuurlijk niet 3D is en de achtergrond wel. Uiteindelijk heb ik alleen de achtergrond een beetje laten bewegen en niet het ruimte schip. De volgende keer maak ik de cockpit wel 3D en dan zou dit wel moeten lukken. </p>
 <p>Ook heb ik deze week @layers toegoegd aan een aantal css files. Dit deed ik omdat het een requirement was van de opdracht. @layers kan je goed gebruiken om lagen zoals: basis, layout, stylingComponents, specialStyling te definieren en zo iets overzichtelijkere code kan schrijven. Ook kan je het gebruiken om specificity problemen op te lossen. Helaas heb ik dit niet mijn code voor zien komen, maar als het voorkomt kan je bijvoorbeeld zo: <code>@layer base, special;</code> de volgorde van de layers definieren. </p>
@@ -130,12 +130,12 @@ Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat v
 <p>Uiteindelijk lukte het mij niet om heel ver te komen. Uiteindelijk wertke 2 en 3 stappen maar meer niet. Dit komt omdat het vaste keyframes zijn een die kan je niet dynamisch aanmaken. Wel heb ik een beetje geprobeerd te rekenen van hoeveel het divje naar beneden moet bewegen aan de hand van hoevaak die moet bewegen, en heb ik meerdere keyframes aangemaakt. Maar wanneer die moet bewegen is afhankelijk van de tijd van het rondje van de radar, de afstand en natuurlijk waar die gepositioneerd is in de radar. Hier kwam ik niet uit. </p>
 <h4>Geluid</h4>
 <p>Het afspelen van geluid is mij niet gelukt deze weken. Wel heb ik het geprobeerd, en door alle webkit attributen op het audio element op display none te zetten, en de playbutton een hoge z-index te geven kan je dus alleen de playbutton zien. Als je die dan een <code>opacity: 0;</code> geeft en hem boven op de button zet kan je dus een geluid afspelen. Alleen dan kan je niet met <code>:has()</code> de button erachter zogenaamd op acitve zetten. Dus ik besloot om dit te laten, en de button te disabelen.  </p>
-
+</body></html>
     </div>
     <nav class="nav">
       <ul>
           
-              <li data-tag="h2">
+              <li data-tag="h3">
                   <a href="#ProcesCSStotherescue">
                       Proces CSS to the rescue
                   </a>

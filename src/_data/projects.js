@@ -3,6 +3,7 @@ const path = require("path");
 const axios = require("axios");
 const { marked } = require("marked");
 const { JSDOM } = require("jsdom");
+const cheerio = require("cheerio");
 
 function loadJSON(filename) {
     if (fs.existsSync(filename)) {
@@ -28,6 +29,28 @@ const parseToHTML = (markdownFile) => {
                 reject(err);
             } else {
                 const html = marked(data);
+
+                // // Load the HTML content into a Cheerio object
+                // const $ = cheerio.load(html);
+
+                // // TODO FIND H1'S ALSO
+                // $("h1").each((index, element) => {
+                //     // console.log(element);
+                //     $(element).replaceWith(`<h3>${$(element).html()}</h3>`);
+                // });
+                // // TODO if h1 is found h2 becomes h4
+
+                // // Find all h2 elements and replace them with h3 elements
+                // $("h2").each((index, element) => {
+                //     // console.log(element);
+                //     $(element).replaceWith(`<h3>${$(element).html()}</h3>`);
+                // });
+                // // TODO add id's to the elements
+
+                // // Return the modified HTML content
+                // // return $.html();
+                // const modifiedHtml = $.html();
+                // resolve(modifiedHtml);
                 resolve(html);
             }
         });
@@ -39,6 +62,24 @@ const parseHTTPmdToHTML = async (url) => {
     try {
         const response = await axios.get(url);
         const html = marked(response.data);
+
+        // Load the HTML content into a Cheerio object
+        // const $ = cheerio.load(html);
+
+        // $("h1").each((index, element) => {
+        //     // console.log(element);
+        //     $(element).replaceWith(`<h3>${$(element).html()}</h3>`);
+        // });
+        // // TODO if h1 is found h2 becomes h4
+
+        // // Find all h2 elements and replace them with h3 elements
+        // $("h2").each((index, element) => {
+        //     $(element).replaceWith(`<h3>${$(element).html()}</h3>`);
+        // });
+        // // TODO add id's to the elements
+
+        // // Return the modified HTML content
+        // return $.html();
         return html;
     } catch (error) {
         console.error("Error fetching file:", error);
@@ -57,13 +98,13 @@ const generateHeadingsArray = (htmlContent) => {
         const tag = heading.tagName.toLowerCase();
         const target = text.replace(/\s+/g, "");
         heading.setAttribute("id", target);
-        // console.log("Modified Heading:", heading.outerHTML); // Log the modified heading
         headingsArray.push({ tag: tag, text: text, target });
     });
 
     // Serialize the modified DOM back to HTML
     const updatedHtmlContent = dom.serialize();
 
+    // TODO fix this because I cant change the html content
     return { headingsArray, updatedHtmlContent };
 };
 
