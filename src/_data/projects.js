@@ -61,6 +61,15 @@ const parseToHTML = (markdownFile) => {
 const parseHTTPmdToHTML = async (url) => {
     try {
         const response = await axios.get(url);
+        const markdownContent = response.data;
+
+        // Add additional '#' symbols where there are already two '#' symbols
+        // const modifiedMarkdown = markdownContent.replace(/##/g, "###"); ALSO DOESNT WORK
+
+        // Convert the modified Markdown to HTML
+        // const html = marked(modifiedMarkdown);
+
+        // return html;
         const html = marked(response.data);
 
         // Load the HTML content into a Cheerio object

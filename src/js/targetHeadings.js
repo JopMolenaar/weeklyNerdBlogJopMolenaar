@@ -11,3 +11,6 @@ h3.forEach((h) => {
 h4.forEach((h) => {
     h.setAttribute("id", h.textContent.replace(/\s+/g, ""));
 });
+
+// TODO change the element so that there are no double h1's and h2's
+// TODO or maybe change the markdown but I dont know if that is possible
