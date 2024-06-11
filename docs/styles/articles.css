@@ -4,6 +4,7 @@
     top: 0;
     height: 100vh;
     pointer-events: none;
+    display: none;
 }
 
 .articles > ul {

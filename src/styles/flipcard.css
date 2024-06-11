@@ -4,7 +4,7 @@ main > ul > li {
     /* perspective: 1000px; for the 3d effect */
 }
 
-main > ul > li > a {
+main div > ul > li > a {
     position: relative;
     width: 100%;
     height: 100%;

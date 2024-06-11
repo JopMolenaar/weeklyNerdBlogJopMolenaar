@@ -4,21 +4,24 @@ title: My Eleventy Blog
 ---
 <main>
     <h1>Blog</h1>
-    <ul>
-        <% projects.projects.forEach((content, index) => { %>
-            <li class="flip-card">
-                <a class="flip-card-inner" href="/project/<%= index %>/index.html">
-                    <!-- <div class="flip-card-front"> -->
-                        <p><%= content.name %></p>
-                        <img src="<%= content.img %>" alt="">
-                    <!-- </div> -->
-                    <!-- <div class="flip-card-back"> -->
-                        <!-- <p>...</p> -->
-                    <!-- </div> -->
-                </a>
-            </li>      
-        <% }); %>
-    </ul>
+    <div>
+        <ul>
+            <% projects.projects.forEach((content, index) => { %>
+
+                <li class="flip-card">
+                    <a class="flip-card-inner" href="/project/<%= index === 0 ? '' : index + '/' %>/index.html">
+                        <!-- <div class="flip-card-front"> -->
+                            <p><%= content.name %></p>
+                            <img src="<%= content.img %>" alt="">
+                        <!-- </div> -->
+                        <!-- <div class="flip-card-back"> -->
+                            <!-- <p>...</p> -->
+                        <!-- </div> -->
+                    </a>
+                </li>      
+            <% }); %>
+        </ul>
+    </div>
     <section class="articles">
         <h2>Artikelen</h2>
         <ul>
@@ -29,7 +32,6 @@ title: My Eleventy Blog
                    </div>
          
                    <nav class="nav">
-                       <!-- <%- content.nav %> -->
                         <ul>
                             <% content.nav.forEach((heading) => { %>
                                 <li data-tag="<%= heading.tag %>">

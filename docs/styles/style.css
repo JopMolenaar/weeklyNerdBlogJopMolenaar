@@ -69,6 +69,10 @@ p, li {
     display: none;
 }
 
+/* TODO add button to let people scroll */
+/* TODO add focus styles */
+
+
 /* Code pieces // TODO use libraries or something for colors */
 pre {
     background-color: var(--color-code-bg);
@@ -94,7 +98,6 @@ p > code {
 p a {
     color: color-mix(in srgb, currentColor 60%, var(--color-body));
 }
-
 
 @media (prefers-reduced-motion:no-preference){
     html {

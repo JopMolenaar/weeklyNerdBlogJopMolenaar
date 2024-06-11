@@ -81,40 +81,49 @@ const positionValues = [
     },
 ];
 
-function mouseMoveFunction(e) {
-    const mouseX = e.clientX,
-        mouseY = e.clientY;
-
-    const maxX = ul.offsetWidth - window.innerWidth,
-        maxY = ul.offsetHeight - window.innerHeight;
-
-    const xDecimal = mouseX / window.innerWidth,
-        yDecimal = mouseY / window.innerHeight;
-
-    const panX = maxX * xDecimal * -1,
-        panY = maxY * yDecimal * -1;
-
-    ul.animate(
-        {
-            transform: `translate(${panX}px, ${panY}px)`,
-        },
-        {
-            duration: 2300,
-            fill: "forwards",
-            easing: "ease",
-        }
-    );
+function hasHover() {
+    return window.matchMedia("(hover: hover)").matches;
 }
-window.addEventListener("mouseover", mouseMoveFunction);
 
-// Listen for hash changes
-window.addEventListener("hashchange", () => {
-    if (window.location.hash) {
-        window.removeEventListener("mouseover", mouseMoveFunction);
-    } else {
-        window.addEventListener("mouseover", mouseMoveFunction);
+if (hasHover()) {
+    function mouseMoveFunction(e) {
+        const mouseX = e.clientX,
+            mouseY = e.clientY;
+
+        const maxX = ul.offsetWidth - window.innerWidth,
+            maxY = ul.offsetHeight - window.innerHeight;
+
+        const xDecimal = mouseX / window.innerWidth,
+            yDecimal = mouseY / window.innerHeight;
+
+        const panX = maxX * xDecimal * -1,
+            panY = maxY * yDecimal * -1;
+
+        ul.animate(
+            {
+                transform: `translate(${panX}px, ${panY}px)`,
+            },
+            {
+                duration: 2300,
+                fill: "forwards",
+                easing: "ease",
+            }
+        );
     }
-});
+    window.addEventListener("mouseover", mouseMoveFunction);
+
+    // Listen for hash changes
+    window.addEventListener("hashchange", () => {
+        if (window.location.hash) {
+            window.removeEventListener("mouseover", mouseMoveFunction);
+        } else {
+            window.addEventListener("mouseover", mouseMoveFunction);
+        }
+    });
+}
+
+
+// TODO know when you have scrolled and how far 
 
 lis.forEach((li) => {
     let randomIndex;

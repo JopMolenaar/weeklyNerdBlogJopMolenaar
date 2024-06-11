@@ -6,6 +6,7 @@ main > h1 {
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 25vw;
+    margin: 0;
     opacity: 0.3;
     /* filter: blur(5px); */
     color: white;
@@ -56,21 +57,30 @@ main > h1::after {
 }
 
 
+
+
 main {
     height: 100%;
     /* overflow-x: hidden;  */
+    overflow: hidden;
     position: relative;
-    /* TODO extra div around the ul to be able to scroll to the right and left of the ul */
 }
-main > ul:nth-of-type(1) {
+main > div {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+main div > ul:nth-of-type(1) {
     align-self: center;
     position: relative;
     aspect-ratio: 1;
     width: 140vw;
     height: 140vh;
+    padding: 0;
+    margin: 0;
 }
 
-main > ul:nth-of-type(1) > li {
+main div > ul:nth-of-type(1) > li {
     /* border: 1px solid red; */
     position: absolute;
     list-style: none;
@@ -119,71 +129,71 @@ main > ul:nth-of-type(1) > li {
     }
 }
 
-main > ul:nth-of-type(1) > li:nth-of-type(1){
+main div > ul:nth-of-type(1) > li:nth-of-type(1){
     top: 4vh;
     left: 10vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(2){
+main div  > ul:nth-of-type(1) > li:nth-of-type(2){
     top: 10vh;
     left: 35vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(3){
+main div  > ul:nth-of-type(1) > li:nth-of-type(3){
     top: 6vh;
     left: 70vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(4){
+main div  > ul:nth-of-type(1) > li:nth-of-type(4){
     top: 10vh;
     left: 105vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(5){
+main div  > ul:nth-of-type(1) > li:nth-of-type(5){
     top: 37vh;
     left: 5vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(6){
+main div  > ul:nth-of-type(1) > li:nth-of-type(6){
     top: 40vh;
     left: 36vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(7){
+main div  > ul:nth-of-type(1) > li:nth-of-type(7){
     top: 38vh;
     left: 89vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(8){
+main div  > ul:nth-of-type(1) > li:nth-of-type(8){
     top: 46vh;
     left: 115vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(9){
+main div > ul:nth-of-type(1) > li:nth-of-type(9){
     top: 78vh;
     left: 7vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(10){
+main div  > ul:nth-of-type(1) > li:nth-of-type(10){
     top: 72vh;
     left: 39vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(11){
+main  div > ul:nth-of-type(1) > li:nth-of-type(11){
     top: 45vh;
     left: 62vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(12){
+main  div > ul:nth-of-type(1) > li:nth-of-type(12){
     top: 76vh;
     left: 81vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(13){
+main div  > ul:nth-of-type(1) > li:nth-of-type(13){
     top: 78vh;
     left: 115vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(14){
+main div  > ul:nth-of-type(1) > li:nth-of-type(14){
     top: 110vh;
     left: 4vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(15){
+main  div > ul:nth-of-type(1) > li:nth-of-type(15){
     top: 104vh;
     left: 35vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(16){
+main  div > ul:nth-of-type(1) > li:nth-of-type(16){
     top: 110vh;
     left: 70vw;
 }
-main > ul:nth-of-type(1) > li:nth-of-type(17){
+main  div > ul:nth-of-type(1) > li:nth-of-type(17){
     top: 107vh;
     left: 105vw;
 }
