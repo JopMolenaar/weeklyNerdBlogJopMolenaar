@@ -1,37 +1,61 @@
 ## css Day
 
 ### Intro
+
 Omdat we de hackathon hadden gewonnen, kregen wij kaartjes van PPK en Krijn voor CSS DAY. Css day is een conferentie waar sprekers iets gaan vertellen over hun gedachtes over css en nieuwe features of technieken. Het was op 6 en 7 juni en er spraken 14 mensen uit verschillende landen die bijvoorbeeld werken bij Algolia, Google en Apple. Ook zitten sommige in de CSS working group en die bepalen hoe de nieuwe css features eruit komen te zien. 
 
 ### Matthias UX, web
- , 18 jaar exp
 
-Design tools are now less powerful then css
+Matthias werkt bij ... en heft al 18 jaar ervaring. 
 
-Fluid web typography => fluid type 
+Hij hiel een presentatie over ... en de titel was ...
+
+Hij zei onderandere dat design tools nu minder krachtig zijn dan css en dat dus de creativiteit niet ten goede komt. Dit komt doordat er dus veel meer mogelijkheden zijn dan de designers denken dat kan. 
+
+Hij liet een aantal voorbeelden zien die ik echt heel gaaf vond en zeker mee wil experimenteren en wil gebruiken in mijn designs. 
+
+Hij liet Fluid web typography zien. Met berekeningen zorgde hij ervoor dat de typografie mee schaalde met de viewport. Dus in plaats van veel white space en een klein font op een grote monitor kan je met het grotere font de hele pagina visueel aantrekkelijk houden. 
+
+<!-- TODO zelf de fluid type maken voor dot artikel -->
+
+<!-- Fluid web typography => fluid type 
 Fonts grow or shrink bc of the vp
 Maybe not really excrssivble
 
 Utopia is a calculator for fluid type
 
-To scale it exponentially it requires a lot of math
+To scale it exponentially it requires a lot of math -->
 
+Ook zei hij dat we css veel vroeger in het design process moeten gebruiken, terug komend op het punt dat de design tools minder krachtig zijn dan css. Ook moeten css dingen laten bepalen over hoe de website zich gedraagd. Denk aan automatische grids etc.
+ <!-- // TODO zei hij dit? -->
+<!-- TODO foto's -->
+We kunnen css vroeger in het design process gebruiken door prototypes te bouwen, veel met de designers over en weer overleggen. En uiteindelijk de code uit de prototypes integreren in development.
 
-Use css earlier in the design process 
+<!-- Use css earlier in the design process 
 Let css decide
-Build prototypes
+Build prototypes -->
 
 
 ### Rachel Andrew 
-Dev at chrome, working on new features in css
 
-Subgrid fixes the alignment of the  elements inside the elements in the grid 
+Rachel is een developer bij chrome en werkt aan nieuwe features in css. 
+Ze ging het hebben over mansory layout maar voordat ze het daar over had leerde ik al iets nieuws. Ze noemde namelijk subgrid. Ik wist wel wat subgrid deed en hoe het deels werkte, maar ik hed het nog nooit gebruikt, of een goed voorbeeld ervan gezien. Ze gaf een voorbeeld van kaartjes met een titeltje en een afbeelding erachter. Een titel was iets groter dan de andere en daardoor was die aan het wrappen. Daardoor waren de titels in de verschillende kaartjes niet meer mooi uitgelijnd. Dit loste ze op met subgrid en zei dat je subgrid kon gebruiken om een grid neer te zetten op elementen in elementen die in een grid zitten. Dit maakte een hoop duidelijk voor mij en ik snapte meteen hoe en waarvoor het gebruikt kon worden. 
+Later had ze het over mansory en waarom het nog steeds veel issues heeft, en misschien helemaal nooit in css komt. Ze komen er namelijk niet uit waar manroy geplaats moet worden, is het een flex of een grid layout. Ook hebben ze nog problemen met de tab volgorde. Omdat sommige elementen wat langer zijn dan andere en sommige zelfs twee keer zo lang, zijn sommige al gefocused geweest als je de elementen in de volgende rij focused. Ik zou die dan gewoon overslaan, of misschien nog een keer laten focussen, ze zijn eenmaal groter en misschien dus belangrijker. Ook vergeleek ze het met grid: dense. Dit heeft namelijk soms ook nog wat problemen met de tab volgorde. 
 
-Talked about Mansory and why it’s still has problems (weird order etc)
-Same as dense
+Om dit op te lossen werken ze aan `Reading-order-items` om zo de items te kunnen reorderen. Ze hebben -items erachter gezet omdat ze misschien niet alleen de items willen reorderen. Ik vond dit ook interressant want je ziet dat ze heel goed nadenken voordat ze iets nieuws implementeren. Dit komt door browser backwards compatibility. Alles wat heeft gewerkt moet blijven werken. Anders gaan er namelijk heel weel websites op het web kapot. Ook gaven ze toe dat ze al eerder fouten hebben gemaakt met naamgeving. 
+<!-- TODO dit zei iemand anders dacht ik, iets met animations name ofzo-->
 
-Reordering items is getting worked on
-Reading-order-items
+<!-- TODO WAT IK ER ZELF VAN VIND FLEX OF GRID EN HOE HET ZOU MOETEN TABBEN -->
+
+<!-- Dev at chrome, working on new features in css -->
+
+<!-- Subgrid fixes the alignment of the  elements inside the elements in the grid  -->
+
+<!-- Talked about Mansory and why it still has problems (weird order etc) -->
+<!-- Same as dense -->
+
+<!-- Reordering items is getting worked on -->
+<!-- Reading-order-items -->
 
 ### Sarah Dayan
  
@@ -62,15 +86,17 @@ Ik heb zelf niet heel veel met fonts maar wat hij laat zien boeit mij toch wel e
 
 ### Elika Etemad
 
-Elika haar presentatie kon ik echt niet volgen. Ze gaf 0 context, gebruikte moeilijke termen, sprak ontzettend snel en las haar presentatie voor. 
+Elika werkt bij Apple en gaf een presentatie over de basis van css.
+Haar presentatie kon ik echt niet volgen. Ze gaf 0 context, gebruikte moeilijke termen, sprak ontzettend snel en las haar presentatie voor. 
 
-Works at apple
-
+<!-- Works at apple -->
+De basics van css zijn:
 ￼
 + understandable 
 + performant
 + international 
 + integrated
+<!-- en nog een aantal -> staan op de foto's  -->
 
 ### Stephen hay
 
@@ -83,6 +109,7 @@ Use the new features, be creative
 ### Kevin Powell 
 
 
+
 Min(…px, …%)
 Layouts berekenen met variables 
 Calc in media queries
@@ -90,6 +117,12 @@ Calc in media queries
 Ik moet vaker dit doen met custom prop en calc layouts
 
 ### Sarah soueidan
+
+Sarah had het over toegankelijkheid met css en noemde veel dingen die je moet en niet moet doen.
+
+<!-- list style: none => "" -->
+
+
 Extra c in css
 Tree
 - role
@@ -102,29 +135,51 @@ Lost style none op list in nav haalt niet de hoeveelheid van de list af voor scr
 
 ### Tab Atkins 
 
-Anchor positioning
-Foto’s
+Tab Atkins ging het hebben over anchor positioning. Maar voordat hij daar over ging vertellen had hij het over position in het algemeen. Ik had geen koffie op en viel vaak bijna even weg. Uiteindelijk kreeg ik mijn aandacht er weer bij toen hij startte met anchor positioning. 
+Dit vond ik erg interessant want dit had ik ook nog nooit gebruikt. Ik wist wel dat het bestond en dat we het wilde gaan gebruiken in het project waar ik mee bezig ben, maar verder was ik er nog niet ingedoken.  
+
+<!-- Anchor positioning -->
+<!-- TODO Foto’s -->
 
 ### Carmen Ansio
-Werkt bij lottiefiles
-Scroll driven animations 
+
+Carmen werkt bij lottiefiles en had het over scroll driven animations.
+
+<!-- TODO fotos -->
+<!-- Scroll driven animations  -->
 
 ### Roma komarov
 
-When to experiment => when there is a isecase and it has a impact!
+Roma is iemand die ontzetten veel experimenteerd met nieuwe css technieken. Hij liet echt ontzettend coole dingen zien en inspireerde mij van wat je er allemaal mee kon. 
 
-Lot of cool experiments with anchor positioning
-And scroll driven animations 
+Hij liet dingen zien zoals de sticky headings net zoals bij VScode, gemaakt met scroll animations. 
+En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspiratie kreeg. 
+<!-- TODO en nog meer -->
 
+Ook had hij het over wanneer je zou moeten experimenteren en zei dat je moet experimenteren als er een usecase is en als het impect zou hebben. 
 
+<!-- When to experiment => when there is a isecase and it has a impact! -->
+
+<!-- Lots of cool experiments with anchor positioning -->
+<!-- And scroll driven animations  -->
+
+<!-- TODO SCROLL DRIVEN ANIMATIONS MET DIE HEADINGS MAKEN -->
+<!-- TODO ANCHOR POSTIONING ELEMENT ON THE NAV VAN WAAR JE SCROLLT-->
 
 ### Josh Comeau 
-Teaching css
-Eye opener om te kijken hoe dingen in elkaar zitten, 
 
+Josh had het over het les geven aan mensen over css. Hij zei dat hij soms dingen tegen komt waarvan hij denkt dat dat heel raar is. Na wat googlen kan hij het oplossen maar Josh gaat op onderzoek uit en kijkt hoe en waarom dat zo werkt. Zo liet hij een voorbeeld zien van een plaatje in een div met een border. Er kwam ruimte onder het plaatje te zitten. Dit kwam uiteindelijk doordat het plaatje op de baseline wordt geplaatst. Je kan dan line height 0 zeggen maar ook wat andere dingen doen 
+<!-- TODO FOTOS + MISSCHIEN IN RESET CSS ZETTEN -->
+
+<!-- Teaching css -->
+<!-- Eye opener om te kijken hoe dingen in elkaar zitten,  -->
 
 ### Nicole sullivan
-Mansory layout 
+
+Nicole had het ook over mansory layout.  
+<!-- TODO nog doen.  -->
+
+
 
 
 

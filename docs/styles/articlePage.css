@@ -20,7 +20,7 @@ article {
     overflow-y: scroll;
     position: relative;
 }
-article > h2 {
+article > h1 {
     grid-column: 1/3;
 }
 article > a {
