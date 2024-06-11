@@ -15,7 +15,7 @@ article {
     /* TODO NOISE?   */
     padding: 1em;
     display: grid;
-    grid-template-columns: 1fr 30%;
+    grid-template-columns: 1fr fit-content;
     grid-template-rows: 2em 1fr;
     overflow-y: scroll;
     position: relative;
@@ -31,28 +31,66 @@ article > div {
     max-width: 40em;
     height: 100%;
     overflow-y: auto;
-    justify-content: center;
 }
+
+article > div h2 {
+    top: 0;
+    --sticky-top: 0em;
+}
+article > div h3 { 
+    top: 2.1em;
+    --sticky-top: 2.1em;
+}
+article > div h4 {
+    top: 2.1em;
+    --sticky-top: 2.1em;
+}
+
+article > div h2, article > div h3, article > div h4 {
+    padding: 0.3em;
+    align-self: start;
+    --animation-gap: 0em;
+    position: sticky;
+    height: 1.7em;
+    background-color: whitesmoke;
+    animation: shrink linear forwards;
+    animation-timeline: view();
+    animation-range: calc(100vw - 10vh - 1em - var(--sticky-top) - 2em - 60px - var(--animation-gap)) calc(100vw - 10vh - 25px);
+}
+
+
+@keyframes shrink {
+    from { font-size: var(--font-size-heading);}
+    to {
+        background-color: var(--color-body);
+    }
+}
+
+
+/* Nav */
 
 article .nav {
     height: fit-content;
-    width: 20em;
-    position: sticky;
     top: 3em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     padding: 0.5rem;
-    border-inline-start: var(--color-body) solid 2px;
     margin-inline-start: 0.5rem;
-
 }
 article .nav ul {
+    border-inline-start: var(--color-body) solid 2px;
+    width: fit-content;
     margin: 0;
     padding: 0;
+    padding-left: 0.4em;
     gap: 0.2rem;
     display: flex;
     flex-direction: column;
 }
 article .nav li {
     list-style: none;
+    margin-bottom: 0.5em;
 }
 article .nav li[data-heading="h3"]{
     padding-left: 1em;

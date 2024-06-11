@@ -21,21 +21,19 @@
     <!-- <img src="" alt="pre css day"> -->
     <div class="content">
       <html><head></head><body><h2 id="PreCSSday">Pre CSS day</h2>
-<h3 id="BramusvanDamme">Bramus van Damme</h3>
-<p>Was een lecurer</p>
-<p>view transitions for MPA's are here</p>
-<p>fe developer
-working at google</p>
-<p>run a blog he said, expose your work, write about it or something</p>
-<p>helpfull for ux</p>
-<p>view transistion api (spa same doucment page)</p>
+<p>De laatste weekly nerd van de Minor is de georganiseerde pre van het opkomende event CSS Day waarvoor ik kaartjes had gewonnen. De minor had Bramus van Damme en Miriam Suzanne uitgenodigd om te spreken over view transitions en container queries. Bijde relatief nieuw voor mij dus ik was erg benieuwd. </p>
+<h3 id="BramusvanDamme(Viewtransitions)">Bramus van Damme (View transitions)</h3>
+<p>Bramus werkt bij Google als front-end developer en hij was een leraar. Hij introduceerde ons de net geimplementeerde view transitions API. </p>
+<p>Hij liet voorbeelden zien die ik al eerder had gezien maar niet de implementatie die ik al eerder had gezien. Ik had het namelijk zelf al een keer geprobeerd met @keyframes en een delay op de link. </p>
+<h4>Implementatie</h4>
+<p>De implementatie is als volgt:</p>
+<!-- TODO add implementatie -->
+
 <pre><code>document.startViewTransition(()=&gt;{
 
 })
 </code></pre>
-<p>it takes snapshots and pauses the rendering of the new page</p>
-<p>user agent stylesheet, is the stylesheet of the browser, if vewtransitions are supporten is says: view-transistion: root</p>
-<h4>tweak the animations:</h4>
+<h5>tweak the animations:</h5>
 <p>with css  but you cant use the elements in de snap shots, </p>
 <p>view-transition-name: box
 box is in a different layer</p>
@@ -54,10 +52,24 @@ view-transition-name: name1
 same element I think</p>
 <p>view-transition-class 
 nmae needs to be unique, class is schared on these elements, </p>
-<p>cross document view transition chrome 126</p>
-<p>screenshot way ()</p>
-<p>two conditions: same site, same origin &amp; both pages need to have it opt in: @view-transition {navigation: auto}</p>
-<p>they will implement cross origin in the future</p>
+<h4>Hoe het werkt</h4>
+<p>View transitions zijn niet alleen visueel een upgrade voor je website, maar het is ook handig voor UX. Dit komt doordat de gebruiker ziet dat sommige elementen hetzelfde zijn en daardoor makkelijk weer de link kan leggen met de andere pagina. </p>
+<!-- view transitions for MPA's are here -->
+
+<!-- fe developer -->
+<!-- working at google -->
+
+
+<!-- helpfull for ux -->
+
+
+
+<p>it takes snapshots and pauses the rendering of the new page
+daarna laat hij de oude screen shot zien en render hij de andere pagina. 
+En daarna laat hij de screenshots in elkaar faden. 
+Maar je kan dus elementen skippen, of de transitie veranderen. </p>
+<p>user agent stylesheet, is the stylesheet of the browser, if vewtransitions are supporten is says: view-transistion: root</p>
+<p>view transistion api (spa same doucment page)</p>
 <p> @view-transition {
     navigation: auto
     types: // could assign types here
@@ -65,9 +77,15 @@ nmae needs to be unique, class is schared on these elements, </p>
 <p> if you dont know the tyopes up front: </p>
 <p> pageswap and pagereveal on the window.addEventlistener
  and then you can add the type</p>
+<p>screenshot way ()</p>
+<p>cross document view transition chrome 126: two conditions: same site, same origin &amp; both pages need to have it opt in: @view-transition {navigation: auto}</p>
+<p>they will implement cross origin in the future</p>
+<h4>Extra things he said</h4>
+<p>run a blog he said, expose your work, write about it or something</p>
 <p> a (link) blocking="render" ??? use with caution</p>
-<h3 id="MiriamSuzanne">Miriam Suzanne</h3>
-<p>container queries</p>
+<h3 id="MiriamSuzanne(containerqueries)">Miriam Suzanne (container queries)</h3>
+<p>Miriam had het over container queries, zij is namelijk de bedenker daarvan en weet precies hoe het werkt en wilde ons overtuigen dat het geen loops veroorzaakt ook al denken veel mensen dat.</p>
+<p>Veel mensen dachten dus inderdaar dat er loops zouden ontstaan doordat je de parent styled om de kinderen op een bepaalde manier te laten gedragen, en ... </p>
 <p>problems etc</p>
 <p>it was asked for a decade, but they were scared it would cause layout loops</p>
 <p>interinsic and extrinisic
@@ -75,8 +93,9 @@ pushing out and pushing in</p>
 <p>content on the inside need to set the size of the parent and the parent set the sizes of the children = loop</p>
 <p>contain: inline-size and not contain: size
 but it could go wrong if you do display grid and justify-content: center</p>
-<p>container style queries </p>
-</body></html>
+<p>Met container style queries kan je elementen stylen aan de hand van welke styling ze hebben. Dit kan je gebruiken met het breedte van het element, andere styling of custom properties. </p>
+<h3 id="Reflectie">Reflectie</h3>
+<!-- TODO BIJ ELKE EEN KORTE REFLECTIE  --></body></html>
     </div>
     <nav class="nav">
       <ul>
@@ -88,14 +107,20 @@ but it could go wrong if you do display grid and justify-content: center</p>
               </li>
           
               <li data-tag="h3">
-                  <a href="#BramusvanDamme">
-                      Bramus van Damme
+                  <a href="#BramusvanDamme(Viewtransitions)">
+                      Bramus van Damme (View transitions)
                   </a>
               </li>
           
               <li data-tag="h3">
-                  <a href="#MiriamSuzanne">
-                      Miriam Suzanne
+                  <a href="#MiriamSuzanne(containerqueries)">
+                      Miriam Suzanne (container queries)
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Reflectie">
+                      Reflectie
                   </a>
               </li>
           

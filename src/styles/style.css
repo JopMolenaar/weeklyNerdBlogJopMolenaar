@@ -25,6 +25,27 @@ h5 {
     font-family: "Rajdhani", sans-serif;
 }
 
+h1 {
+    --font-size-heading: 2em;
+    font-size: 2em;
+}
+h2 {
+    --font-size-heading: 1.5em;
+    font-size: 1.5em;
+}
+h3 {
+    --font-size-heading: 1.2em;
+    font-size: 1.2em;
+}
+h4 {
+    --font-size-heading: 1.1em;
+    font-size: 1.1em;
+}
+h5 {
+    --font-size-heading: 1em;
+    font-size: 1em;
+}
+
 p,
 a,
 li,

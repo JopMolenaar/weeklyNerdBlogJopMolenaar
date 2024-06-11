@@ -1,21 +1,17 @@
 ## Pre CSS day
 
+De laatste weekly nerd van de Minor is de georganiseerde pre van het opkomende event CSS Day waarvoor ik kaartjes had gewonnen. De minor had Bramus van Damme en Miriam Suzanne uitgenodigd om te spreken over view transitions en container queries. Bijde relatief nieuw voor mij dus ik was erg benieuwd. 
 
+### Bramus van Damme (View transitions)
 
-### Bramus van Damme
+Bramus werkt bij Google als front-end developer en hij was een leraar. Hij introduceerde ons de net geimplementeerde view transitions API. 
 
-Was een lecurer
+Hij liet voorbeelden zien die ik al eerder had gezien maar niet de implementatie die ik al eerder had gezien. Ik had het namelijk zelf al een keer geprobeerd met @keyframes en een delay op de link. 
 
-view transitions for MPA's are here
+#### Implementatie
 
-fe developer
-working at google
-
-run a blog he said, expose your work, write about it or something
-
-helpfull for ux
-
-view transistion api (spa same doucment page)
+De implementatie is als volgt:
+<!-- TODO add implementatie -->
 
 ```
 document.startViewTransition(()=>{
@@ -24,11 +20,7 @@ document.startViewTransition(()=>{
 
 ```
 
-it takes snapshots and pauses the rendering of the new page
-
-user agent stylesheet, is the stylesheet of the browser, if vewtransitions are supporten is says: view-transistion: root
-
-#### tweak the animations:
+##### tweak the animations:
 
 with css  but you cant use the elements in de snap shots, 
 
@@ -59,14 +51,28 @@ view-transition-class
 nmae needs to be unique, class is schared on these elements, 
 
 
-cross document view transition chrome 126
+#### Hoe het werkt
 
-screenshot way ()
+View transitions zijn niet alleen visueel een upgrade voor je website, maar het is ook handig voor UX. Dit komt doordat de gebruiker ziet dat sommige elementen hetzelfde zijn en daardoor makkelijk weer de link kan leggen met de andere pagina. 
 
-two conditions: same site, same origin & both pages need to have it opt in: @view-transition {navigation: auto}
+<!-- view transitions for MPA's are here -->
 
-they will implement cross origin in the future
+<!-- fe developer -->
+<!-- working at google -->
 
+
+<!-- helpfull for ux -->
+
+
+
+it takes snapshots and pauses the rendering of the new page
+daarna laat hij de oude screen shot zien en render hij de andere pagina. 
+En daarna laat hij de screenshots in elkaar faden. 
+Maar je kan dus elementen skippen, of de transitie veranderen. 
+
+user agent stylesheet, is the stylesheet of the browser, if vewtransitions are supporten is says: view-transistion: root
+
+view transistion api (spa same doucment page)
 
  @view-transition {
     navigation: auto
@@ -79,11 +85,31 @@ they will implement cross origin in the future
  and then you can add the type
 
 
+screenshot way ()
+
+
+cross document view transition chrome 126: two conditions: same site, same origin & both pages need to have it opt in: @view-transition {navigation: auto}
+
+they will implement cross origin in the future
+
+#### Extra things he said
+
+run a blog he said, expose your work, write about it or something
+
  a (link) blocking="render" ??? use with caution
 
-### Miriam Suzanne
 
-container queries
+
+
+
+
+
+
+### Miriam Suzanne (container queries)
+
+Miriam had het over container queries, zij is namelijk de bedenker daarvan en weet precies hoe het werkt en wilde ons overtuigen dat het geen loops veroorzaakt ook al denken veel mensen dat.
+
+Veel mensen dachten dus inderdaar dat er loops zouden ontstaan doordat je de parent styled om de kinderen op een bepaalde manier te laten gedragen, en ... 
 
 problems etc
 
@@ -97,4 +123,8 @@ content on the inside need to set the size of the parent and the parent set the 
 contain: inline-size and not contain: size
 but it could go wrong if you do display grid and justify-content: center
 
-container style queries 
+Met container style queries kan je elementen stylen aan de hand van welke styling ze hebben. Dit kan je gebruiken met het breedte van het element, andere styling of custom properties. 
+
+### Reflectie
+
+<!-- TODO BIJ ELKE EEN KORTE REFLECTIE  -->

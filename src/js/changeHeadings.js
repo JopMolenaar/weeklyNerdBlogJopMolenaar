@@ -12,9 +12,20 @@ function changeHeadingLevel(oldHeadings, newLevel) {
     });
 }
 
-if (h1s.length > 0) {
-    changeHeadingLevel(h1s, "h2");
-    changeHeadingLevel(h2s, "h3");
-    changeHeadingLevel(h3s, "h4");
-    changeHeadingLevel(h4s, "h5");
+deleteFirstHeading();
+
+if (h2s.length > 0) {
+    changeHeadingLevel(h3s, "h2");
+    changeHeadingLevel(h4s, "h3");
 }
+
+function deleteFirstHeading() {
+    let headingToDelete;
+    headingToDelete = document.querySelector(".content h1");
+    if (!headingToDelete) {
+        headingToDelete = document.querySelector(".content h2");
+    }
+    headingToDelete.remove();
+}
+
+// TODO CREATE DIVS AROUND THE HEADINGS WITH THE TEXT THAT MATHCES SO THAT DE STICKED HEADING WILL BE PUSHED AWAY
