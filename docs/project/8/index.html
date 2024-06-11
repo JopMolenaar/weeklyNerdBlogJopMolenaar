@@ -89,7 +89,7 @@ Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat v
 <p>Ook probeerde ik op hover van het dashboard, het ruimte schip met de achtergrond een beetje te laten bewegen. Dit lukte natuurlijk wel met de achtergrond maar met het ruimte schip lukte dat niet. Dit komt omdat het ruimte schip natuurlijk niet 3D is en de achtergrond wel. Uiteindelijk heb ik alleen de achtergrond een beetje laten bewegen en niet het ruimte schip. De volgende keer maak ik de cockpit wel 3D en dan zou dit wel moeten lukken. </p>
 <p>Ook heb ik deze week @layers toegoegd aan een aantal css files. Dit deed ik omdat het een requirement was van de opdracht. @layers kan je goed gebruiken om lagen zoals: basis, layout, stylingComponents, specialStyling te definieren en zo iets overzichtelijkere code kan schrijven. Ook kan je het gebruiken om specificity problemen op te lossen. Helaas heb ik dit niet mijn code voor zien komen, maar als het voorkomt kan je bijvoorbeeld zo: <code>@layer base, special;</code> de volgorde van de layers definieren. </p>
 <p>Op donderdag heb ik de joystick gefixed. Hij tripte helaaml als je hem naar rechts en naar beneded trok, en dat lag aan een rotateY op de label. Hier kwam ik achter na een hoop inspecteren en dingen uitzetten. Ik moest daarna wel wat values van de <code>:before</code> veranderen zodat die mooi meegaat met het hoofd van de joystick.</p>
-<h4>De radar</h4>
+<h4 id="Deradar">De radar</h4>
 <p>De radar maken ging best goed. Met linear en radial gradients maakte ik de lijnen op de radar. En met een conic gradient maakte ik hetgene dat rond draait. </p>
 <pre><code class="language-css">form:nth-child(2) div:nth-of-type(3) {
     overflow: hidden;
@@ -117,7 +117,7 @@ Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat v
 </code></pre>
 <p>Ook maakte ik een zwart rond divje van 4px die van boven naar beneden gaat in de radar, en alleen zichtbaar is wanneer de radar erover heen is gegaan. Na wat timen lukte dit maar ik wist al zeker dat dit veel beter kan wordne geschreven. Op dinsdag begon ik met het herschrijven van deze regels en met berekeningen en custom properties dit veel dynamischer te maken. </p>
 <p>Uiteindelijk lukte het mij niet om heel ver te komen. Uiteindelijk wertke 2 en 3 stappen maar meer niet. Dit komt omdat het vaste keyframes zijn een die kan je niet dynamisch aanmaken. Wel heb ik een beetje geprobeerd te rekenen van hoeveel het divje naar beneden moet bewegen aan de hand van hoevaak die moet bewegen, en heb ik meerdere keyframes aangemaakt. Maar wanneer die moet bewegen is afhankelijk van de tijd van het rondje van de radar, de afstand en natuurlijk waar die gepositioneerd is in de radar. Hier kwam ik niet uit. </p>
-<h4>Geluid</h4>
+<h4 id="Geluid">Geluid</h4>
 <p>Het afspelen van geluid is mij niet gelukt deze weken. Wel heb ik het geprobeerd, en door alle webkit attributen op het audio element op display none te zetten, en de playbutton een hoge z-index te geven kan je dus alleen de playbutton zien. Als je die dan een <code>opacity: 0;</code> geeft en hem boven op de button zet kan je dus een geluid afspelen. Alleen dan kan je niet met <code>:has()</code> de button erachter zogenaamd op acitve zetten. Dus ik besloot om dit te laten, en de button te disabelen.  </p>
 </body></html>
     </div>
@@ -151,6 +151,18 @@ Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat v
               <li data-tag="h3">
                   <a href="#Week4">
                       Week 4
+                  </a>
+              </li>
+          
+              <li data-tag="h4">
+                  <a href="#Deradar">
+                      De radar
+                  </a>
+              </li>
+          
+              <li data-tag="h4">
+                  <a href="#Geluid">
+                      Geluid
                   </a>
               </li>
           

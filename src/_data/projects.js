@@ -29,28 +29,6 @@ const parseToHTML = (markdownFile) => {
                 reject(err);
             } else {
                 const html = marked(data);
-
-                // // Load the HTML content into a Cheerio object
-                // const $ = cheerio.load(html);
-
-                // // TODO FIND H1'S ALSO
-                // $("h1").each((index, element) => {
-                //     // console.log(element);
-                //     $(element).replaceWith(`<h3>${$(element).html()}</h3>`);
-                // });
-                // // TODO if h1 is found h2 becomes h4
-
-                // // Find all h2 elements and replace them with h3 elements
-                // $("h2").each((index, element) => {
-                //     // console.log(element);
-                //     $(element).replaceWith(`<h3>${$(element).html()}</h3>`);
-                // });
-                // // TODO add id's to the elements
-
-                // // Return the modified HTML content
-                // // return $.html();
-                // const modifiedHtml = $.html();
-                // resolve(modifiedHtml);
                 resolve(html);
             }
         });
@@ -61,34 +39,7 @@ const parseToHTML = (markdownFile) => {
 const parseHTTPmdToHTML = async (url) => {
     try {
         const response = await axios.get(url);
-        const markdownContent = response.data;
-
-        // Add additional '#' symbols where there are already two '#' symbols
-        // const modifiedMarkdown = markdownContent.replace(/##/g, "###"); ALSO DOESNT WORK
-
-        // Convert the modified Markdown to HTML
-        // const html = marked(modifiedMarkdown);
-
-        // return html;
         const html = marked(response.data);
-
-        // Load the HTML content into a Cheerio object
-        // const $ = cheerio.load(html);
-
-        // $("h1").each((index, element) => {
-        //     // console.log(element);
-        //     $(element).replaceWith(`<h3>${$(element).html()}</h3>`);
-        // });
-        // // TODO if h1 is found h2 becomes h4
-
-        // // Find all h2 elements and replace them with h3 elements
-        // $("h2").each((index, element) => {
-        //     $(element).replaceWith(`<h3>${$(element).html()}</h3>`);
-        // });
-        // // TODO add id's to the elements
-
-        // // Return the modified HTML content
-        // return $.html();
         return html;
     } catch (error) {
         console.error("Error fetching file:", error);
@@ -99,21 +50,22 @@ const parseHTTPmdToHTML = async (url) => {
 const generateHeadingsArray = (htmlContent) => {
     const dom = new JSDOM(htmlContent);
     const document = dom.window.document;
-    const headings = document.querySelectorAll("h2, h3");
+    const headings = document.querySelectorAll("h2, h3, h4, h5");
     let headingsArray = [];
 
     headings.forEach((heading) => {
         const text = heading.textContent.trim();
         const tag = heading.tagName.toLowerCase();
         const target = text.replace(/\s+/g, "");
-        heading.setAttribute("id", target);
+        heading.setAttribute("id", target); // Dit werkt nu (hard build needed)
+        // TODO CHANGE HERE THE HEADINGS ALSO
+        // TODO PLACE SECTIONS AROUND THE SECTIONS WITH A NEW HEADING
         headingsArray.push({ tag: tag, text: text, target });
     });
 
     // Serialize the modified DOM back to HTML
     const updatedHtmlContent = dom.serialize();
 
-    // TODO fix this because I cant change the html content
     return { headingsArray, updatedHtmlContent };
 };
 
@@ -138,7 +90,6 @@ module.exports = async function () {
             }
 
             const output = generateHeadingsArray(markdownContent);
-            // TODO make all h2 or higher, lower then h2 and so on
             const headings = output.headingsArray;
             const htmlContent = output.updatedHtmlContent;
 

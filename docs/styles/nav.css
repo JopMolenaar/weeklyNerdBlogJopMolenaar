@@ -1,17 +1,12 @@
 .articles > ul > li > .nav {
-    
-}
-
-.articles > ul > li > .nav {
     /* border: solid rgb(129, 129, 129) 1px; */
     /* border-radius: 10px; */
     /* background-color: white;
     background-color: color-mix(in srgb, var(--color-main) 80%, var(--color-mix)); */
     height: fit-content;
     width: 20em;
-    position: sticky;
-    top: 3em;
     padding: 0.5rem;
+    padding-top: 0;
     border-inline-start: var(--color-body) solid 2px;
     margin-inline-start: 0.5rem;
 

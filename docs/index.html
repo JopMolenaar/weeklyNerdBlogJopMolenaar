@@ -1216,7 +1216,7 @@ Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat v
 <p>Ook probeerde ik op hover van het dashboard, het ruimte schip met de achtergrond een beetje te laten bewegen. Dit lukte natuurlijk wel met de achtergrond maar met het ruimte schip lukte dat niet. Dit komt omdat het ruimte schip natuurlijk niet 3D is en de achtergrond wel. Uiteindelijk heb ik alleen de achtergrond een beetje laten bewegen en niet het ruimte schip. De volgende keer maak ik de cockpit wel 3D en dan zou dit wel moeten lukken. </p>
 <p>Ook heb ik deze week @layers toegoegd aan een aantal css files. Dit deed ik omdat het een requirement was van de opdracht. @layers kan je goed gebruiken om lagen zoals: basis, layout, stylingComponents, specialStyling te definieren en zo iets overzichtelijkere code kan schrijven. Ook kan je het gebruiken om specificity problemen op te lossen. Helaas heb ik dit niet mijn code voor zien komen, maar als het voorkomt kan je bijvoorbeeld zo: <code>@layer base, special;</code> de volgorde van de layers definieren. </p>
 <p>Op donderdag heb ik de joystick gefixed. Hij tripte helaaml als je hem naar rechts en naar beneded trok, en dat lag aan een rotateY op de label. Hier kwam ik achter na een hoop inspecteren en dingen uitzetten. Ik moest daarna wel wat values van de <code>:before</code> veranderen zodat die mooi meegaat met het hoofd van de joystick.</p>
-<h4>De radar</h4>
+<h4 id="Deradar">De radar</h4>
 <p>De radar maken ging best goed. Met linear en radial gradients maakte ik de lijnen op de radar. En met een conic gradient maakte ik hetgene dat rond draait. </p>
 <pre><code class="language-css">form:nth-child(2) div:nth-of-type(3) {
     overflow: hidden;
@@ -1244,7 +1244,7 @@ Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat v
 </code></pre>
 <p>Ook maakte ik een zwart rond divje van 4px die van boven naar beneden gaat in de radar, en alleen zichtbaar is wanneer de radar erover heen is gegaan. Na wat timen lukte dit maar ik wist al zeker dat dit veel beter kan wordne geschreven. Op dinsdag begon ik met het herschrijven van deze regels en met berekeningen en custom properties dit veel dynamischer te maken. </p>
 <p>Uiteindelijk lukte het mij niet om heel ver te komen. Uiteindelijk wertke 2 en 3 stappen maar meer niet. Dit komt omdat het vaste keyframes zijn een die kan je niet dynamisch aanmaken. Wel heb ik een beetje geprobeerd te rekenen van hoeveel het divje naar beneden moet bewegen aan de hand van hoevaak die moet bewegen, en heb ik meerdere keyframes aangemaakt. Maar wanneer die moet bewegen is afhankelijk van de tijd van het rondje van de radar, de afstand en natuurlijk waar die gepositioneerd is in de radar. Hier kwam ik niet uit. </p>
-<h4>Geluid</h4>
+<h4 id="Geluid">Geluid</h4>
 <p>Het afspelen van geluid is mij niet gelukt deze weken. Wel heb ik het geprobeerd, en door alle webkit attributen op het audio element op display none te zetten, en de playbutton een hoge z-index te geven kan je dus alleen de playbutton zien. Als je die dan een <code>opacity: 0;</code> geeft en hem boven op de button zet kan je dus een geluid afspelen. Alleen dan kan je niet met <code>:has()</code> de button erachter zogenaamd op acitve zetten. Dus ik besloot om dit te laten, en de button te disabelen.  </p>
 </body></html>
                    </div>
@@ -1279,6 +1279,18 @@ Ik liet de buttons later de omgeving beinvloeden door erop te hoveren maar dat v
                                 <li data-tag="h3">
                                     <a href="#Week4">
                                         Week 4
+                                    </a>
+                                </li>
+                            
+                                <li data-tag="h4">
+                                    <a href="#Deradar">
+                                        De radar
+                                    </a>
+                                </li>
+                            
+                                <li data-tag="h4">
+                                    <a href="#Geluid">
+                                        Geluid
                                     </a>
                                 </li>
                             
@@ -1424,7 +1436,7 @@ Begrijpt u de huidige muziek/effecten die worden omschreven in de ondertiteling 
 Met verschillende font's en kleuren zouden we ook kunnen spelen om verschillende personen en intonatie aan te geven maar het moet niet te druk worden en wel consistent blijven. </p>
 <p>Muziek kan ze niet horen en krijgt ze helaas dus ook niet mee, dit geeft vaak wel de spanning weer in de film. Ook weet ze hoe muziek impact kan hebben op mensen hun emoties doordat ze dat heeft gezien op een begrafenis. Dit gevoel wil zij ook ervaren of in ieder geval dichter bij in de buurt komen. Over de huidige closed captions is ze opzich wel enthausiast, maar ze krijgt gewoon niet alle info en het gevoel mee van de platte tekst, dus dat kan zeker beter. </p>
 <p>Verder heeft ze wat films opgenoemd die ze vaak kijkt, waar ze voorbeelden uit noemde, en waar wij ook wat van konden kijken om te vergelijken.</p>
-<h4>Begin onderzoek en begin van prototype</h4>
+<h4 id="Beginonderzoekenbeginvanprototype">Begin onderzoek en begin van prototype</h4>
 <p>Ik ben begonnen om alles op te schrijven van het interview en wat scenes van wat films te kijken. Ze had de <code>The bake off</code>, <code>3 body problem</code>, <code>The bear</code>, <code>The menu</code> en <code>The chestnutmen</code> genoemd als series die ze al had gezien. Verder heeft ze een hele brede interesse en kijkt ze ook naar de keuringsdienst van waarde en rupals dragrace. </p>
 <p>Uiteindelijk heb ik wat dingen opgeschreven van dingen die mij opvielen tijdens het kijken van de scenes zonder geluid. Ik probeerde echt in de rol van Marie te stappen om zo te kijken wat zij meekrijgt. Ook heb ik daarna met closed captions gekeken, en daarna met geluid en closed captions. </p>
 <p><strong>Zonder geluid, zonder cc:</strong> </p>
@@ -1592,6 +1604,12 @@ Ook vindt ik study situation horen bij het testen van de prototypes, want daar s
                                 <li data-tag="h3">
                                     <a href="#💡Bevindingen">
                                         💡 Bevindingen
+                                    </a>
+                                </li>
+                            
+                                <li data-tag="h4">
+                                    <a href="#Beginonderzoekenbeginvanprototype">
+                                        Begin onderzoek en begin van prototype
                                     </a>
                                 </li>
                             
@@ -2298,7 +2316,7 @@ En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspir
 <h3 id="BramusvanDamme(Viewtransitions)">Bramus van Damme (View transitions)</h3>
 <p>Bramus werkt bij Google als front-end developer en hij was een leraar. Hij introduceerde ons de net geimplementeerde view transitions API. </p>
 <p>Hij liet voorbeelden zien die ik al eerder had gezien maar niet de implementatie die ik al eerder had gezien. Ik had het namelijk zelf al een keer geprobeerd met @keyframes en een delay op de link. </p>
-<h4>Implementatie</h4>
+<h4 id="Implementatie">Implementatie</h4>
 <p>De implementatie is als volgt:</p>
 <!-- TODO add implementatie -->
 
@@ -2306,7 +2324,7 @@ En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspir
 
 })
 </code></pre>
-<h5>tweak the animations:</h5>
+<h5 id="tweaktheanimations:">tweak the animations:</h5>
 <p>with css  but you cant use the elements in de snap shots, </p>
 <p>view-transition-name: box
 box is in a different layer</p>
@@ -2325,7 +2343,7 @@ view-transition-name: name1
 same element I think</p>
 <p>view-transition-class 
 nmae needs to be unique, class is schared on these elements, </p>
-<h4>Hoe het werkt</h4>
+<h4 id="Hoehetwerkt">Hoe het werkt</h4>
 <p>View transitions zijn niet alleen visueel een upgrade voor je website, maar het is ook handig voor UX. Dit komt doordat de gebruiker ziet dat sommige elementen hetzelfde zijn en daardoor makkelijk weer de link kan leggen met de andere pagina. </p>
 <!-- view transitions for MPA's are here -->
 
@@ -2353,7 +2371,7 @@ Maar je kan dus elementen skippen, of de transitie veranderen. </p>
 <p>screenshot way ()</p>
 <p>cross document view transition chrome 126: two conditions: same site, same origin &amp; both pages need to have it opt in: @view-transition {navigation: auto}</p>
 <p>they will implement cross origin in the future</p>
-<h4>Extra things he said</h4>
+<h4 id="Extrathingshesaid">Extra things he said</h4>
 <p>run a blog he said, expose your work, write about it or something</p>
 <p> a (link) blocking="render" ??? use with caution</p>
 <h3 id="MiriamSuzanne(containerqueries)">Miriam Suzanne (container queries)</h3>
@@ -2383,6 +2401,30 @@ but it could go wrong if you do display grid and justify-content: center</p>
                                 <li data-tag="h3">
                                     <a href="#BramusvanDamme(Viewtransitions)">
                                         Bramus van Damme (View transitions)
+                                    </a>
+                                </li>
+                            
+                                <li data-tag="h4">
+                                    <a href="#Implementatie">
+                                        Implementatie
+                                    </a>
+                                </li>
+                            
+                                <li data-tag="h5">
+                                    <a href="#tweaktheanimations:">
+                                        tweak the animations:
+                                    </a>
+                                </li>
+                            
+                                <li data-tag="h4">
+                                    <a href="#Hoehetwerkt">
+                                        Hoe het werkt
+                                    </a>
+                                </li>
+                            
+                                <li data-tag="h4">
+                                    <a href="#Extrathingshesaid">
+                                        Extra things he said
                                     </a>
                                 </li>
                             
