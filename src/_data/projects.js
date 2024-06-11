@@ -88,6 +88,7 @@ module.exports = async function () {
             }
 
             const output = generateHeadingsArray(markdownContent);
+            // TODO make all h2 or higher, lower then h2 and so on
             const headings = output.headingsArray;
             const htmlContent = output.updatedHtmlContent;
 
