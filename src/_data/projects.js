@@ -56,10 +56,15 @@ const generateHeadingsArray = (htmlContent) => {
         const text = heading.textContent.trim();
         const tag = heading.tagName.toLowerCase();
         const target = text.replace(/\s+/g, "");
+        heading.setAttribute("id", target);
+        // console.log("Modified Heading:", heading.outerHTML); // Log the modified heading
         headingsArray.push({ tag: tag, text: text, target });
     });
 
-    return headingsArray;
+    // Serialize the modified DOM back to HTML
+    const updatedHtmlContent = dom.serialize();
+
+    return { headingsArray, updatedHtmlContent };
 };
 
 // Export an asynchronous function to fetch project data
@@ -82,12 +87,14 @@ module.exports = async function () {
                 markdownContent = "Failed to fetch data";
             }
 
-            const headings = generateHeadingsArray(markdownContent);
+            const output = generateHeadingsArray(markdownContent);
+            const headings = output.headingsArray;
+            const htmlContent = output.updatedHtmlContent;
 
             markdownContents.push({
                 name: item.name,
                 nav: headings,
-                html: markdownContent,
+                html: htmlContent,
                 img: item.img,
                 id: item.paramId,
             });

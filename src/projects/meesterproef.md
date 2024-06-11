@@ -94,6 +94,8 @@ Simulatie aan de gang gekregen (deels)
 
 ### 🔬 Week 5
 
+**Maandag**
+
 ### ⏱️ Week 6
 
 **Donderdag** presentation at client (June 20)
