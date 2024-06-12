@@ -176,16 +176,78 @@ En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspir
 <li>mastodon</li>
 </ul>
 <p>Ik was erg onder de indruk hoe veel we al weten en hoe veel mensen we al ontmoet hebben door onze studie. Ook ben ik geïnspireerd door …, ga ik nieuwe dingen gebruiken zoals … en ga ik meer experimenteren met nieuwe technieken want zoals … al zei: </p>
+<p>Uiteindelijk heb ik dus dit artikel gemaakt over css day en wilde ik daarbij de nieuwe geleerde technieken uitproberen. In dit artikel kan je daar een aantal dingen van terug zien namelijk:</p>
+<ul>
+<li>De headings die aan de boven kant blijven hangen en omhoog worden gedrukt door de volgende heading. Dit heb ik gedaan met scroll driven animtions.</li>
+</ul>
+<p>Dit is de code (simplified):</p>
+<pre><code class="language-css">    h2 {--sticky-top: 0rem;}
+    h3 {--sticky-top: 2.1rem;}
+    h4 {--sticky-top: 4rem;}
+
+    h2, h3, h4 {
+        animation: shrink linear forwards;
+        animation-timeline: view();
+        animation-range: calc(90vh - 3em - var(--sticky-top) - 80px) calc(100vh - 10vh - 25px);
+    }
+</code></pre>
+<p>Hiervan heb ik ook nog andere dingen meegenomen van de talks namelijk over engineren en met custom properties werken</p>
+<p>Ook heb ik met anchor positioning gespeeld. Dit kan je terug zien bij het hoveren op de navigatie rechts op de pagina. De uitdaging was om het zo generiek moeglijk te schrijven, en daardoor kwam ik tegen wat dingen aan die ik wel in css zou willen zien. Zoals custom properties kunnen gebruiken voor anchor-name. Dus in plaats van de code zo te moeten schrijven voor anchor positioning:</p>
+<pre><code class="language-css">    /* Hardcoded duplicate code */
+    article .nav li:nth-of-type(1) { anchor-name: --1; }
+    article .nav li:nth-of-type(2) { anchor-name: --2; }
+    article .nav li:nth-of-type(3) { anchor-name: --3; }
+    article .nav li:nth-of-type(4) { anchor-name: --4; }
+    article .nav li:nth-of-type(5) { anchor-name: --5; }
+
+    :root:has(article .nav li:nth-of-type(1):hover) { --anchor: --1; }
+    :root:has(article .nav li:nth-of-type(2):hover) { --anchor: --2; }
+    :root:has(article .nav li:nth-of-type(3):hover) { --anchor: --3; }
+    :root:has(article .nav li:nth-of-type(4):hover) { --anchor: --4; }
+    :root:has(article .nav li:nth-of-type(5):hover) { --anchor: --5; }
+
+    article .nav:has(li:hover):after {
+        opacity: 1;
+    }
+    
+    nav::after {
+        position-anchor: var(--anchor);
+      inset:
+        anchor(top)
+        anchor(right)
+        anchor(bottom)
+        anchor(left);
+    }
+</code></pre>
+<p>Wilde ik het graag zo doen:</p>
+<pre><code class="language-css">    /* Voeg meer toe zo nodig */
+    li:nth-of-type(1){--anchorName: --1}
+    li:nth-of-type(2){--anchorName: --2}
+    li:nth-of-type(3){--anchorName: --3}
+    li:nth-of-type(4){--anchorName: --4}
+    li:nth-of-type(5){--anchorName: --5}
+    li:nth-of-type(6){--anchorName: --6}
+
+    /* Deze regels hieronder blijven hetzelfde  */
+    article .nav li { anchor-name: var(--anchorName);}
+
+    :root { --anchor: --1; }
+
+    :root:has(article .nav li:hover) { --anchor: var(--anchorName);}
+
+    nav::after {
+        position-anchor: var(--anchor);
+        inset:
+            anchor(top)
+            anchor(right)
+            anchor(bottom)
+            anchor(left);
+        }
+</code></pre>
 </body></html>
     </div>
     <nav class="nav">
       <ul>
-          
-              <li data-tag="h2">
-                  <a href="#cssDay">
-                      css Day
-                  </a>
-              </li>
           
               <li data-tag="h3">
                   <a href="#Intro">
@@ -295,5 +357,6 @@ En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspir
     <script src="../../js/changeHeadings.js"></script>
     <script src="../../js/pageTransition.js"></script>
     <script src="../../js/cursor.js"></script>
+    <script src="../../js/followHeadings.js"></script>
 </body>
 </html>

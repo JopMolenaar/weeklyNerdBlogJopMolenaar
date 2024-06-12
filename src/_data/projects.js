@@ -52,7 +52,7 @@ const generateHeadingsArray = (htmlContent) => {
     const document = dom.window.document;
     const headings = document.querySelectorAll("h2, h3, h4, h5");
     let headingsArray = [];
-
+    let firstHeading;
     headings.forEach((heading) => {
         const text = heading.textContent.trim();
         const tag = heading.tagName.toLowerCase();
@@ -60,7 +60,11 @@ const generateHeadingsArray = (htmlContent) => {
         heading.setAttribute("id", target); // Dit werkt nu (hard build needed)
         // TODO CHANGE HERE THE HEADINGS ALSO
         // TODO PLACE SECTIONS AROUND THE SECTIONS WITH A NEW HEADING
-        headingsArray.push({ tag: tag, text: text, target });
+        if (firstHeading === undefined) {
+            firstHeading = heading;
+        } else {
+            headingsArray.push({ tag: tag, text: text, target });
+        }
     });
 
     // Serialize the modified DOM back to HTML

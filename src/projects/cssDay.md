@@ -191,3 +191,81 @@ Induiken of downloaden:
 + mastodon 
 
 Ik was erg onder de indruk hoe veel we al weten en hoe veel mensen we al ontmoet hebben door onze studie. Ook ben ik geïnspireerd door …, ga ik nieuwe dingen gebruiken zoals … en ga ik meer experimenteren met nieuwe technieken want zoals … al zei: 
+
+Uiteindelijk heb ik dus dit artikel gemaakt over css day en wilde ik daarbij de nieuwe geleerde technieken uitproberen. In dit artikel kan je daar een aantal dingen van terug zien namelijk:
+- De headings die aan de boven kant blijven hangen en omhoog worden gedrukt door de volgende heading. Dit heb ik gedaan met scroll driven animtions. 
+
+Dit is de code (simplified):
+
+```css
+    h2 {--sticky-top: 0rem;}
+    h3 {--sticky-top: 2.1rem;}
+    h4 {--sticky-top: 4rem;}
+
+    h2, h3, h4 {
+        animation: shrink linear forwards;
+        animation-timeline: view();
+        animation-range: calc(90vh - 3em - var(--sticky-top) - 80px) calc(100vh - 10vh - 25px);
+    }
+```
+
+Hiervan heb ik ook nog andere dingen meegenomen van de talks namelijk over engineren en met custom properties werken
+
+Ook heb ik met anchor positioning gespeeld. Dit kan je terug zien bij het hoveren op de navigatie rechts op de pagina. De uitdaging was om het zo generiek moeglijk te schrijven, en daardoor kwam ik tegen wat dingen aan die ik wel in css zou willen zien. Zoals custom properties kunnen gebruiken voor anchor-name. Dus in plaats van de code zo te moeten schrijven voor anchor positioning:
+
+```css 
+    /* Hardcoded duplicate code */
+    article .nav li:nth-of-type(1) { anchor-name: --1; }
+    article .nav li:nth-of-type(2) { anchor-name: --2; }
+    article .nav li:nth-of-type(3) { anchor-name: --3; }
+    article .nav li:nth-of-type(4) { anchor-name: --4; }
+    article .nav li:nth-of-type(5) { anchor-name: --5; }
+
+    :root:has(article .nav li:nth-of-type(1):hover) { --anchor: --1; }
+    :root:has(article .nav li:nth-of-type(2):hover) { --anchor: --2; }
+    :root:has(article .nav li:nth-of-type(3):hover) { --anchor: --3; }
+    :root:has(article .nav li:nth-of-type(4):hover) { --anchor: --4; }
+    :root:has(article .nav li:nth-of-type(5):hover) { --anchor: --5; }
+
+    article .nav:has(li:hover):after {
+        opacity: 1;
+    }
+    
+    nav::after {
+        position-anchor: var(--anchor);
+      inset:
+        anchor(top)
+        anchor(right)
+        anchor(bottom)
+        anchor(left);
+    }
+```
+
+Wilde ik het graag zo doen:
+
+```css
+    /* Voeg meer toe zo nodig */
+    li:nth-of-type(1){--anchorName: --1}
+    li:nth-of-type(2){--anchorName: --2}
+    li:nth-of-type(3){--anchorName: --3}
+    li:nth-of-type(4){--anchorName: --4}
+    li:nth-of-type(5){--anchorName: --5}
+    li:nth-of-type(6){--anchorName: --6}
+
+    /* Deze regels hieronder blijven hetzelfde  */
+    article .nav li { anchor-name: var(--anchorName);}
+
+    :root { --anchor: --1; }
+
+    :root:has(article .nav li:hover) { --anchor: var(--anchorName);}
+
+    nav::after {
+        position-anchor: var(--anchor);
+        inset:
+            anchor(top)
+            anchor(right)
+            anchor(bottom)
+            anchor(left);
+        }
+```
+
