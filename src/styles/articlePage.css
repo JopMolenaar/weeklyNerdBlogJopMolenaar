@@ -73,21 +73,28 @@ article > div h2, article > div h3, article > div h4 {
     height: fit-content;
     background-color: whitesmoke;
     animation: shrink linear forwards;
+
     margin-block: 0;
     animation-timeline: view();
-    animation-range: calc(100vh - 10vh - 3em - var(--sticky-top) - 60px - var(--animation-gap)) calc(100vh - 10vh - 25px);
+    animation-range: calc(100vh - 10vh - 3em - var(--sticky-top) - 40px - var(--animation-gap)) calc(100vh - 10vh - 25px);
 }
 
 
 @keyframes shrink {
-    from { font-size: var(--font-size-heading);}
+    from { font-size: var(--font-size-heading);
+        border-bottom: solid 0px white;
+    }
+    
     80% {
-        background-color: var(--color-body);
+        border-bottom: solid 4px var(--color-body);
+        /* background-color: var(--color-body); */
     }
     to {
-        background-color: var(--color-body);
+        /* background-color: var(--color-body); */
+        border-bottom: solid 4px var(--color-body);
         font-size: calc( var(--font-size-heading) - 0.2em);
-        padding-block: 0.3em;
+        padding-block: 0.2em;
+        padding-bottom: 0.1em;
     }
 }
 
