@@ -59,12 +59,12 @@ article > div p {
     margin-block: 0;
 }
 article > div p:not(:last-of-type){
-    margin-block: 1em;
+    margin-bottom: 1em;
 }
 article > div h2, article > div h3, article > div h4 {
     /* text-wrap: nowrap; */
     /* padding: 0.3em; */
-    padding-top: 1em;
+    padding-top: 1.5em;
     padding-bottom: 0.5em;
     align-self: start;
     --animation-gap: 0em;
@@ -76,7 +76,7 @@ article > div h2, article > div h3, article > div h4 {
 
     margin-block: 0;
     animation-timeline: view();
-    animation-range: calc(100vh - 10vh - 3em - var(--sticky-top) - 40px - var(--animation-gap)) calc(100vh - 10vh - 25px);
+    animation-range: calc(100vh - 10vh - 3em - var(--sticky-top) - 80px - var(--animation-gap)) calc(100vh - 10vh - 25px);
 }
 
 
@@ -84,7 +84,10 @@ article > div h2, article > div h3, article > div h4 {
     from { font-size: var(--font-size-heading);
         border-bottom: solid 0px white;
     }
-    
+    10% {
+        border-bottom: solid 0px white;
+        /* background-color: var(--color-body); */
+    }
     80% {
         border-bottom: solid 4px var(--color-body);
         /* background-color: var(--color-body); */
