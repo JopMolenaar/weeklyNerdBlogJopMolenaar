@@ -63,7 +63,7 @@ article > div p:not(:last-of-type){
 }
 article > div h2, article > div h3, article > div h4 {
     /* text-wrap: nowrap; */
-    padding: 0.3em;
+    /* padding: 0.3em; */
     padding-top: 1em;
     padding-bottom: 0.5em;
     align-self: start;
@@ -75,7 +75,7 @@ article > div h2, article > div h3, article > div h4 {
     animation: shrink linear forwards;
     margin-block: 0;
     animation-timeline: view();
-    animation-range: calc(100vh - 10vh - 3em - var(--sticky-top) - 110px - var(--animation-gap)) calc(100vh - 10vh - 25px);
+    animation-range: calc(100vh - 10vh - 3em - var(--sticky-top) - 60px - var(--animation-gap)) calc(100vh - 10vh - 25px);
 }
 
 
