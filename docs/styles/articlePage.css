@@ -14,7 +14,8 @@ article {
     height: 90vh;
     background-color: whitesmoke;
     /* TODO NOISE?   */
-    padding: 1em;
+    padding: 2em;
+    column-gap: 2em;
     display: grid;
     grid-template-columns: 1fr fit-content;
     grid-template-rows: 2em 1fr;
@@ -105,7 +106,7 @@ article .nav {
     justify-content: center;
     padding-block: 0.5rem;
     padding-top: 0;
-    margin-inline-start: 0.5rem;
+    /* margin-inline-start: 1.5rem; */
 }
 article .nav ul {
     border-inline-start: var(--color-body) solid 2px;
