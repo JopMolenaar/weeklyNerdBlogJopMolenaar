@@ -94,7 +94,50 @@ Simulatie aan de gang gekregen (deels)
 
 ### 🔬 Week 5
 
-**Maandag**
+**Maandag** ben ik verder gegaan met de step functie en heb het eindelijk werkend gekregen.
+
+**Dinsdag** was ik druk bezig met stage, ik daarna wel wat documentatie gescrheven voor de step functie, heb ik de calulations en de group functies kunnen laten berekenen als je bezig bent in het canvas.
+
+**Woensdag** hadden we tech reviews en de client meeting waar ik vragen kon stellen over onduidelijkheden in de logica, dit heb ik daarna even kunnen fixen en kunnen opschonen
+
+**Donderdag** ben ik bezig geweest met een filter functie, 
+
+design review gevraagd 
+- most impotant person weergeven?
+- responsiveness? 
+
+Uiteindelijk een lijst gemaakt van wat we nog moeten doen:
+```
+infolinks lichter {check}
+most important person op canvas en minder in de calculations popup
+anchor positioning popup [check]
+add influencer + het ontstaan van een influencer stimuleren -> toekomstig iets
+rode stippen naar postst.
+bulk delete posts op account
+swicthen tussen gebruikers op mobiel weghalen
+add friend pagina
+onboarding => bart bijna mee klaar
+delete acount functie
+forward buttons uitdoen wanneer je links uitzet
+wat wij willen over brengen is nog niet helemaal duidelijk -> testen,
+responsiveness fixen
+node veslepen -> toekomstig iets
+testen
+``` 
+
+Verder vandaag gedaan
+- Andere kleine functies fixen zoals lijsten in de mobiel zonder flickeren refreshen, filteren, 
+
+anchor positioning op de node data container gedaan. Dit lukte eerst niet en na veel trial and error ben ik erachter gekomen dat het lag aan position absolute. Wat raar was want in het voorbeeld en in een ander document kan het er wel op staan. 
+Ook heb ik Bart geholpen met js code, 
+
+Moeten nog doen:
+- Nodes niet spawnen op de rand van het canvas
+- documentatie voor de nieuwe functies, comments schrijven en opschonen. 
+
+**Vrijdag** ben ik niet op school geweest. Ik ging naar een open dag van de kazerne van mijn Neef in Rotterdam. In de middag heb ik thuis wel gewerkt aan dingen die nog af moesten worden gemaakt namelijk:
+...
+...
 
 ### ⏱️ Week 6
 

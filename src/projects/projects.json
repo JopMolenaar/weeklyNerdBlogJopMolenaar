@@ -111,5 +111,11 @@
         "link": "src/projects/preCssDay.md",
         "img": "",
         "name": "pre css day"
+    },
+    {
+        "paramId": "De-waag",
+        "link": "src/projects/deWaag.md",
+        "img": "",
+        "name": "De waag"
     }
 ]

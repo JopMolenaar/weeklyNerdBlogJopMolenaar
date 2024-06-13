@@ -5,23 +5,23 @@ const as = ul.querySelectorAll("a");
 const positionValues = [
     {
         top: "4vh",
-        left: "10vw",
+        left: "28vw",
     },
     {
-        top: "10vh",
-        left: "35vw",
+        top: "7vh",
+        left: "55vw",
     },
     {
         top: "6vh",
-        left: "70vw",
+        left: "81vw",
     },
     {
-        top: "8vh",
-        left: "108vw",
+        top: "6vh",
+        left: "112vw",
     },
     {
-        top: "37vh",
-        left: "5vw",
+        top: "10vh",
+        left: "3vw",
     },
     {
         top: "40vh",
@@ -36,12 +36,12 @@ const positionValues = [
         left: "115vw",
     },
     {
-        top: "78vh",
-        left: "7vw",
+        top: "79vh",
+        left: "10vw",
     },
     {
         top: "72vh",
-        left: "31vw",
+        left: "36vw",
     },
     {
         top: "38vh",
@@ -60,8 +60,8 @@ const positionValues = [
         left: "4vw",
     },
     {
-        top: "104vh",
-        left: "35vw",
+        top: "107vh",
+        left: "34vw",
     },
     {
         top: "110vh",
@@ -76,8 +76,12 @@ const positionValues = [
         left: "63vw",
     },
     {
-        top: "100vh",
-        left: "61vw",
+        top: "101vh",
+        left: "58vw",
+    },
+    {
+        top: "45vh",
+        left: "2vw",
     },
 ];
 
