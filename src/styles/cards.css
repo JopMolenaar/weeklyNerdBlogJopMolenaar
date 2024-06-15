@@ -56,7 +56,7 @@ main > h1::after {
         mask-composite: exclude;
 }
 
-
+/* TODO update text size depends on container width */
 
 
 main {
@@ -212,53 +212,3 @@ main  div > ul:nth-of-type(1) > li:nth-of-type(19){
     top: 107vh;
     left: 105vw;
 }
-
-.fade-out {
-    /* animation: fade-out 700ms linear; */
-}
-.grow {
-    /* animation: grow 1500ms linear; */
-}
-
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-/* 
-@keyframes grow {
-    0% {
-        height: 28vh;
-        width: 22vw;
-    }
-    60% {
-        width: 90vw;
-        height: 90vh;
-        top: 0em;
-        left: 0em;
-    }
-    100% {
-        width: 90vw;
-        height: 90vh;
-        top: 0em;
-        left: 0em;
-    }
-} */
