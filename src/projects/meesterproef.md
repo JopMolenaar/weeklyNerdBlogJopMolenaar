@@ -94,52 +94,44 @@ Simulatie aan de gang gekregen (deels)
 
 ### 🔬 Week 5
 
-**Maandag** ben ik verder gegaan met de step functie en heb het eindelijk werkend gekregen.
+**Maandag** ben ik verder gegaan met de step functie en heb het eindelijk werkend gekregen. Ik had hier nog wel wat vragen over wat dingen in de code maar die kon ik stellen op woensdag. 
 
-**Dinsdag** was ik druk bezig met stage, ik daarna wel wat documentatie gescrheven voor de step functie, heb ik de calulations en de group functies kunnen laten berekenen als je bezig bent in het canvas.
+**Dinsdag** was ik druk bezig met stage, ik had daarna wel wat documentatie geschreven voor de step functie, en heb ik de calulations en de group functies kunnen laten berekenen als je bezig bent in het canvas.
 
-**Woensdag** hadden we tech reviews en de client meeting waar ik vragen kon stellen over onduidelijkheden in de logica, dit heb ik daarna even kunnen fixen en kunnen opschonen
+**Woensdag** hadden we tech reviews en de client meeting waar ik vragen kon stellen over onduidelijkheden in de logica, dit heb ik daarna even kunnen fixen en kunnen opschonen. 
 
-**Donderdag** ben ik bezig geweest met een filter functie, 
+**Donderdag** ben ik bezig geweest met een filter functie en hadden we design reviews. Bij die review had ik een vraag over hoe we de most impotant person beter konden weergeven. Uiteindelijk kreeg ik ok nog meer feedback op de website en daar hebben we later met de groep een laastste todo lijst van gemaakt. Die lijst was uiteindelijk:
 
-design review gevraagd 
-- most impotant person weergeven?
-- responsiveness? 
 
-Uiteindelijk een lijst gemaakt van wat we nog moeten doen:
-```
-infolinks lichter {check}
-most important person op canvas en minder in de calculations popup
-anchor positioning popup [check]
-add influencer + het ontstaan van een influencer stimuleren -> toekomstig iets
-rode stippen naar postst.
-bulk delete posts op account
-swicthen tussen gebruikers op mobiel weghalen
-add friend pagina
-onboarding => bart bijna mee klaar
-delete acount functie
-forward buttons uitdoen wanneer je links uitzet
-wat wij willen over brengen is nog niet helemaal duidelijk -> testen,
-responsiveness fixen
-node veslepen -> toekomstig iets
-testen
-``` 
-
-Verder vandaag gedaan
-- Andere kleine functies fixen zoals lijsten in de mobiel zonder flickeren refreshen, filteren, 
-
-anchor positioning op de node data container gedaan. Dit lukte eerst niet en na veel trial and error ben ik erachter gekomen dat het lag aan position absolute. Wat raar was want in het voorbeeld en in een ander document kan het er wel op staan. 
-Ook heb ik Bart geholpen met js code, 
-
-Moeten nog doen:
+- Infolinks lichter => Als feedback uit de design review
+- Most important person op canvas en minder in de calculations popup => Als feedback uit de design review
+- Anchor positioning popup
+- Rode stippen naar rode post icoontjes.
+- bulk delete posts op account
+- swicthen tussen gebruikers op mobiel weghalen
+- add friend pagina + mobiel een class maken
+- onboarding afmaken
+- delete account functie
+- forward buttons uitdoen wanneer je links uitzet
+- wat wij willen over brengen is nog niet helemaal duidelijk -> testen,
+- responsiveness fixen
+- node veslepen -> toekomstig iets
+- Add influencer + het ontstaan van een influencer stimuleren -> toekomstig iets
 - Nodes niet spawnen op de rand van het canvas
-- documentatie voor de nieuwe functies, comments schrijven en opschonen. 
+- Meer documentatie voor de nieuwe functies, comments schrijven en opschonen. 
+- Toegankelijkheid
+- Person node configuiratie
 
-**Vrijdag** ben ik niet op school geweest. Ik ging naar een open dag van de kazerne van mijn Neef in Rotterdam. In de middag heb ik thuis wel gewerkt aan dingen die nog af moesten worden gemaakt namelijk:
-...
-...
+Verder had ik vandaag nog andere kleine functies gefixed zoals lijsten in de mobiel refreshen zonder flickeren en nchor positioning gebruikt op de node data container. Dit lukte eerst niet en na veel trial and error ben ik erachter gekomen dat het lag aan een position absolute. Dit vond ik erg raar want in het voorbeeld en in een ander test document kan het er wel op staan. Ook heb ik Bart geholpen met js code. 
+
+**Vrijdag** ben ik niet op school geweest. Ik ging naar een open dag van de kazerne van mijn neef in Rotterdam. In de middag heb ik thuis wel gewerkt aan dingen die nog af moesten worden gemaakt namelijk:
+dat de most important persons niet meer worden laten zien in de calculations popup, maar met medals op de persoon zelf. En het aan en uit zetten van het berekenen van de hoeveelheid groepen. 
 
 ### ⏱️ Week 6
+
+**Maandag**
+**Dinsdag**
+**Woensdag**
 
 **Donderdag** presentation at client (June 20)
 **Vrijdag** expo at CMD (June 21) 

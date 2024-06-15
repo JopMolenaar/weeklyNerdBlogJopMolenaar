@@ -28,6 +28,7 @@ h5 {
 h1 {
     --font-size-heading: 2em;
     font-size: 2em;
+    font-size: clamp(var(--font-size-heading), calc(var(--font-size-heading) * 0.6522) + 1vw, calc(var(--font-size-heading) + 0.2em));
 }
 h2 {
     --font-size-heading: 1.5em;
@@ -65,6 +66,9 @@ summary {
 }
 :target {
     scroll-margin-top: 2em;
+    /* change with js
+    - When you go up, calc the section height of the section where the targeted heading is in, en set that as margin top for a second.
+    */
 }
 
 p, li {
