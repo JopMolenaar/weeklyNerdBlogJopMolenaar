@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (headingTopRelativeToContainer >= 0 && headingTopRelativeToContainer < highestHeadingTop) {
                 highestHeadingTop = headingTopRelativeToContainer;
                 highestHeading = heading;
-                console.log(highestHeading);
+                // console.log(highestHeading);
                 // TODO check if there is a heading beneath it (within 20px)
             }
         });
