@@ -1,5 +1,3 @@
-console.log("hi");
-
 // See which heading is the heighest in the viewport
 // search that heading in the .nav
 // place on that heading in the nav a data set of in viewport

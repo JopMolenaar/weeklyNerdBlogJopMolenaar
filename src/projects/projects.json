@@ -3,13 +3,13 @@
         "paramId": "notesKilian",
         "link": "src/projects/notesKilian.md",
         "img": "",
-        "name": "Kilian"
+        "name": "Kilian Valkhof"
     },
     {
         "paramId": "notesFenna",
         "link": "src/projects/notesFenna.md",
         "img": "",
-        "name": "Fenna"
+        "name": "Fenna de Wilde"
     },
     {
         "paramId": "processWAFS",
@@ -27,13 +27,13 @@
         "paramId": "notesNils",
         "link": "src/projects/notesNils.md",
         "img": "",
-        "name": "Nils"
+        "name": "Nils Binder"
     },
     {
         "paramId": "notesJeremy",
         "link": "src/projects/notesJeremy.md",
         "img": "",
-        "name": "Jeremy"
+        "name": "Jeremy keith"
     },
     {
         "paramId": "notesMarieke",
@@ -51,7 +51,7 @@
         "paramId": "processCSS",
         "link": "https://jopmolenaar.github.io/CSS-cockpit-control/process.md",
         "img": "images/ufoCockpitCss.webp",
-        "name": "CSS"
+        "name": "CSS to the rescue"
     },
     {
         "paramId": "processBT",
@@ -90,7 +90,7 @@
     },
     {
         "paramId": "LeerdoelenJop",
-        "link": "",
+        "link": "src/projects/leerDoelenJop.md",
         "img": "",
         "name": "Leerdoelen Jop"
     },
@@ -110,12 +110,12 @@
         "paramId": "pre-css-day",
         "link": "src/projects/preCssDay.md",
         "img": "",
-        "name": "pre css day"
+        "name": "Pre CSS day"
     },
     {
         "paramId": "De-waag",
         "link": "src/projects/deWaag.md",
         "img": "",
-        "name": "De waag"
+        "name": "De Waag"
     }
 ]
