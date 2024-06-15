@@ -269,3 +269,4 @@ Wilde ik het graag zo doen:
         }
 ```
 
+Ook heb ik fluidtype toegevoegd aan mijn  design. Dit opent veel deuren voor mij omdat ik dan minder mijn hofd moet breken over nieuwe layouts creeeren op verschillende scherm groottes. 
