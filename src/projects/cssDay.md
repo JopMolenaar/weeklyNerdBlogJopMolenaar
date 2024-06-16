@@ -280,3 +280,5 @@ Uiteindelijk lukte het, maar kwam ondertussen wel tot nieuwe dingen die ik terug
     view-transition-name: var(--name);
 }
 ```
+
+Ook heb ik nog "fit width to text" geimplemeteerd op de kaartjes op de home pagina. Dit had ik gezien bij Roma komarov en dit is echt een hele coole techniek om dus je text mooi met de breedte uit te lijnen. Meer info over de techniek: [Zie hier zijn artikel kizu.dev/fit-to-width-text](https://kizu.dev/fit-to-width-text/)
