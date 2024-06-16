@@ -9,7 +9,7 @@ title: My Eleventy Blog
             <% projects.projects.forEach((content, index) => { %>
 
                 <li class="element-<%= content.id %>" class="flip-card">
-                    <a class="flip-card-inner" href="/project/<%= index === 0 ? '' : index + '/' %>index.html">
+                    <a class="flip-card-inner" href="./project/<%= index === 0 ? '' : index + '/' %>index.html">
                         <!-- <div class="flip-card-front"> -->
                             <p class="heading-<%= content.id %>"><span><%= content.name %></span></p>
                             <img src="<%= content.img %>" alt="">
