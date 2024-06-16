@@ -136,6 +136,9 @@ main div > ul:nth-of-type(1) > li {
             }
         /* } */
     }
+    & a:focus-visible {
+        border: solid hotpink 10px;
+    }
 }
 
 main div > ul:nth-of-type(1) > li:nth-of-type(1){
@@ -249,3 +252,5 @@ main  div > ul:nth-of-type(1) > li:nth-of-type(20){
     }
   }
 /* src: https://kizu.dev/fit-to-width-text/ */
+
+
