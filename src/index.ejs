@@ -7,17 +7,11 @@ title: My Eleventy Blog
     <div>
         <ul>
             <% projects.projects.forEach((content, index) => { %>
-
                 <li class="element-<%= content.id %>" class="flip-card">
                     <a class="flip-card-inner" href="/weeklyNerdBlogJopMolenaar/project/<%= index === 0 ? '' : index + '/' %>index.html">
-                        <!-- <div class="flip-card-front"> -->
-                            <p class="heading-<%= content.id %>"><span><%= content.name %></span></p>
-                            <img src="<%= content.img %>" alt="">
-                            <!-- TODO ALT -->
-                        <!-- </div> -->
-                        <!-- <div class="flip-card-back"> -->
-                            <!-- <p>...</p> -->
-                        <!-- </div> -->
+                        <p class="heading-<%= content.id %>"><span><%= content.name %></span></p>
+                        <img src="<%= content.img %>" alt="">
+                        <!-- TODO ALT -->
                     </a>
                 </li>      
             <% }); %>
