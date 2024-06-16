@@ -25,17 +25,13 @@ const links = document.querySelectorAll("a");
 
 links.forEach((link) => [
     link.addEventListener("click", (e) => {
-        handleClick(e);
+        if (link.href !== "") {
+            if (!document.startViewTransition) {
+                updateTheDOMSomehow();
+                return;
+            }
+            // With a View Transition:
+            document.startViewTransition(() => updateTheDOMSomehow());
+        }
     }),
 ]);
-
-function handleClick(e) {
-    // Fallback for browsers that don't support this API:
-    if (!document.startViewTransition) {
-        updateTheDOMSomehow();
-        return;
-    }
-
-    // With a View Transition:
-    document.startViewTransition(() => updateTheDOMSomehow());
-}
