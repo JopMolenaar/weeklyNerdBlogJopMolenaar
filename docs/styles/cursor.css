@@ -20,6 +20,6 @@ body .blob:nth-of-type(1) {
     background-color: black;
 }
 
-html:has(.nav:hover) .blob {
+html:has(.nav:hover, a:hover) .blob {
     opacity: 0;
 }

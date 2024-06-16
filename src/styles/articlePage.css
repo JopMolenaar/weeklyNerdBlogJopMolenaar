@@ -28,8 +28,19 @@ article > h1 {
     margin: 0.3rem;
     margin-bottom: 0.6rem;
 }
+
 article > a {
     order: -3;
+    transform: rotate(-90deg);
+    text-decoration: none;
+    color: black;
+    transform-origin: center center;
+    width: fit-content;
+    font-size: 2em;
+    transition: 100ms;
+}
+article > a:hover {
+    scale: 1.1;
 }
 
 article > div {

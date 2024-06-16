@@ -2,50 +2,50 @@
     {
         "paramId": "notesKilian",
         "link": "src/projects/notesKilian.md",
-        "img": "",
+        "img": "images/kilian.webp",
         "name": "Kilian Valkhof"
     },
     {
         "paramId": "notesFenna",
         "link": "src/projects/notesFenna.md",
-        "img": "",
+        "img": "images/fenna.webp",
         "name": "Fenna de Wilde"
     },
     {
         "paramId": "processWAFS",
         "link": "https://jopmolenaar.github.io/web-app-from-scratch-2324/process.md",
-        "img": "",
+        "img": "images/wafsWebsites.webp",
         "name": "WAFS"
     },
     {
         "paramId": "notesJeffry",
         "link": "src/projects/notesJeffry.md",
-        "img": "",
-        "name": "Jeffry"
+        "img": "images/jeffryArts.webp",
+        "name": "Jeffry Arts"
     },
     {
         "paramId": "notesNils",
         "link": "src/projects/notesNils.md",
-        "img": "",
+        "img": "images/nilsBinder.webp",
         "name": "Nils Binder"
     },
     {
         "paramId": "notesJeremy",
         "link": "src/projects/notesJeremy.md",
-        "img": "",
+        "img": "images/jeremy.webp",
         "name": "Jeremy keith"
     },
     {
         "paramId": "notesMarieke",
         "link": "src/projects/notesMarieke.md",
-        "img": "",
-        "name": "Marieke"
+        "img": "images/mariekeEnPim.webp",
+        "name": "Marieke En Pim"
     },
     {
         "paramId": "notesRosa",
         "link": "src/projects/notesRosa.md",
-        "img": "",
-        "name": "Rosa"
+        "img": "images/rosa.webp",
+        "name": "Rosa Schuurman"
     },
     {
         "paramId": "processCSS",
@@ -55,7 +55,7 @@
     },
     {
         "paramId": "processBT",
-        "img": "",
+        "img": "images/browserTech.webp",
         "name": "Browser tech"
     },
     {
@@ -73,7 +73,7 @@
     {
         "paramId": "processHCD",
         "link": "https://raw.githubusercontent.com/JopMolenaar/HCD-videoExperienceForMarie/main/README.md",
-        "img": "",
+        "img": "images/hcd.webp",
         "name": "HCD"
     },
     {
@@ -85,37 +85,37 @@
     {
         "paramId": "Q42",
         "link": "src/projects/q42.md",
-        "img": "",
+        "img": "images/q42.webp",
         "name": "Q42"
     },
     {
         "paramId": "LeerdoelenJop",
         "link": "src/projects/leerDoelenJop.md",
-        "img": "",
+        "img": "images/leerdoelen.webp",
         "name": "Leerdoelen Jop"
     },
     {
         "paramId": "Robert",
         "link": "src/projects/notesRobert.md",
-        "img": "",
-        "name": "Robert"
+        "img": "images/robert.webp",
+        "name": "Robert Spier"
     },
     {
         "paramId": "CSS-DAY",
         "link": "src/projects/cssDay.md",
-        "img": "",
+        "img": "images/cssDay.webp",
         "name": "CSS DAY"
     },
     {
         "paramId": "pre-css-day",
         "link": "src/projects/preCssDay.md",
-        "img": "",
+        "img": "images/preCssDay.webp",
         "name": "Pre CSS day"
     },
     {
         "paramId": "De-waag",
         "link": "src/projects/deWaag.md",
-        "img": "",
+        "img": "images/deWaag.webp",
         "name": "De Waag"
     }
 ]
