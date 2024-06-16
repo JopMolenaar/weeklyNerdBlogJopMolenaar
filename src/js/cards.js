@@ -4,86 +4,87 @@ const as = ul.querySelectorAll("a");
 
 const positionValues = [
     {
-        top: "4vh",
-        left: "28vw",
+        top: "2.86%",
+        left: "20%",
     },
     {
-        top: "7vh",
-        left: "55vw",
+        top: "5%",
+        left: "39.29%",
     },
     {
-        top: "6vh",
-        left: "81vw",
+        top: "4.29%",
+        left: "57.86%",
     },
     {
-        top: "6vh",
-        left: "112vw",
+        top: "4.29%",
+        left: "80%",
     },
     {
-        top: "10vh",
-        left: "3vw",
+        top: "7.14%",
+        left: "2.14%",
     },
     {
-        top: "40vh",
-        left: "36vw",
+        top: "28.57%",
+        left: "25.71%",
     },
     {
-        top: "35vh",
-        left: "90vw",
+        top: "25%",
+        left: "64.29%",
     },
     {
-        top: "46vh",
-        left: "115vw",
+        top: "32.86%",
+        left: "82.14%",
     },
     {
-        top: "79vh",
-        left: "10vw",
+        top: "56.43%",
+        left: "7.14%",
     },
     {
-        top: "72vh",
-        left: "36vw",
+        top: "51.43%",
+        left: "25.71%",
     },
     {
-        top: "38vh",
-        left: "62vw",
+        top: "27.14%",
+        left: "44.29%",
     },
     {
-        top: "69vh",
-        left: "88vw",
+        top: "49.29%",
+        left: "62.86%",
     },
     {
-        top: "78vh",
-        left: "115vw",
+        top: "55.71%",
+        left: "82.14%",
     },
     {
-        top: "110vh",
-        left: "4vw",
+        top: "78.57%",
+        left: "2.86%",
     },
     {
-        top: "107vh",
-        left: "34vw",
+        top: "76.43%",
+        left: "24.29%",
     },
     {
-        top: "110vh",
-        left: "82vw",
+        top: "78.57%",
+        left: "58.57%",
     },
     {
-        top: "107vh",
-        left: "105vw",
+        top: "76.43%",
+        left: "75%",
     },
     {
-        top: "70vh",
-        left: "63vw",
+        top: "50%",
+        left: "45%",
     },
     {
-        top: "101vh",
-        left: "58vw",
+        top: "72.14%",
+        left: "41.43%",
     },
     {
-        top: "45vh",
-        left: "2vw",
+        top: "32.14%",
+        left: "1.43%",
     },
 ];
+
 
 function hasHover() {
     return window.matchMedia("(hover: hover)").matches;

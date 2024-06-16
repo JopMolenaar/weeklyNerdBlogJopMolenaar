@@ -78,8 +78,8 @@ main div > ul:nth-of-type(1) {
     height: 140vh;
     padding: 0;
     margin: 0;
-    /* min-width: 100em;
-    min-height: 100em; */
+    min-width: 100em;
+    min-height: 100em;
     /* TODO make min width */
 }
 
@@ -87,8 +87,8 @@ main div > ul:nth-of-type(1) > li {
     /* border: 1px solid red; */
     position: absolute;
     list-style: none;
-    height: 28vh;
-    width: 22vw;
+    height: 20%;
+    width: 15.71%;
     /* TODO MAKE % */
     /* height: 17%;
     width: 18%; */
@@ -140,51 +140,51 @@ main div > ul:nth-of-type(1) > li {
 
 main div > ul:nth-of-type(1) > li:nth-of-type(1){
     top: 4vh;
-    left: 10vw;
+    left: 28vw;
 }
 main div  > ul:nth-of-type(1) > li:nth-of-type(2){
-    top: 10vh;
-    left: 35vw;
+    top: 7vh;
+    left: 55vw;
 }
 main div  > ul:nth-of-type(1) > li:nth-of-type(3){
     top: 6vh;
-    left: 70vw;
+    left: 81vw;
 }
 main div  > ul:nth-of-type(1) > li:nth-of-type(4){
-    top: 10vh;
-    left: 105vw;
+    top: 6vh;
+    left: 112vw;
 }
 main div  > ul:nth-of-type(1) > li:nth-of-type(5){
-    top: 37vh;
-    left: 5vw;
+    top: 10vh;
+    left: 3vw;
 }
 main div  > ul:nth-of-type(1) > li:nth-of-type(6){
     top: 40vh;
     left: 36vw;
 }
 main div  > ul:nth-of-type(1) > li:nth-of-type(7){
-    top: 38vh;
-    left: 89vw;
+    top: 35vh;
+    left: 90vw;
 }
 main div  > ul:nth-of-type(1) > li:nth-of-type(8){
     top: 46vh;
     left: 115vw;
 }
 main div > ul:nth-of-type(1) > li:nth-of-type(9){
-    top: 78vh;
-    left: 7vw;
+    top: 79vh;
+    left: 10vw;
 }
 main div  > ul:nth-of-type(1) > li:nth-of-type(10){
     top: 72vh;
-    left: 39vw;
+    left: 36vw;
 }
 main  div > ul:nth-of-type(1) > li:nth-of-type(11){
-    top: 45vh;
+    top: 38vh;
     left: 62vw;
 }
 main  div > ul:nth-of-type(1) > li:nth-of-type(12){
-    top: 76vh;
-    left: 81vw;
+    top: 69vh;
+    left: 88vw;
 }
 main div  > ul:nth-of-type(1) > li:nth-of-type(13){
     top: 78vh;
@@ -195,12 +195,12 @@ main div  > ul:nth-of-type(1) > li:nth-of-type(14){
     left: 4vw;
 }
 main  div > ul:nth-of-type(1) > li:nth-of-type(15){
-    top: 104vh;
-    left: 35vw;
+    top: 107vh;
+    left: 34vw;
 }
 main  div > ul:nth-of-type(1) > li:nth-of-type(16){
     top: 110vh;
-    left: 70vw;
+    left: 82vw;
 }
 main  div > ul:nth-of-type(1) > li:nth-of-type(17){
     top: 107vh;
@@ -208,10 +208,14 @@ main  div > ul:nth-of-type(1) > li:nth-of-type(17){
 }
 main  div > ul:nth-of-type(1) > li:nth-of-type(18){ 
      /* TODO change all values again */
-    top: 107vh;
-    left: 105vw;
+    top: 70vh;
+    left: 63vw;
 }
 main  div > ul:nth-of-type(1) > li:nth-of-type(19){
-    top: 107vh;
-    left: 105vw;
+    top: 101vh;
+    left: 58vw;
+}
+main  div > ul:nth-of-type(1) > li:nth-of-type(20){
+    top: 45vh;
+    left: 2vw;
 }
