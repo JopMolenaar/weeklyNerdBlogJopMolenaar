@@ -23,11 +23,11 @@ const links = document.querySelectorAll("a");
 //     });
 // }
 
-links.forEach((link)=>[
-link.addEventListener((e)=>[
-    handleClick(e)
-])
-])
+links.forEach((link) => [
+    link.addEventListener("click", (e) => {
+        handleClick(e);
+    }),
+]);
 
 function handleClick(e) {
     // Fallback for browsers that don't support this API:

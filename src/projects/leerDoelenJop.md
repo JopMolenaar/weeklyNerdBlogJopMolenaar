@@ -4,7 +4,7 @@
  
  Dit blog heb ik gemaakt om alle processen van de vakken en samenvattingen van de sprekers bij te houden.
 
- ### Mijn belangrijkste bevindingen
+ ### Mijn belangrijkste bevindingen van de weekly nerds
 
 <!-- TODO updaten -->
 De sprekers die ik het meest interessant vond waren Kilian, Nils en Jeremy. Kilian had het over het niet gebruiken van Javascript als het ook met HTML en CSS kan. 
@@ -43,6 +43,12 @@ je iets maakt dat gefocused is op een deel van deze dingen, en ook nog maar vier
 Uiteindelijk is dit best goed gelukt. Ik heb heel veel nieuwe dingen geleerd over het web en zijn mogelijkheden. Ik heb bijvoorbeeld geleerd hoe je je website een PWA maakt en zo kan installeren op je apparaat. Hoe je push notificaties kan sturen en een chat kan maken met behulp van server sent events. Ik heb meer geleerd over browser api's, backend en ... Ook heb ik veel nieuwe selectoren en mogelijkheden die css aanbiedt geleerd. Ik heb kunnen testen met iemand die een bepreking heeft en iets speciaal voor haar gemaakt. Ik heb in een team een mooie UI kunnen neerzetten. De UX en toegankelijkheid heb ik kunnen optimaliseren bij een website om een belastings formulier in te kunnen vullen op welk apparaat en welke browser dan ook. 
 
 Dus al met al heb ik beide leerdoelen kunnen behalen.
+
+<!-- Gesprek van de eerste keer weekly nerd met sanne opschrijven. 
+Dat ik een website echt af wilde maken. UX toegankelijk, design + resp, functionaliteit etc (Bij hackathon wel gelukt, verder veel in de opdracht gebleven.)
+Nog iets, (sanne weet dat.) 
+Dingen voor mn portfolio maken?
+-->
 
 ### Leerdoelen voor de meersterproef
 
@@ -97,9 +103,4 @@ Ook heb ik het een aantal keer voorbij zien komen tijdens het zoeken naar een st
 lijstje. 
 </p>
 </section> 
-<!-- Gesprek van de eerste keer weekly nerd met sanne opschrijven. 
-Dat ik een website echt af wilde maken. UX toegankelijk, design + resp, functionaliteit etc (Bij hackathon wel gelukt, verder veel in de opdracht gebleven.)
-Nog iets, (sanne weet dat.) 
-Dingen voor mn portfolio maken?
--->
-                
+     

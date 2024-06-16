@@ -13,9 +13,8 @@
 
     
 <main>
-  <article>
-    <h1>CSS DAY</h1>
-    <!-- <img src="images/cssDay.webp" alt="CSS DAY"> -->
+  <article class="element-CSS-DAY" >
+    <h1 class="heading-CSS-DAY" project="CSS DAY">CSS DAY</h1>
     <div class="content">
       <html><head></head><body><h2 id="cssDay">css Day</h2>
 <h3 id="Intro">Intro</h3>
@@ -242,6 +241,13 @@ En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspir
         }
 </code></pre>
 <p>Ook heb ik fluidtype toegevoegd aan mijn  design. Dit opent veel deuren voor mij omdat ik dan minder mijn hofd moet breken over nieuwe layouts creeeren op verschillende scherm groottes. </p>
+<p>Ook heb ik geprobeerd view transitions toe te voegen aan mijn blog. Het lagged best wel erg op mijn computer en weet niet waar dat aan ligt maar dat stopte mij niet om er niet in te duiken. </p>
+<p>Uiteindelijk lukte het, maar kwam ondertussen wel tot nieuwe dingen die ik terug zou willen zien in css. Je kan namelijk hier ook niet variabelen gebruiken voor <code>view-transition-name</code>, en ik zou ook graag willen dat je de dataset op een element in de html in een custom property kan doen met css. Dit is erg jammer want dan werkt dit namelijk niet. En moet ik voor elk project een <code>view-transition-name</code> aanmaken.</p>
+<pre><code>.heading {
+    --name: attr(project)
+    view-transition-name: var(--name);
+}
+</code></pre>
 </body></html>
     </div>
     <nav class="nav">
@@ -347,6 +353,7 @@ En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspir
   </nav>
   <a href="/">⇧<span class="visually-hidden">Back</span></a>
   </article>
+  <img src="../../images/cssDay.webp">
 </main>
 <!-- This is where the page content will be injected -->
    

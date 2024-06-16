@@ -8,9 +8,8 @@ pagination:
 ---
 
 <main>
-  <article>
-    <h1><%= project.name %></h1>
-    <!-- <img src="<%= project.img %>" alt="<%= project.name %>"> -->
+  <article class="element-<%= project.id %>" >
+    <h1 class="heading-<%= project.id %>" project="<%= project.name %>"><%= project.name %></h1>
     <div class="content">
       <%- project.html %>
     </div>
@@ -27,4 +26,5 @@ pagination:
   </nav>
   <a href="/">⇧<span class="visually-hidden">Back</span></a>
   </article>
+  <img src="../../<%= project.img %>">
 </main>

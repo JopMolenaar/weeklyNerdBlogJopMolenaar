@@ -270,3 +270,13 @@ Wilde ik het graag zo doen:
 ```
 
 Ook heb ik fluidtype toegevoegd aan mijn  design. Dit opent veel deuren voor mij omdat ik dan minder mijn hofd moet breken over nieuwe layouts creeeren op verschillende scherm groottes. 
+
+Ook heb ik geprobeerd view transitions toe te voegen aan mijn blog. Het lagged best wel erg op mijn computer en weet niet waar dat aan ligt maar dat stopte mij niet om er niet in te duiken. 
+
+Uiteindelijk lukte het, maar kwam ondertussen wel tot nieuwe dingen die ik terug zou willen zien in css. Je kan namelijk hier ook niet variabelen gebruiken voor `view-transition-name`, en ik zou ook graag willen dat je de dataset op een element in de html in een custom property kan doen met css. Dit is erg jammer want dan werkt dit namelijk niet. En moet ik voor elk project een `view-transition-name` aanmaken.
+```
+.heading {
+    --name: attr(project)
+    view-transition-name: var(--name);
+}
+```

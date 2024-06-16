@@ -8,11 +8,12 @@ title: My Eleventy Blog
         <ul>
             <% projects.projects.forEach((content, index) => { %>
 
-                <li class="flip-card">
+                <li class="element-<%= content.id %>" class="flip-card">
                     <a class="flip-card-inner" href="/project/<%= index === 0 ? '' : index + '/' %>index.html">
                         <!-- <div class="flip-card-front"> -->
-                            <p><%= content.name %></p>
+                            <p class="heading-<%= content.id %>"><%= content.name %></p>
                             <img src="<%= content.img %>" alt="">
+                            <!-- TODO ALT -->
                         <!-- </div> -->
                         <!-- <div class="flip-card-back"> -->
                             <!-- <p>...</p> -->
@@ -22,31 +23,5 @@ title: My Eleventy Blog
             <% }); %>
         </ul>
     </div>
-    <section class="articles">
-        <h2>Artikelen</h2>
-        <ul>
-            <% projects.projects.forEach((content) => { %>
-                <li id="<%= content.id %>"> 
-                   <div>
-                    <%- content.html %>
-                   </div>
-         
-                   <nav class="nav">
-                        <ul>
-                            <% content.nav.forEach((heading) => { %>
-                                <li data-tag="<%= heading.tag %>">
-                                    <a href="#<%= heading.target %>">
-                                        <%= heading.text %>
-                                    </a>
-                                </li>
-                            <% }); %>
-                        </ul>
-                    </nav>
-                    <a href="#">⇧<span class="visually-hidden">Back</span></a>
-                </li>      
-            <% }); %>
-        </ul>
-    </section>
 
-    <!-- need to be modals? or not -->
 </main>

@@ -8,7 +8,22 @@
     --color-mix: rgb(0, 0, 0);
     --color-code-bg: #dadada;
     --color-code: rgb(22, 22, 22);
+    view-transition-name: root;
+
 }
+
+html {
+    view-transition-name: none;
+}
+
+/* .heading {
+    --name: attr(project)
+    view-transition-name: var(--name);
+} */
+/* .heading::after {
+    content: ' (source: ' attr(project) ') ';
+} */
+
 
 body {
     margin: 0;
@@ -134,3 +149,149 @@ p a {
     navigation: auto;
   }
   
+
+
+/* All view transition names for each project */
+
+.heading-notesKilian {
+    view-transition-name: notesKilian;
+}
+.element-notesKilian {
+    view-transition-name: element-notesKilian;
+}
+/* .heading-notesKilian {
+    view-transition-name: notesKilian;
+} */
+
+.heading-notesFenna {
+    view-transition-name: notesFenna;
+}
+.element-notesFenna {
+    view-transition-name: element-notesFenna;
+}
+
+.heading-processWAFS {
+    view-transition-name: processWAFS;
+}
+.element-processWAFS {
+    view-transition-name: element-processWAFS;
+}
+
+.heading-notesJeffry {
+    view-transition-name: notesJeffry;
+}
+.element-notesJeffry {
+    view-transition-name: element-notesJeffry;
+}
+
+.heading-notesNils {
+    view-transition-name: notesNils;
+}
+.element-notesNils {
+    view-transition-name: element-notesNils;
+}
+
+.heading-notesJeremy {
+    view-transition-name: notesJeremy;
+}
+.element-notesJeremy {
+    view-transition-name: element-notesJeremy;
+}
+
+.heading-notesMarieke {
+    view-transition-name: notesMarieke;
+}
+.element-notesMarieke {
+    view-transition-name: element-notesMarieke;
+}
+
+.heading-notesRosa {
+    view-transition-name: notesRosa;
+}
+.element-notesRosa {
+    view-transition-name: element-notesRosa;
+}
+
+.heading-processCSS {
+    view-transition-name: processCSS;
+}
+.element-processCSS {
+    view-transition-name: element-processCSS;
+}
+
+.heading-processBT {
+    view-transition-name: processBT;
+}
+.element-processBT {
+    view-transition-name: element-processBT;
+}
+
+.heading-Hackathon {
+    view-transition-name: Hackathon;
+}
+.element-Hackathon {
+    view-transition-name: element-Hackathon;
+}
+
+.heading-processAPI {
+    view-transition-name: processAPI;
+}
+.element-processAPI {
+    view-transition-name: element-processAPI;
+}
+
+.heading-processHCD {
+    view-transition-name: processHCD;
+}
+.element-processHCD {
+    view-transition-name: element-processHCD;
+}
+
+.heading-Meesterproef {
+    view-transition-name: Meesterproef;
+}
+.element-Meesterproef {
+    view-transition-name: element-Meesterproef;
+}
+
+.heading-Q42 {
+    view-transition-name: Q42;
+}
+.element-Q42 {
+    view-transition-name: element-Q42;
+}
+
+.heading-LeerdoelenJop {
+    view-transition-name: LeerdoelenJop;
+}
+.element-LeerdoelenJop {
+    view-transition-name: element-LeerdoelenJop;
+}
+
+.heading-Robert {
+    view-transition-name: Robert;
+}
+.element-Robert {
+    view-transition-name: element-Robert;
+}
+
+.heading-CSS-DAY {
+    view-transition-name: CSS-DAY;
+}
+.element-CSS-DAY {
+    view-transition-name: element-CSS-DAY;
+}
+
+.heading-pre-css-day {
+    view-transition-name: pre-css-day;
+}
+.element-pre-css-day {
+    view-transition-name: element-pre-css-day;
+}
+
+.heading-De-waag {
+    view-transition-name: De-waag;
+}
+.element-De-waag {
+    view-transition-name: element-De-waag;
+}
