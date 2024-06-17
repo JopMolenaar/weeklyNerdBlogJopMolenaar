@@ -23,15 +23,13 @@ const links = document.querySelectorAll("a");
 //     });
 // }
 
-links.forEach((link) => [
+links.forEach((link) => {
     link.addEventListener("click", (e) => {
-        if (link.href !== "") {
-            if (!document.startViewTransition) {
-                updateTheDOMSomehow();
-                return;
-            }
-            // With a View Transition:
-            document.startViewTransition(() => updateTheDOMSomehow());
+        if (!document.startViewTransition || !link.href.includes("/index.html")) {
+            updateTheDOMSomehow();
+            return;
         }
-    }),
-]);
+        // With a View Transition:
+        document.startViewTransition(() => updateTheDOMSomehow());
+    });
+});

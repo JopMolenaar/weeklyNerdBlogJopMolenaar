@@ -1,6 +1,6 @@
 ## Pre CSS day
 
-De laatste weekly nerd van de Minor is de georganiseerde pre van het opkomende event CSS Day waarvoor ik kaartjes had gewonnen. De minor had Bramus van Damme en Miriam Suzanne uitgenodigd om te spreken over view transitions en container queries. Bijde relatief nieuw voor mij dus ik was erg benieuwd. 
+De laatste weekly nerd van de Minor is de georganiseerde pre van het opkomende event CSS Day waarvoor ik kaartjes had gewonnen. De minor had Bramus van Damme en Miriam Suzanne uitgenodigd om te spreken over view transitions en container queries. Beide relatief nieuw voor mij dus ik was erg benieuwd. 
 
 ### Bramus van Damme (View transitions)
 
