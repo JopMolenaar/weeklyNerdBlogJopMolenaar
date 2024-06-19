@@ -40,15 +40,11 @@ nieuwe functie van Rick erin gegooid.
 We hadden een meeting met Yuri vandaag, en ze waren heel erg verast over wat we al hadden. 
 We hebben nog meer duidelijkheid gekregen over wat zij nou eigenlijk willen met dit prototype. Dat is namelijk om het later wel automatisch te simuleren, en dat nodes hun eigen gedrag hebben. Alleen dan met interactie. Storytelling, oftewel onboarding vond Yuri een goed idee. We hebben ook gevraagd om te mogen testen en met wie dan. Hier kwam uit dat het gewoon studenten rond onze leeftijd moeten zijn alleen niet uit onze studie. Het gaat puur om of mensen het snappen en kunnen gebruiken, niet hoe het er nog uit ziet. Dit gaan we later vragen aan design experts. Ook moeten we karaktereigenschappen toevoegen aan de nodes. Gaat Rick verder op onze code, en laat weten welke features er aan komen zodat wij hier al op kunnen voorbeireiden met UX en UI. 
 
-**Donderdag** 
-
-Meeting gehad met Sanne
+**Donderdag** Meeting gehad met Sanne
 Nieuw idee gekregen om de kaart te besturen. 
 Namelijk door een telefoon te simuleren met social media. En daaraan dus de kaart gaan veranderen. Zo is het misschien duidelijker voor de gebruiker van wat er gebeurt. 
 
-**Vrijdag** 
-
-Verder vrijdag bezig geweest met het omschrijven naar object oriënted en maandag ook. Verder maandag het verder geoptimaliseerd en toen kwamen we ook tegen iets aan dat het misschien korter zou kunnen maken maar wel veel onoverzichtelijk. Namelijk om alle variabelen in een object te gooien en dit steeds meegeven aan de volgende functies. Dit hebben we uiteindelijk niet gedaan. 
+**Vrijdag** bezig geweest met het omschrijven naar object oriënted en maandag ook. Verder maandag het verder geoptimaliseerd en toen kwamen we ook tegen iets aan dat het misschien korter zou kunnen maken maar wel veel onoverzichtelijk. Namelijk om alle variabelen in een object te gooien en dit steeds meegeven aan de volgende functies. Dit hebben we uiteindelijk niet gedaan. 
 
 Hebben het werkend gekregen behalve de tools en dat de bolletjes groeien
 
@@ -131,8 +127,9 @@ dat de most important persons niet meer worden laten zien in de calculations pop
 
 **Maandag** ben ik bezg geweest om wat bugs op te lossen. Anchor positioning werkt namelijk niet op safari en chrome en dit moest ik even fixen door te kijken of het gesupport wordt, en dan zo nodig de oude manier gebruiken. Ook zorgte anchor positioning ervoor dat de anchor boven alles komt, zelfs als het element waarop die anchored, niet zichtbaar is. Dit heb ik uitiendleijk kunnen oplossen met `position-visibility: anchors-visible;`. Ook ben ik bezig geweest om de mobiel object oriented te schrijven. Dit hebben we niet gedaan toen we het aan het maken waren dus is het uiteindelijk een onbegonnen zaak geworden om dat om te schrijven. Je hebt namelijk overal variabelen nodig om de functie uit te kunnen voeren en de functies worden op verschillende plaatsen uitgevoerd. Uiteindelijk zijn we hier mee gestopt en hebben we het gelaten. Een goed leermoment voor de volgende keer: als je oop aan het doen bent, MOET je het vanaf het begin ook zo schrijven, en niet denken van ik doe het later wel beter. 
 
-**Dinsdag**
-**Woensdag**
+**Dinsdag** zijn we vooral bezig geweest met de laatste dingen op het lijstje. Er komen natuurlijk altijd weer dingen om de hoek kijken dus elke keer dat dat gebeurt overleggen we of we dat gaan fixen. Het doel van vandaag was om kwa code klaar te zijn zodat we het woensdag af kunnen ronden. 
+
+**Woensdag** wiki afmaken - code nakijken - presentatie voorbereiden - bugs oplossen
 
 **Donderdag** presentation at client (June 20)
 **Vrijdag** expo at CMD (June 21) 
