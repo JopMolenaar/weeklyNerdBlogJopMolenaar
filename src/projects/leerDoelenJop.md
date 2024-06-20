@@ -79,16 +79,9 @@ Wij moesten een al gemaakt prototype dat bestond uit een canvas gekoppeld aan ee
 
 #### Eigen niveau
 
-<!-- Mijn niveau in het groepje lag boven gemiddeld. Maar we waren natuurlijk maar met drie man 
+Ik vond mijn eigen niveau erg goed en hoog liggen. Met de taakverdeling kreeg ik de verantwoordlijkheid om Rick zijn functies (vooral de step maar ook sommige andere functies zoals groepen berekenen en belangrijkste persoon berekenen) te implementeren in ons project. Dit was nog even een uitdaging want Rick had code geschreven die het tegenovergestelde werkte dan dat van onze. Verder ben ik bezig geweest om dit beter te maken en laten werken. Denk bijvoorbeeld aan het laten zien van de most important person en filteren op links. Maar ook de data laden op de mobiel op de juiste momenten zodat het altijd up to date blijft en niet irriteerd. Ook heb ik genoeg gecodeerd aan het design, hebben we samen met het groepje voldoende geitereerd op het design waarbij we allemaal nieuwe versies gingen maken op basis van de feedback die we hadden gekregen. Ook heb ik mijn groepsleden geholpen en feedback gegeven wanneer dat nodig was. 
 
-Ik heb de hele step functie van Rick kunnen omschrijven, verder kunnen ontwikkelen.
-Ik heb samen met Joppe de code object oriented geschreven
-Ik heb een bijdrage kunnen leveren in het design en op user experience gedeeltes en veel features uitgedacht.
-Ik heb het groepje een beetje kunnen lijden maar we hebben vooral over alles overlegd en een goede communicatie behouden. 
-Ik heb veel data kunnen laden op de telefoon, data containers.
-Ik heb Bart ook vaak kunnen helpen en Joppe af en toe. -->
-
-Ik ben het meest trots op de simulatie. Deze heb ik werkend gekregen, geoptimaliseerd en waterdicht en inzichtelijk kunnen krijgen in de loop van deze zes weken. Steeds kwam er weer iets tevoorschijn dat beter kan, over het hoofd gezien was en in de toekomst kan worden toegevoegd. Dit was een logische brei waar ik erg van hou en mijn tanden graag in wil zetten. Verder heb ik er veel van geleerd, met name op objet oriented niveau. 
+Ik ben het meest trots op de simulatie. Deze heb ik werkend gekregen, geoptimaliseerd en waterdicht en inzichtelijk kunnen krijgen in de loop van deze zes weken. Steeds kwam er weer iets tevoorschijn dat beter kan, over het hoofd gezien was en in de toekomst kan worden toegevoegd. Het mooiste vind ik ook dat hij volledig samen werkt met de mobiel. Dit was een logische brei waar ik erg van hou en mijn tanden graag in wil zetten. Verder heb ik er veel van geleerd, met name op objet oriented niveau. Waar figma goed voor is en hoe je het moet gebruiken en als basis kan gebruiken wanneer je het design van figma codeerd. 
 
 #### Leerdoelen
 
@@ -105,28 +98,3 @@ Het tweede leerdoel over object oriented programming heb ik zeker laten zien in 
 
 Hoe meer we met de klant spraken en onze nieuwe inzichten en designs lieten zien, hoe meer we ook ons design soms moesten aanpassen. Hierbij heb ik vooral geleerd hoe figma in elkaar zit, waar figma goed voor is en hoe je makkelijk designs kan aanpassen.
 Ik ben erchter gekomen dat figma alleen goed werkt als je een design hebt dat snel even aangepast moet worden. Tijdens een klant gesprek hoor je dan bijvoorbeeld dat hij het iets anders wilt, en in figma kan je dan heel makkelijk even het element van boven naar onder slepen om te kijken of de klant dat beter vindt. Verder zal ik figma niet gaan gebruiken en ook niet aanraadden om te designen. Dit kan je veel beter doen met schetsen, codepens en prototypes. 
-
-<!-- <h3>Waar ik nu sta</h3>
-<p>Ik ben deze minor er achter gekomen dat ik een technische front-end developer ben. Ik ben niet visueel heel sterk en visueel creatief (wel creatief in oplossingen bedenken) maar wil wel graag een mooie 
-website maken. Ik heb een designer nodig die mij een design geeft waar ik mij aan kan houden. Dit heb ik echter nog nooit echt gedaan, en zo gaat het in het bedrijfsleven wel zijn gang.
-Ook sta op het punt om mijn brede basis kennis (HTML, CSS, JS, Node en geen frameworks) meer naar de professionele wereld te vormen met de stage in zicht, en wil mij hier al een beetje op voor bereiden. 
-Daarom zou ik graag wat technieken die ze daar gebruiken ook al willen gebruiken zoals object oriented programming, het MVC model voor de backend en builders.
-</p>
-</section> 
-<section>
-<h3>Mijn leerdoelen</h3>
-<p>Mijn leerdoelen voor de meesterproef zijn:</p>
-<ul>
-<li>Ik wil leren om een design van de designer te coderen, en de realtie van de frontend developer en de designer te oefenen met input van beide 
-kanten over wat er gemaakt moet worden en de grenzen breder te maken over wat er mogelijk is.
-</li>
-<li>Ik wil leren om builders te kunnen gebruiken en/of dingen zoals static site generators te kunnen gebruiken voor performance upgrades.</li>
-<li>Ik wil object oriented programming leren</li>
-<li>Ik wil het kunnen gebruiken en opzetten van het MVC model voor de backend leren.</li>
-</ul>
-<p>Ik wil dit leren omdat ik dit allemaal nog nooit heb gedaan, en dit veel wordt gebruikt in de professionele wereld. 
-Ook heb ik het een aantal keer voorbij zien komen tijdens het zoeken naar een stage en staan deze dingen al langer op mijn
-lijstje. 
-</p>
-</section> 
-     -->

@@ -137,7 +137,7 @@ function deleteFirstHeading() {
 document.addEventListener("DOMContentLoaded", () => {
     // Select all relevant elements within the article
     const allElements = document.querySelectorAll(
-        "article > div h1, article > div h2, article > div h3, article > div h4, article > div h5, article > div p, article > div ul, article > div ol, article > div li, article > div pre, article > div code,  article > div blockquote"
+        "article > div h1, article > div h2, article > div h3, article > div h4, article > div h5, article > div p, article > div ul, article > div ol, article > div li, article > div pre, article > div code, article > div blockquote, article > div a"
     );
 
     const sectionStack = [];
@@ -166,12 +166,20 @@ document.addEventListener("DOMContentLoaded", () => {
             newSection.dataset.level = level; // Store the heading level in the section
             sectionStack.push(newSection);
         } else {
-            // Append other elements (p, ul, ol, li, pre, code) to the current section
+            // Check if the element should be skipped to preserve semantics
+            const parentTag = element.parentNode.tagName.toLowerCase();
+            if (["ul", "ol", "pre", "li"].includes(parentTag) || element.matches("a, code")) {
+                return;
+            }
+
+            // Append other elements (p, ul, ol, pre, blockquote) to the current section
             if (sectionStack.length > 0) {
                 sectionStack[sectionStack.length - 1].appendChild(element);
             }
         }
     });
 });
+
+
 
 // TODO target writes it over, but when you scroll again it returns to the scroll thing
