@@ -30,110 +30,7 @@ function deleteFirstHeading() {
     headingToDelete.remove();
 }
 
-// document.addEventListener("DOMContentLoaded", () => {
-//     const allHeadings = document.querySelectorAll("article > div h1, article > div h2, article > div h3, article > div h4, article > div h5");
-
-//     allHeadings.forEach((heading) => {
-//         const section = document.createElement("section");
-//         console.log(heading, heading.parentNode, heading.parentElement);
-//         heading.parentNode.insertBefore(section, heading);
-//         section.appendChild(heading);
-//     });
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     // Select all headings and paragraphs within the article
-//     const articleElements = document.querySelectorAll(
-//         "article > div h1, article > div h2, article > div h3, article > div h4, article > div h5, article > div p"
-//     );
-
-//     let currentSection = null;
-
-//     articleElements.forEach((element) => {
-//         if (element.matches("h1, h2, h3, h4, h5")) {
-//             // If it's a heading, start a new section
-//             currentSection = document.createElement("section");
-//             element.parentNode.insertBefore(currentSection, element);
-//         }
-
-//         // If there's an active section, append the element to it
-//         if (currentSection) {
-//             currentSection.appendChild(element);
-//         }
-//     });
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const allElements = document.querySelectorAll("article > div h1, article > div h2, article > div h3, article > div h4, article > div h5, article > div p");
-//     const sectionStack = [];
-
-//     allElements.forEach((element) => {
-//         if (element.matches("h1, h2, h3, h4, h5")) {
-//             const newSection = document.createElement("section");
-
-//             // Find the correct parent section based on the heading level
-//             const level = parseInt(element.tagName[1]); // Extract the heading level (1, 2, 3, etc.)
-
-//             // Pop sections from the stack until we find the correct level
-//             while (sectionStack.length > 0 && parseInt(sectionStack[sectionStack.length - 1].tagName[1]) >= level) {
-//                 sectionStack.pop();
-//             }
-
-//             // Append the new section to the current top section in the stack, or to the parent if stack is empty
-//             if (sectionStack.length === 0) {
-//                 element.parentNode.insertBefore(newSection, element);
-//             } else {
-//                 sectionStack[sectionStack.length - 1].appendChild(newSection);
-//             }
-
-//             // Append the heading to the new section
-//             newSection.appendChild(element);
-//             sectionStack.push(newSection);
-//         } else {
-//             // Append paragraphs to the current section
-//             if (sectionStack.length > 0) {
-//                 sectionStack[sectionStack.length - 1].appendChild(element);
-//             }
-//         }
-//     });
-// });
-
-// document.addEventListener("DOMContentLoaded", () => {
-//     const allElements = document.querySelectorAll("article > div h1, article > div h2, article > div h3, article > div h4, article > div h5, article > div p");
-//     const sectionStack = [];
-
-//     allElements.forEach((element) => {
-//         if (element.matches("h1, h2, h3, h4, h5")) {
-//             const newSection = document.createElement("section");
-
-//             // Find the correct parent section based on the heading level
-//             const level = parseInt(element.tagName[1]); // Extract the heading level (1, 2, 3, etc.)
-
-//             // Pop sections from the stack until we find the correct level
-//             while (sectionStack.length > 0 && parseInt(sectionStack[sectionStack.length - 1].dataset.level) >= level) {
-//                 sectionStack.pop();
-//             }
-
-//             // Append the new section to the current top section in the stack, or to the parent if stack is empty
-//             if (sectionStack.length === 0) {
-//                 element.parentNode.insertBefore(newSection, element);
-//             } else {
-//                 sectionStack[sectionStack.length - 1].appendChild(newSection);
-//             }
-
-//             // Append the heading to the new section
-//             newSection.appendChild(element);
-//             newSection.dataset.level = level; // Store the heading level in the section
-//             sectionStack.push(newSection);
-//         } else {
-//             // Append paragraphs to the current section
-//             if (sectionStack.length > 0) {
-//                 sectionStack[sectionStack.length - 1].appendChild(element);
-//             }
-//         }
-//     });
-// });
-
+// add sections around each heading and its siblings, this will result in a more correct semantic on the page. And evenly high headings will be able to push eachother out of the screen.
 document.addEventListener("DOMContentLoaded", () => {
     // Select all relevant elements within the article
     const allElements = document.querySelectorAll(
@@ -177,6 +74,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 sectionStack[sectionStack.length - 1].appendChild(element);
             }
         }
+    });
+    const allSections = scrollContainer.querySelectorAll("section");
+    // console.log(allSections);
+    allSections.forEach((section) => {
+        scrollContainer.addEventListener("scroll", () => {
+            findOverlappingHeadings(section);
+        });
     });
 });
 
