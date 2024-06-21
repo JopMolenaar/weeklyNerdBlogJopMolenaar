@@ -27,6 +27,10 @@ Die prioriteiten waren het vervangen van het canvas. We wilde niet steeds gaan t
 
 **Vrijdag** zijn we weer bezig geweest met het design en daarna ook verder gegaan met de eerste  features te programmeren.
 
+Ons eerste design was: 
+
+![final website](../../images/firstSketches.webp)
+
 ### 🔄 Week 2
 
 **Dinsdag** hadden we een meeting met Marten en daarna zijn we verder gegaan met het laten werken van de functies.
@@ -38,6 +42,10 @@ Die prioriteiten waren het vervangen van het canvas. We wilde niet steeds gaan t
 Even later hadden we de meeting met Yuri (de opdrachtgever), en ze waren heel erg verast over wat we al hadden. We hebben nog meer duidelijkheid gekregen over wat zij nou eigenlijk willen met dit prototype. Dat is namelijk om het later wel automatisch te simuleren, en dat nodes hun eigen gedrag hebben. Alleen dan met interactie. Storytelling, oftewel onboarding vond Yuri een goed idee. We hebben ook gevraagd om te mogen testen en met wie dan. Hier kwam uit dat het gewoon studenten rond onze leeftijd moeten zijn alleen niet van onze studie. Het gaat er puur om of mensen het snappen en kunnen gebruiken, niet hoe het er ziet. Ook moeten we karaktereigenschappen toevoegen aan de nodes, gaat Rick verder op onze code en laat weten welke features er aan komen zodat wij hier al op kunnen voorbereiden. 
 
 **Donderdag** had ik een design review met Sanne. Daarbij heeft hij een nieuw idee benoemd om het netwerk te besturen. Namelijk door een telefoon te simuleren met social media en daaraan dus de kaart gaan veranderen. Zo is het misschien duidelijker voor de gebruiker van wat er gebeurt. Hier hebben we met het groepje over overlegd en uiteindelijk ervoor gekozen om dat erbij te maken.
+
+Hierbij de schetsen om het in de layout te passen
+
+![final website](../../images/experimentedWithToolbarAndPhone.webp)
 
 **Vrijdag** zijn we bezig geweest met het omschrijven naar object oriënted. Ook kwamen we op een idee dat het misschien korter zou kunnen maken maar wel veel onoverzichtelijk. Namelijk om alle variabelen in een object te gooien en dit steeds meegeven aan de volgende functies. Dit hebben we uiteindelijk niet gedaan. 
 Verder hebben we de functionaliteiten die we hadden werkend gekregen behalve de tools en dat de bolletjes groeien.
@@ -61,6 +69,10 @@ Ook had Yuri nog wat dingen aan te merken op de styling. De mobiel moest kleiner
 
 Die woensdag hebben we dus meteen het design aangepast in figma, en meerdere versies gemaakt over wat mogelijk zou zijn. Uiteindelijk hebben we dingen bij elkaar gevoegd en hier kwam een mooi design uit.  
 
+Geexperimenteerd met de indeling: Het is uiteindelijk de eerste geworden. 
+
+![final website](../../images/experimentedWithToolbar.webp)
+
 **Donderdag**  ben ik bezig geweest om de layout van de website te veranderen aan de hand van het figma design. Ik wilde dit heel graag doen want ik was helemaal klaar met de onzekerheid van de code van Rick, en kwam daar dus niet echt verder mee. 
 
 De layout was snel gefixed. En verder was ik bezig meet meer optimalisatie van de code. 
@@ -77,6 +89,10 @@ Dit vond Marten een goed idee. Later heb ik dus Rick een bericht gestuurd en afg
 **Dinsdag** ben ik hier weer verder mee geweest en heb ik de functie werkend kunnen krijgen. De geselecteerde node, maakt steeds kleine stapjes en ik krijg geen errors meer. Wel is de code nog super rommelig en zouden er nog dingen misschien worden aangepast. Ook gaat er nog iets niet goed maar dat los ik nu op met 3 if statements. Dit moet er ook uit worden gehaald. Verder ben ik bezig geweest met het fixen van de data in de telefoon en wat bugs op gelost. 
 
 **Woensdag** hadden we weer tech reviews. Daarbij ging het vooral over waar we waren en wat ik ga vragen in het gesprek straks met Rick. Bij de client meeting gaven we ook weer een update. En daarna heb ik deels de simulatie met kunnen oplossen met Rick.
+
+Laatste sketches figma na meeting met de klant.
+
+![final website](../../images/finalSketchesFigma.webp)
 
 **Donderdag** CSS day
 
@@ -127,5 +143,9 @@ dat de most important persons niet meer worden laten zien in de calculations pop
 Ook hebbben we kunnen testen met personen uit de doelgroep. Daaruit kwam dat de toolbar en telefoon pas laat werden gevonden, vonden ze de mobiel onoverzichtelijk, probeerde vaak op posts te drukken en konden het canvas moeilijk leeghalen. Een aantal oplossingen die we daarvoor meteen hadden bedacht waren dat de onboarding moet worden uitgebreid, de telefoon doorzichtig laten zien met een empty state, een algoritme om posts en mogelijke vrienden op de mobiel te laten zien. Dit hebben we ook meteen genoteerd in onze design rationale. 
 
 **Donderdag** in de ochtend heb ik nog twee bugs uit de website kunnen halen en daarna hadden we de eind presentatie bij de klant. Die ging erg goed. We gingen door het design heen, daarna door de website heen om alle features even te laten zien. En als laatste door de documentatie, nog wat uitleg over waar bepaalde dingen staan zoals de variabelen die het netwerk 
+
+Uiteindelijke website:
+
+![final website](../../images/finalWebsite.webp)
 
 **Vrijdag** hadden we de expo bij CMD.

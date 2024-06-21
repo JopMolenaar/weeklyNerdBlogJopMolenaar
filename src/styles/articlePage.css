@@ -73,6 +73,9 @@ article > div p, article > div code, article > div li{
     margin-block: 0;
     font-size: clamp(1rem, calc(1rem * 0.6522) + 0.87vw, 1.6rem);
 }
+article > div img {
+    width: 100%;
+}
 article > nav li {
     font-size: clamp(1rem, 0.6522rem + 1.05vw, 1.4rem);
 }
