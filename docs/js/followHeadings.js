@@ -85,6 +85,7 @@ function isStickingUnderHigherHeading(element1, element2) {
 
 // Function to find and log overlapping headings
 function findOverlappingHeadings(section) {
+    // TODO FIND ALSO THE HEADINGS THAT STICK TO A HIGHER HEADING IF THAT IS TRUE, PLACE THE ANCHOR TO THAT NAV ELEMENT
     // get h2
     // check if h3 is sticking to the h2 with isStickingUnderHigherHeading(element1, element2)
     const headings = section.querySelectorAll("h3");

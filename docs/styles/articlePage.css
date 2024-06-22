@@ -65,19 +65,19 @@ article > div h2 {
 }
 article > div h3 { 
     --sticky-top: 2.1rem;
-    top: calc(var(--sticky-top) + clamp(var(--font-size-heading), calc(var(--font-size-heading) * 0.6522) + 1vw, calc(var(--font-size-heading) + 0.2em)) - (var(--sticky-top) / 1.5));
+    top: calc(var(--sticky-top) + clamp(var(--font-size-heading), calc(var(--font-size-heading) * 0.6522) + 1.2vw, calc(var(--font-size-heading) + 0.7em)) - (var(--sticky-top) / 1.5));
     z-index: 8;
 }
 article > div h4 {
     --sticky-top: 4rem;
-    top: calc(var(--sticky-top) + clamp(var(--font-size-heading), calc(var(--font-size-heading) * 0.6522) + 1vw, calc(var(--font-size-heading) + 0.2em)) - (var(--sticky-top) / 5));
+    top: calc(var(--sticky-top) + clamp(var(--font-size-heading), calc(var(--font-size-heading) * 0.6522) + 1.2vw, calc(var(--font-size-heading) + 0.7em)) - (var(--sticky-top) / 5));
     z-index: 7;
 }
 
-article > div p, article > div code, article > div li{
+article > div p, article > div code, article > div li, article .date{
     max-width: 40em;
     margin-block: 0;
-    font-size: clamp(1rem, calc(1rem * 0.6522) + 0.87vw, 1.6rem);
+    font-size: clamp(1rem, calc(1rem * 0.6522) + 0.87vw, 1.4rem);
 }
 article > div img {
     width: 100%;
@@ -98,7 +98,7 @@ article > div h2, article > div h3, article > div h4 {
     height: fit-content;
     background-color: rgb(240, 240, 240);
     animation: addBorder linear forwards;
-    font-size: clamp(calc(var(--font-size-heading) - 0.3em), calc(var(--font-size-heading) * 0.6522) + 1vw, calc(var(--font-size-heading) + 0.2em));
+    font-size: clamp(calc(var(--font-size-heading) - 0.3em), calc(var(--font-size-heading) * 0.6522) + 1.2vw, calc(var(--font-size-heading) + 0.7em));
     margin-block: 0;
     animation-timeline: view();
     animation-range: calc(90vh - 3em - var(--sticky-top) - 80px) calc(100vh - 10vh - 25px);
