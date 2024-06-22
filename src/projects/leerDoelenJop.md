@@ -77,13 +77,17 @@ lijstje.
 Tijdens dit 6 weken durende project voor een echte klant heb ik veel kunnen leren. In een groep van drie hebben we iets moois neer gezet waar we trots op kunnen zijn. Het doel van dit project was om een volledige user interface te maken gebaseerd op een onderzoek over sociale netwerken voor de minor des en mis informatie waar zij mee kunnen experimenteren en van kunnen leren. 
 Wij moesten een al gemaakt prototype dat bestond uit een canvas gekoppeld aan een paar functies in de javascript uitbreiden tot een van zichzelf sprekende user interface waar de gebruikers zelf een sociaal netwerk kunnen simuleren. Meer over deze opdracht en het proces [hier](). 
 
-#### Eigen niveau
+#### Eigen niveau van de meesterproef
 
 Ik vond mijn eigen niveau erg goed en hoog liggen. Met de taakverdeling kreeg ik de verantwoordlijkheid om Rick zijn functies (vooral de step maar ook sommige andere functies zoals groepen berekenen en belangrijkste persoon berekenen) te implementeren in ons project. Dit was nog even een uitdaging want Rick had code geschreven die het tegenovergestelde werkte dan dat van onze. Verder ben ik bezig geweest om dit beter te maken en laten werken. Denk bijvoorbeeld aan het laten zien van de most important person en filteren op links. Maar ook de data laden op de mobiel op de juiste momenten zodat het altijd up to date blijft en niet irriteerd. Ook heb ik genoeg gecodeerd aan het design, hebben we samen met het groepje voldoende geitereerd op het design waarbij we allemaal nieuwe versies gingen maken op basis van de feedback die we hadden gekregen. Ook heb ik mijn groepsleden geholpen en feedback gegeven wanneer dat nodig was. 
 
 Ik ben het meest trots op de simulatie. Deze heb ik werkend gekregen, geoptimaliseerd en waterdicht en inzichtelijk kunnen krijgen in de loop van deze zes weken. Steeds kwam er weer iets tevoorschijn dat beter kan, over het hoofd gezien was en in de toekomst kan worden toegevoegd. Het mooiste vind ik ook dat hij volledig samen werkt met de mobiel. Dit was een logische brei waar ik erg van hou en mijn tanden graag in wil zetten. Verder heb ik er veel van geleerd, met name op objet oriented niveau. Waar figma goed voor is en hoe je het moet gebruiken en als basis kan gebruiken wanneer je het design van figma codeerd. 
 
-#### Leerdoelen
+Als ik kijk volgens de vakken rubrics welke vakken bij de meesterproef naar voren zijn gekomen zijn dat: WAFS en API(content fetchen voor de nodes), CSS to the rescue (spelen met anchor positioning om de data voor de nodes altijd bij de node op de goeie plek zichtbaar te hebben), Browser tech (de website is progressive enhanced en werkt (en getest) op chrome, firefox en safari) en HCD (we hebben de website getest met de doelgroep en verbeterd of genoteerd in de documentatie wat beter moet worden gemaakt).
+
+Wel is de website niet echt toegankelijk voor mensen met een beperkt zicht en ook niet responsive, dit wat niet de opdracht en daarom ook niet een aandachtspunt voor de eerste versie. 
+
+#### Leerdoelen van de meesterproef
 
 De drie leerdoelen die ik had opgesteld waren:
 
