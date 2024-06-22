@@ -43,7 +43,7 @@ h5 {
 h1 {
     --font-size-heading: 2em;
     font-size: 2em;
-    font-size: clamp(var(--font-size-heading), calc(var(--font-size-heading) * 0.6522) + 1vw, calc(var(--font-size-heading) + 0.2em));
+    font-size: clamp(calc(var(--font-size-heading) - 0.3em), calc(var(--font-size-heading) * 0.6522) + 1.2vw, calc(var(--font-size-heading) + 0.2em));
 }
 h2 {
     --font-size-heading: 1.5em;
