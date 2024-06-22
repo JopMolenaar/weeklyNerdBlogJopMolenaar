@@ -16,6 +16,10 @@ Dit artikel gaat over mijn proces bij de meesterproef. Bij de meesterproef ben i
 
 **Dinsdag** hebben we ons verder ingelezen in het project. Ook hebben we de code die er al was kunnen inzien. We hebben kunnen brainstormen over het eerste design en de features. En hebben dieper in object oriented programming gekeken. 
 
+Wat we kregen van Yuri was een website waar een in een canvas bolletjes waren getekend, en je kan lijntjes tussen de bolletjes tekenen. De website zag er zo uit:
+
+![Eerste versie van Yuri](../../images/eersteJavascriptVersie.png)
+
 **Woensdag** begonnen we met tech reviews. Daar kregen we een tip om een korte recap bij de klant te geven van de opdracht zodat de opdrachtgever eventueel misvattingen eruit kan halen. Daarna hadden we onze eeste meeting met Yuri. Bij deze meeting hebben we de gelegenheid gekregen om vragen te kunnen stellen en dit hielp ons erg om de opdracht beter te snappen. Verder zijn we bezig geweest met ons eerste design en hebben een start gemaakt met het design te programmeren en wat er al geschreven is te begrijpen en te ordenen.
 
 **Donderdag** hebben we wat er al geschreven was kunnen begrijpen en ordenen. Ook hebben we ons design in figma kunnen maken en de eerste dingen van het design kunnen programmeren.
@@ -29,7 +33,7 @@ Die prioriteiten waren het vervangen van het canvas. We wilde niet steeds gaan t
 
 Ons eerste design was: 
 
-![final website](../../images/firstSketches.webp)
+![Drie schermen van een simpele website waarin elk een feature is the zien](../../images/firstSketches.webp)
 
 ### 🔄 Week 2
 
@@ -45,7 +49,7 @@ Even later hadden we de meeting met Yuri (de opdrachtgever), en ze waren heel er
 
 Hierbij de schetsen om het in de layout te passen
 
-![final website](../../images/experimentedWithToolbarAndPhone.webp)
+![Vier schermen naast elkaar met elk een andere layout](../../images/experimentedWithToolbarAndPhone.webp)
 
 **Vrijdag** zijn we bezig geweest met het omschrijven naar object oriënted. Ook kwamen we op een idee dat het misschien korter zou kunnen maken maar wel veel onoverzichtelijk. Namelijk om alle variabelen in een object te gooien en dit steeds meegeven aan de volgende functies. Dit hebben we uiteindelijk niet gedaan. 
 Verder hebben we de functionaliteiten die we hadden werkend gekregen behalve de tools en dat de bolletjes groeien.
@@ -69,9 +73,9 @@ Ook had Yuri nog wat dingen aan te merken op de styling. De mobiel moest kleiner
 
 Die woensdag hebben we dus meteen het design aangepast in figma, en meerdere versies gemaakt over wat mogelijk zou zijn. Uiteindelijk hebben we dingen bij elkaar gevoegd en hier kwam een mooi design uit.  
 
-Geexperimenteerd met de indeling: Het is uiteindelijk de eerste geworden. 
+Geexperimenteerd met de indeling: (Het is uiteindelijk de eerste geworden) 
 
-![final website](../../images/experimentedWithToolbar.webp)
+![Drie verschillende schermen naast elkaar met elk een andere layout](../../images/experimentedWithToolbar.webp)
 
 **Donderdag**  ben ik bezig geweest om de layout van de website te veranderen aan de hand van het figma design. Ik wilde dit heel graag doen want ik was helemaal klaar met de onzekerheid van de code van Rick, en kwam daar dus niet echt verder mee. 
 
@@ -92,7 +96,7 @@ Dit vond Marten een goed idee. Later heb ik dus Rick een bericht gestuurd en afg
 
 Laatste sketches figma na meeting met de klant.
 
-![final website](../../images/finalSketchesFigma.webp)
+![Laatste schetsen die gemaakt zijn in figma. Je ziet twee schermen naast elkaar met de dezelfde layout, alleen de content op de mobiel is anders.](../../images/finalSketchesFigma.webp)
 
 **Donderdag** CSS day
 
@@ -146,6 +150,6 @@ Ook hebbben we kunnen testen met personen uit de doelgroep. Daaruit kwam dat de 
 
 Uiteindelijke website:
 
-![final website](../../images/finalWebsite.webp)
+![Laatste versie website](../../images/finalWebsite.webp)
 
 **Vrijdag** hadden we de expo bij CMD.

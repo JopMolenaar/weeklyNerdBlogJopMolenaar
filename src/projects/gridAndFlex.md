@@ -1,1 +1,0 @@
-repeat(auto-fit, minmax(min(min25rem, 100%), 1fr));
