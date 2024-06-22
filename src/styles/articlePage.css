@@ -207,6 +207,7 @@ article .nav::after {
     
     nav::after {
         position-anchor: var(--anchor);
+        position-visibility: anchors-visible;
       inset:
         anchor(top)
         anchor(right)
