@@ -10,7 +10,11 @@ pagination:
 <main>
   <article class="element-<%= project.id %>" >
     <h1 class="heading-<%= project.id %>" project="<%= project.name %>"><%= project.name %></h1>
-    <p class="date">..-..-2024</p>
+      <% if (project.date) { %>
+        <p class="date"><%= project.date %></p>
+      <% } else { %>
+        <p class="date">..-..-2024</p>
+      <% } %>
     <div class="content">
       <%- project.html %>
     </div>

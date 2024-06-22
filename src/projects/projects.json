@@ -80,7 +80,8 @@
         "paramId": "Meesterproef",
         "link": "src/projects/meesterproef.md",
         "img": "images/meesterproef.webp",
-        "name": "Meesterproef"
+        "name": "Meesterproef",
+        "date": "23-06-2024"
     },
     {
         "paramId": "Q42",
@@ -92,7 +93,8 @@
         "paramId": "LeerdoelenJop",
         "link": "src/projects/leerDoelenJop.md",
         "img": "images/leerdoelen.webp",
-        "name": "Leerdoelen Jop"
+        "name": "Leerdoelen Jop",
+        "date": "23-06-2024"
     },
     {
         "paramId": "Robert",
@@ -104,13 +106,15 @@
         "paramId": "CSS-DAY",
         "link": "src/projects/cssDay.md",
         "img": "images/cssDay.webp",
-        "name": "CSS DAY"
+        "name": "CSS DAY",
+        "date": "07-06-2024"
     },
     {
         "paramId": "pre-css-day",
         "link": "src/projects/preCssDay.md",
         "img": "images/preCssDay.webp",
-        "name": "Pre CSS day"
+        "name": "Pre CSS day",
+        "date": "05-06-2024"
     },
     {
         "paramId": "De-waag",

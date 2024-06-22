@@ -103,6 +103,7 @@ module.exports = async function () {
                 html: htmlContent,
                 img: item.img,
                 id: item.paramId,
+                date: item.date,
             });
         }
 
