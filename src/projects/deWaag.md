@@ -1,1 +1,45 @@
-# De waag
+## De waag
+
+Bij deze weekly nerd kwam een de waag bij ons langs. Danny en Marit hadden het over het mobiele ecosysteem en de public stack. 
+
+<!-- Wat is het probleem
+Experimenteren met designes
+
+Operating systems
+Apps 
+
+Technology is meer dan je denkt
+
+What is in your phone
+Content
+Services
+Apps
+Software library’s
+Exchange protocol …
+Trackers etc
+
+How can we make this more visible, these different values 
+
+4 verschillende lagen
+Fundament, designoroces, tech stack, burger perspectief 
+
+Fundament => Context factoren 
+Ontwerpproces => open source rech neemt vaak gebruikers mee in dit proces 
+Tech stack => alle tech maar ook de afspraken en standaarden 
+(Allemaal waarde, en heeft veel invloed op de tech die je aan t ontwikkelen bent, en ook op de gebruiker.)
+
+Booking.com heeft de burger niet centraal staan. Ze willen je niet perse helpen en alleen maar geld verdienen.  -->
+
+### Tests
+
+Danny en Marit zijn met een groot project bezig en wilde daarom wat testen met ons doen zodat ze wat data konden verzamelen. Deze workshop is begin punt van proces.
+
+We begonnen met de 4 kwadranten test.Daarbij werden er vragen gesteld en moesten wij in een kwadrant staan met het antwoord op de vraag.
+
+Daarna hebben we een formulier ingevuld waar je je waardes bij een onderwerp zoals operating system en cloud services moest leggen en zeggen of je die mist of niet.
+
+Daarna moesten we in een groepje de optimale telefoon maken. Dit is uiteindelijk de telefoon geworden. 
+
+![zes hoekige Kaartjes tegen elkaar aan met verschillende symbooltjes erop. Die moeten de waarden van onze optimale mobiel voorstellen](../../images/deWaagMobiel.webp)
+
+De symbolen moeten de waardes in onze optimale telefoon voorstellen. Onze optimale mobiel moet een aanknop hebben, daarnaast moet hij goed beschermt, goed voor de natuur, transparant kwa data, data moet gewijzigd kunnen worden, en wij moeten bepalen wat er wordt opgeslagen, het moet een laser hebben, goede service hebben om onze vragen te kunnen beantwoorden, het moet connected zijn met het internet, het moet meerdere sims hebben, meerdere fonts, een scherm hebben, de achterkant moet kunnen worden aangepast, met natuurlijke goede warnings als je iets aanpast, en het moet een chip hebben. 
