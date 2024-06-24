@@ -1,8 +1,6 @@
-# Weekly Nerd => Kilian Valkhof
+## Weekly Nerd => Kilian Valkhof
 
-7 Februari 2024
-
-## Samenvatting van de lezing
+### Samenvatting van de lezing
 
 Kilian Valkhof is de oprichter van polypane en is lid van het electron governance team dat Frameworks bouwt voor browsers. 
 
@@ -18,7 +16,7 @@ Als je in de komende jaren iets gaat bouwen dat je al eerder hebt gebouwd, en da
 
 Daarna ging hij door een lijst met html en css code die voor bepaalde doelen kunnen worden gebruikt die eerst vaak met Javascript werden gemaakt. 
 
-### Custom toggles
+#### Custom toggles
 
 Custom toggles worden vaak gebruikt op `form` `img` en andere elementen.
 Kan je herkennen aan de `::` na een element, voor de custom toggle.
@@ -31,7 +29,7 @@ en `input::track` om de achterkant van de switch aan te roepen.
 Ook kwam er een vraag uit het publiek wat het verschil was tussen `appearance: none;` en `all: unset;`. Bij `appearance: none;`  zeg je dat de browser dit element niet hoeft te vervangen en niet de standaard styling wil, waardoor je hem zelf beter kan stylen. 
 Met `all: unset;` zeg je dat je helemaal geen styling wilt en is minder agressief.
 
-### Datalist
+#### Datalist
 
 Met het datalist element in html maak je een automatic complete field. Dit hoef je dus niet meer met Javascript te schrijven.
 
@@ -45,20 +43,20 @@ Met het datalist element in html maak je een automatic complete field. Dit hoef 
 
 Je kan hem alleen nog niet stylen. Als je dat echt wilt zul je hem wel moeten maken met javascript. Maar het stylen van dit element zou best wel snel in de toekomst kunnen worden toegev=oegd aan browsers. 
 
-### Color pickers
+#### Color pickers
 
 Hij zei ook wat over color pickers. Met `input-type="color"` op het input element krijg je een heleboel colorpicker functionaliteiten van de browser, en je krijgt zelfs meer dan je zelf kan maken met Javascript.
 
 Ook kan je met `color-scheme: dark;` op de input, het element dark laten stylen door de browsers. 
 
-### In-page transitions
+#### In-page transitions
 
 Met In-page transitions vervang je honderden regels js + jquery met 1 regel html en dan heb je ook nog een betere ervaring. 
 <!-- wat is die regel html? -->
 Maar bij scrollen op de pagina kan t ook met 2 regels js.
 <!-- welke twee reges? -->
 
-### Accessibility
+#### Accessibility
 
 Accessibility is heel belangrijk en je zou animaties moeten kunnen uitzetten voor mensen die dat willen. Dit kan met `@media {prefers-reduced-motion:no-preference}`.
 
@@ -69,13 +67,13 @@ Ook heb je `scroll-margin`, dit is een margin tot waar die naar boven scrolled, 
 
 Als je op de link klikt en je springt naar het gelinkte kopje op de pagina kan je dit een styling geven met `:target`. Dit geeft dan styling weer als dat element getarget wordt. 
 
-### Carousels
+<!-- #### Carousels
 
 scroll-snap api's
 
-adam argyle snap video's
+adam argyle snap video's -->
 
-### Accordions and modals
+#### Accordions and modals
 
 Accordions of ook wel details and summary's genoemd hoef je ook niet met Javascript te maken. 
 
@@ -94,7 +92,7 @@ Ook is het handig om een de muis een pointer te maken en hover styling toe te vo
 Ook gaf hij als tip dat je de details en summary niet moet dichtmaken als je op een andere klikt. Soms willen mensen vergelijken en dan moet de gebruiker er heel vaak op klikken om zijn/haar doel te behalen. 
 
 
-### Dialog
+#### Dialog
 
 In plaats van zelf een goeie popup te bouwen met Javascript kan je ook het html element `<dialog><dialog/>` gebruiken. Een dialog blokeert de javascript daar achter niet maar een `<alert></alert>` wel. 
 
@@ -106,14 +104,14 @@ De dialog komt boven alles want het komt in de top layer. En je kan ook dialogs 
 
 Om alles rondom de dialog (achter de modal) te kunnen stylen kan je met `::backdrop` dat aanroepen en stylen. 
 
-### Container queries
+#### Container queries
 
 Container queries werken als een soort media queries, maar dan in plaats van hoe breed mijn vp is, is het: hoe breed is mijn container? Dus dan kan je hoe de childs in die container zich moeten gedragen. Hierdoor hoef je dus niet extra media queries toe te voegen. 
 
 Je kan dit doen met `container-type:` en `@container (min-width: ...em)`
 En 50cqw container units is dus 50% van de container breedte. 
 
-### :has()
+#### :has()
 
 :has() is een parent selector, dit kan je bijvoorbeeld zo gebruiken:
 ```css
@@ -125,7 +123,7 @@ Hier zeg je: als een h1 meteen een p eronder heeft, geef het dan een `margin-bot
 Voor meer info: [polypane.app/blog/where-is-has/](https://polypane.app/blog/where-is-has-new-css-selectors-that-make-your-life-easier/)
 
 
-### Features van browsers en css waar nog aan wordt gewerkt
+#### Features van browsers en css waar nog aan wordt gewerkt
 
 Hier noemde hij een lijstje van browser functionaliteiten die in weinig browsers al zitten, maar dit aankomende tijd wel wordt toegevoegd aan veel browsers. 
 
@@ -140,12 +138,12 @@ Hier noemde hij een lijstje van browser functionaliteiten die in weinig browsers
 Voor meer info over scroll driven animations: [bram.us/scroll-driven-animations-cover-flow](https://www.bram.us/2023/02/12/scroll-driven-animations-cover-flow-2022-10-06-full-stack-europe/)
 
 
-### Conclusie
+#### Conclusie
 
 De conclusie uit Kilians lezing was dat je moet proberen om zo min mogelijk Javascript te gebruiken en vooral te kijken naar wat er al mogelijk is in de browser met html en css. 
 Als je zo min mogelijk javascript gebruikt en het meeste kan behalen met html en css wordt je website sneller en gaat minder snel kapot.
 
-## Reflectie
+### Reflectie
 
 Ik vond de persentatie van Kilian heel interessant, confronterend en hij heeft zeker indruk op mij gemaakt. Ik ben het helemaal met hem eens dat je niet Javascript moet gebruiken als je met html en css het zelfde doel kan behalen. Een aantal css selectoren die hij besprak kende ik al wel maar veel ook niet. Dit waren namelijk:
 

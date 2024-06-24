@@ -3,7 +3,7 @@ const path = require("path");
 const axios = require("axios");
 const { marked } = require("marked");
 const { JSDOM } = require("jsdom");
-const cheerio = require("cheerio");
+// const cheerio = require("cheerio");
 
 function loadJSON(filename) {
     if (fs.existsSync(filename)) {
@@ -57,7 +57,7 @@ const generateHeadingsArray = (htmlContent) => {
         const text = heading.textContent.trim();
         const tag = heading.tagName.toLowerCase();
         const target = text.replace(/\s+/g, "");
-        heading.setAttribute("id", target); // Dit werkt nu (hard build needed)
+        heading.setAttribute("id", target); // Dit werkt nu
         // TODO CHANGE HERE THE HEADINGS ALSO
         // TODO PLACE SECTIONS AROUND THE SECTIONS WITH A NEW HEADING
         if (firstHeading === undefined) {

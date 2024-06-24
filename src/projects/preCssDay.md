@@ -11,45 +11,38 @@ Hij liet voorbeelden zien die ik al eerder had gezien maar niet de implementatie
 #### Implementatie
 
 De implementatie is als volgt:
-<!-- TODO add implementatie -->
 
 ```
-document.startViewTransition(()=>{
-
-})
-
+document.startViewTransition(() => updateTheDOMSomehow());
 ```
+
+Zo simpel is het. Nu fade je nieuwe pagina in met de oude.
 
 ##### tweak the animations:
 
-with css  but you cant use the elements in de snap shots, 
+view-transition-name: box; Box is in een andere laag
 
-view-transition-name: box
-box is in a different layer
-
-view-transition-name: none doesnt capture the element
+view-transition-name: none;pakt het element niet
 
 ::view-transistion {
-    pointer events: none
+    pointer-events: none
 }
 
-interrupted view transistions skip to the end (for now)
+Onderbroken view transitions gaan naar het einde (voor nu)
 
-identify elements, set the names
+Identificeer elementen, stel de namen in. Het onderstaande voorbeeld wordt behandeld als hetzelfde element in de transitie.
 
+```
 .page1 h2 {
-view-transition-name: name1
+    view-transition-name: name1
 }
 page2 h1{
-view-transition-name: name1
+    view-transition-name: name1
 }
-same element I think
-
-
+```
 
 view-transition-class 
-nmae needs to be unique, class is schared on these elements, 
-
+De naam moet uniek zijn, maar een class wordt gedeeld op deze elementen.
 
 #### Hoe het werkt
 
@@ -63,68 +56,49 @@ View transitions zijn niet alleen visueel een upgrade voor je website, maar het 
 
 <!-- helpfull for ux -->
 
+Het neemt snapshots en pauzeert de rendering van de nieuwe pagina. Daarna laat hij het oude screenshot zien en rendert hij de andere pagina. En daarna laat hij de screenshots in elkaar faden. Maar je kunt dus elementen overslaan, of de transitie veranderen.
 
+<!-- user agent stylesheet, is the stylesheet of the browser, if vewtransitions are supporten is says: view-transistion: root -->
 
-it takes snapshots and pauses the rendering of the new page
-daarna laat hij de oude screen shot zien en render hij de andere pagina. 
-En daarna laat hij de screenshots in elkaar faden. 
-Maar je kan dus elementen skippen, of de transitie veranderen. 
-
-user agent stylesheet, is the stylesheet of the browser, if vewtransitions are supporten is says: view-transistion: root
-
-view transistion api (spa same doucment page)
+View transistion api (spa same document page)
 
  @view-transition {
     navigation: auto
     types: // could assign types here
  }
 
- if you dont know the tyopes up front: 
+Als je de types niet van tevoren weet: pageswap en pagereveal op de window.addEventListener en dan kun je het type toevoegen.
 
- pageswap and pagereveal on the window.addEventlistener
- and then you can add the type
+<!-- screenshot way () -->
 
+Cross-document view transitions zijn in Chrome 126: maar ze hebben twee voorwaarden:
 
-screenshot way ()
+- Zelfde site, zelfde origin 
+- Beide pagina's moeten dit in hun CSS hebben: @view-transition {navigation: auto}
 
-
-cross document view transition chrome 126: two conditions: same site, same origin & both pages need to have it opt in: @view-transition {navigation: auto}
-
-they will implement cross origin in the future
+Ze zullen in de toekomst cross-origin implementeren.
 
 #### Extra things he said
 
-run a blog he said, expose your work, write about it or something
+Run een blog, zei hij, expose je werk, schrijf erover of iets dergelijks.
 
- a (link) blocking="render" ??? use with caution
-
-
-
-
-
-
-
+ <!-- a (link) blocking="render" ??? use with caution -->
 
 ### Miriam Suzanne (container queries)
 
 Miriam had het over container queries, zij is namelijk de bedenker daarvan en weet precies hoe het werkt en wilde ons overtuigen dat het geen loops veroorzaakt ook al denken veel mensen dat.
 
-Veel mensen dachten dus inderdaar dat er loops zouden ontstaan doordat je de parent styled om de kinderen op een bepaalde manier te laten gedragen, en ... 
+Veel mensen dachten dus dat er loops zouden ontstaan doordat je de parent styled om de kinderen op een bepaalde manier te laten gedragen, en ook de kinderen kan stylen om de parent op een bepaalde manier te laten gedragen. 
 
-problems etc
+<!-- It was asked for a decade, but they were scared it would cause layout loops. -->
+Bij layout heb je interinsic and extrinisic. Bij interinsic drukken elementen naar buiten en bij extrinisic naar binnen. 
+<!-- Content on the inside need to set the size of the parent and the parent set the sizes of the children = loop -->
 
-it was asked for a decade, but they were scared it would cause layout loops
-
-interinsic and extrinisic
-pushing out and pushing in
-
-content on the inside need to set the size of the parent and the parent set the sizes of the children = loop
-
-contain: inline-size and not contain: size
-but it could go wrong if you do display grid and justify-content: center
+contain: inline-size en niet contain: size. Maar het kan misgaan als je display grid doet en justify-content: center.
 
 Met container style queries kan je elementen stylen aan de hand van welke styling ze hebben. Dit kan je gebruiken met het breedte van het element, andere styling of custom properties. 
 
 ### Reflectie
 
-<!-- TODO BIJ ELKE EEN KORTE REFLECTIE  -->
+Ik vond de presentatie van Bramus echt heel goed en interessant. Ik had al wel een keer geprobeerd om view transitions te implementeren maar deed dat dus op en hele andere manier dan dat Bramus presenteerde. Dit heb ik uiteindelijk ook geimplementeerd in mijn blog. 
+De presentatie van Miriam vond ik minder interessant en kon ik minder goed mijn aandacht bij houden. 

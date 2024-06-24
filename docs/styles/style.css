@@ -90,6 +90,10 @@ p, li {
     max-width: 40em;
 }
 
+strong {
+    color: color-mix(in srgb, var(--color-body), black 55%) ;
+}
+
 /* The hide class */
 .visually-hidden {
     clip: rect(0 0 0 0);

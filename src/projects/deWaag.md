@@ -33,11 +33,8 @@ Booking.com heeft de burger niet centraal staan. Ze willen je niet perse helpen 
 ### Tests
 
 Danny en Marit zijn met een groot project bezig en wilde daarom wat testen met ons doen zodat ze wat data konden verzamelen. Deze workshop is begin punt van proces.
-
-We begonnen met de 4 kwadranten test.Daarbij werden er vragen gesteld en moesten wij in een kwadrant staan met het antwoord op de vraag.
-
+We begonnen met de 4 kwadranten test. Daarbij werden er vragen gesteld en moesten wij in een kwadrant staan met het antwoord op de vraag.
 Daarna hebben we een formulier ingevuld waar je je waardes bij een onderwerp zoals operating system en cloud services moest leggen en zeggen of je die mist of niet.
-
 Daarna moesten we in een groepje de optimale telefoon maken. Dit is uiteindelijk de telefoon geworden. 
 
 ![zes hoekige Kaartjes tegen elkaar aan met verschillende symbooltjes erop. Die moeten de waarden van onze optimale mobiel voorstellen](../../images/deWaagMobiel.webp)

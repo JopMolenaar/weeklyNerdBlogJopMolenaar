@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../styles/style.css">
-    <link rel="stylesheet" href="../../styles/nav.css">
-    <link rel="stylesheet" href="../../styles/cursor.css">
-    <link rel="stylesheet" href="../../styles/articlePage.css">
+    <title>Article about Kilian Valkhof</title>
+    
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/nav.css">
+        <link rel="stylesheet" href="../styles/cursor.css">
+        <link rel="stylesheet" href="../styles/articlePage.css">
+    
 </head>
 <body>
 
@@ -16,12 +18,11 @@
   <article class="element-notesKilian" >
     <h1 class="heading-notesKilian" project="Kilian Valkhof">Kilian Valkhof</h1>
       
-        <p class="date">..-..-2024</p>
+        <p class="date">07-02-2024</p>
       
     <div class="content">
-      <html><head></head><body><h1>Weekly Nerd =&gt; Kilian Valkhof</h1>
-<p>7 Februari 2024</p>
-<h2 id="Samenvattingvandelezing">Samenvatting van de lezing</h2>
+      <html><head></head><body><h2 id="WeeklyNerd=>KilianValkhof">Weekly Nerd =&gt; Kilian Valkhof</h2>
+<h3 id="Samenvattingvandelezing">Samenvatting van de lezing</h3>
 <p>Kilian Valkhof is de oprichter van polypane en is lid van het electron governance team dat Frameworks bouwt voor browsers. </p>
 <p>Hij zei in de lezing dat je bij het bouwen van website de "rule of least power" moet gebruiken. Dit houdt in dat je de programmeer taal kiest die het minst kan maar voldoene is voor je doel. Voor een normale webpagina gebruik je dus eerst html, daarna css, en dan pas Javascript. Zo heb je de meeste kans dat je website overal kan worden gebruikt en minder snel stuk gaat onder bepaalde omstandigheden.</p>
 <p>Een voorbeeld dat hij hierbij gaf was dat als je door en tunnel rijdt en het internet slecht is, dat je Javascript pagina dan niet meer beschikbaar is, maar als het alleen html en css was, was het wel beschikbaar.</p>
@@ -29,7 +30,7 @@
 <p>Ook gaf hij een hele goede tip: </p>
 <p>Als je in de komende jaren iets gaat bouwen dat je al eerder hebt gebouwd, en dat wilt hergebruiken, kijk eerst of er een betere manier is om het te bouwen dan dat je al had. Browser funtionaliteiten gaan namelijk heel snel vooruit en er zou zo maar een mogelijke browser oplossing klaar liggen die je eerst met javascript had gebouwd. </p>
 <p>Daarna ging hij door een lijst met html en css code die voor bepaalde doelen kunnen worden gebruikt die eerst vaak met Javascript werden gemaakt. </p>
-<h3 id="Customtoggles">Custom toggles</h3>
+<h4 id="Customtoggles">Custom toggles</h4>
 <p>Custom toggles worden vaak gebruikt op <code>form</code> <code>img</code> en andere elementen.
 Kan je herkennen aan de <code>::</code> na een element, voor de custom toggle.</p>
 <p>Hij had het over <code>::focus-visible</code> en deze toggle geldt alleen als je geen interactie hebt met de muis, verder wel.</p>
@@ -37,7 +38,7 @@ Kan je herkennen aan de <code>::</code> na een element, voor de custom toggle.</
 en <code>input::track</code> om de achterkant van de switch aan te roepen. </p>
 <p>Ook kwam er een vraag uit het publiek wat het verschil was tussen <code>appearance: none;</code> en <code>all: unset;</code>. Bij <code>appearance: none;</code>  zeg je dat de browser dit element niet hoeft te vervangen en niet de standaard styling wil, waardoor je hem zelf beter kan stylen. 
 Met <code>all: unset;</code> zeg je dat je helemaal geen styling wilt en is minder agressief.</p>
-<h3 id="Datalist">Datalist</h3>
+<h4 id="Datalist">Datalist</h4>
 <p>Met het datalist element in html maak je een automatic complete field. Dit hoef je dus niet meer met Javascript te schrijven.</p>
 <pre><code class="language-md">&lt;datalist&gt; 
     &lt;options&gt;&lt;/options&gt;
@@ -46,25 +47,28 @@ Met <code>all: unset;</code> zeg je dat je helemaal geen styling wilt en is mind
 &lt;/datalist&gt;
 </code></pre>
 <p>Je kan hem alleen nog niet stylen. Als je dat echt wilt zul je hem wel moeten maken met javascript. Maar het stylen van dit element zou best wel snel in de toekomst kunnen worden toegev=oegd aan browsers. </p>
-<h3 id="Colorpickers">Color pickers</h3>
+<h4 id="Colorpickers">Color pickers</h4>
 <p>Hij zei ook wat over color pickers. Met <code>input-type="color"</code> op het input element krijg je een heleboel colorpicker functionaliteiten van de browser, en je krijgt zelfs meer dan je zelf kan maken met Javascript.</p>
 <p>Ook kan je met <code>color-scheme: dark;</code> op de input, het element dark laten stylen door de browsers. </p>
-<h3 id="In-pagetransitions">In-page transitions</h3>
+<h4 id="In-pagetransitions">In-page transitions</h4>
 <p>Met In-page transitions vervang je honderden regels js + jquery met 1 regel html en dan heb je ook nog een betere ervaring. </p>
 <!-- wat is die regel html? -->
 <p>Maar bij scrollen op de pagina kan t ook met 2 regels js.</p>
 <!-- welke twee reges? -->
 
-<h3 id="Accessibility">Accessibility</h3>
+<h4 id="Accessibility">Accessibility</h4>
 <p>Accessibility is heel belangrijk en je zou animaties moeten kunnen uitzetten voor mensen die dat willen. Dit kan met <code>@media {prefers-reduced-motion:no-preference}</code>.</p>
 <p>Als je links hebt die verwijzen naar een kopje op de zelfde pagina dan springt dat daar zo naar toe. De gebruiker weet dan niet waar ze zijn en hoeveel content ze hebben gemist. 
 Met <code>scroll-behavior: smooth;</code> ga je dat tegen en ziet de gebruiker een mooie scroll animatie. Deze moet je dus wel in de <code>@media (prefers-reduced-motion:no-preference)</code> zetten. </p>
 <p>Ook heb je <code>scroll-margin</code>, dit is een margin tot waar die naar boven scrolled, zo kan je bepalen waar dat gelinkte kopje op je scherm komt als je op die link klikt. </p>
 <p>Als je op de link klikt en je springt naar het gelinkte kopje op de pagina kan je dit een styling geven met <code>:target</code>. Dit geeft dan styling weer als dat element getarget wordt. </p>
-<h3 id="Carousels">Carousels</h3>
-<p>scroll-snap api's</p>
-<p>adam argyle snap video's</p>
-<h3 id="Accordionsandmodals">Accordions and modals</h3>
+<!-- #### Carousels
+
+scroll-snap api's
+
+adam argyle snap video's -->
+
+<h4 id="Accordionsandmodals">Accordions and modals</h4>
 <p>Accordions of ook wel details and summary's genoemd hoef je ook niet met Javascript te maken. </p>
 <pre><code class="language-md">&lt;details&gt;
   &lt;summary&gt;Titel&lt;/summary&gt;
@@ -75,18 +79,18 @@ Met <code>scroll-behavior: smooth;</code> ga je dat tegen en ziet de gebruiker e
 Met [open] kun je de details en summary een andere styling geven als die open is</p>
 <p>Ook is het handig om een de muis een pointer te maken en hover styling toe te voegen op de :hover van een details en summary. Want dit gebeurt niet automatisch</p>
 <p>Ook gaf hij als tip dat je de details en summary niet moet dichtmaken als je op een andere klikt. Soms willen mensen vergelijken en dan moet de gebruiker er heel vaak op klikken om zijn/haar doel te behalen. </p>
-<h3 id="Dialog">Dialog</h3>
+<h4 id="Dialog">Dialog</h4>
 <p>In plaats van zelf een goeie popup te bouwen met Javascript kan je ook het html element <code>&lt;dialog&gt;&lt;dialog/&gt;</code> gebruiken. Een dialog blokeert de javascript daar achter niet maar een <code>&lt;alert&gt;&lt;/alert&gt;</code> wel. </p>
 <p>In de dialog kan je een button zetten met <code>type="submit"</code> om de dialog te sluiten. En als je data terug wilt sturen zet je de submit button in een form in de dialog.
 Je kan de value in Javascript dan ophalen met <code>dialog.returnValue</code>.
 Om de dialog aan te roepen moet je wel Javascript schrijven, maar dat kan je doen met <code>jeDialogElement.showModal()</code>. </p>
 <p>De dialog komt boven alles want het komt in de top layer. En je kan ook dialogs in/over dialogs plaatsen.</p>
 <p>Om alles rondom de dialog (achter de modal) te kunnen stylen kan je met <code>::backdrop</code> dat aanroepen en stylen. </p>
-<h3 id="Containerqueries">Container queries</h3>
+<h4 id="Containerqueries">Container queries</h4>
 <p>Container queries werken als een soort media queries, maar dan in plaats van hoe breed mijn vp is, is het: hoe breed is mijn container? Dus dan kan je hoe de childs in die container zich moeten gedragen. Hierdoor hoef je dus niet extra media queries toe te voegen. </p>
 <p>Je kan dit doen met <code>container-type:</code> en <code>@container (min-width: ...em)</code>
 En 50cqw container units is dus 50% van de container breedte. </p>
-<h3 id=":has()">:has()</h3>
+<h4 id=":has()">:has()</h4>
 <p>:has() is een parent selector, dit kan je bijvoorbeeld zo gebruiken:</p>
 <pre><code class="language-css">h1:has(+ p) {
   margin-bottom: 0;
@@ -94,7 +98,7 @@ En 50cqw container units is dus 50% van de container breedte. </p>
 </code></pre>
 <p>Hier zeg je: als een h1 meteen een p eronder heeft, geef het dan een <code>margin-bottom: 0;</code>.
 Voor meer info: <a href="https://polypane.app/blog/where-is-has-new-css-selectors-that-make-your-life-easier/">polypane.app/blog/where-is-has/</a></p>
-<h3 id="Featuresvanbrowsersencsswaarnogaanwordtgewerkt">Features van browsers en css waar nog aan wordt gewerkt</h3>
+<h4 id="Featuresvanbrowsersencsswaarnogaanwordtgewerkt">Features van browsers en css waar nog aan wordt gewerkt</h4>
 <p>Hier noemde hij een lijstje van browser functionaliteiten die in weinig browsers al zitten, maar dit aankomende tijd wel wordt toegevoegd aan veel browsers. </p>
 <ul>
 <li><code>field-sizing: content;</code>:  styling op een input element die dan mee schaalt met de content.</li>
@@ -108,10 +112,10 @@ Voor meer info: <a href="https://polypane.app/blog/where-is-has-new-css-selector
 <li>scroll driven animations: animatie koppelen aan een scroll ergens op de pagina</li>
 </ul>
 <p>Voor meer info over scroll driven animations: <a href="https://www.bram.us/2023/02/12/scroll-driven-animations-cover-flow-2022-10-06-full-stack-europe/">bram.us/scroll-driven-animations-cover-flow</a></p>
-<h3 id="Conclusie">Conclusie</h3>
+<h4 id="Conclusie">Conclusie</h4>
 <p>De conclusie uit Kilians lezing was dat je moet proberen om zo min mogelijk Javascript te gebruiken en vooral te kijken naar wat er al mogelijk is in de browser met html en css. 
 Als je zo min mogelijk javascript gebruikt en het meeste kan behalen met html en css wordt je website sneller en gaat minder snel kapot.</p>
-<h2 id="Reflectie">Reflectie</h2>
+<h3 id="Reflectie">Reflectie</h3>
 <p>Ik vond de persentatie van Kilian heel interessant, confronterend en hij heeft zeker indruk op mij gemaakt. Ik ben het helemaal met hem eens dat je niet Javascript moet gebruiken als je met html en css het zelfde doel kan behalen. Een aantal css selectoren die hij besprak kende ik al wel maar veel ook niet. Dit waren namelijk:</p>
 <ul>
 <li><code>::focus-visible</code></li>
@@ -134,78 +138,78 @@ Ik gebruik veel chatGPT om mijn code sneller te schrijven, maar dit kijk ik alti
       <ul>
           
               <li data-tag="h3">
+                  <a href="#Samenvattingvandelezing">
+                      Samenvatting van de lezing
+                  </a>
+              </li>
+          
+              <li data-tag="h4">
                   <a href="#Customtoggles">
                       Custom toggles
                   </a>
               </li>
           
-              <li data-tag="h3">
+              <li data-tag="h4">
                   <a href="#Datalist">
                       Datalist
                   </a>
               </li>
           
-              <li data-tag="h3">
+              <li data-tag="h4">
                   <a href="#Colorpickers">
                       Color pickers
                   </a>
               </li>
           
-              <li data-tag="h3">
+              <li data-tag="h4">
                   <a href="#In-pagetransitions">
                       In-page transitions
                   </a>
               </li>
           
-              <li data-tag="h3">
+              <li data-tag="h4">
                   <a href="#Accessibility">
                       Accessibility
                   </a>
               </li>
           
-              <li data-tag="h3">
-                  <a href="#Carousels">
-                      Carousels
-                  </a>
-              </li>
-          
-              <li data-tag="h3">
+              <li data-tag="h4">
                   <a href="#Accordionsandmodals">
                       Accordions and modals
                   </a>
               </li>
           
-              <li data-tag="h3">
+              <li data-tag="h4">
                   <a href="#Dialog">
                       Dialog
                   </a>
               </li>
           
-              <li data-tag="h3">
+              <li data-tag="h4">
                   <a href="#Containerqueries">
                       Container queries
                   </a>
               </li>
           
-              <li data-tag="h3">
+              <li data-tag="h4">
                   <a href="#:has()">
                       :has()
                   </a>
               </li>
           
-              <li data-tag="h3">
+              <li data-tag="h4">
                   <a href="#Featuresvanbrowsersencsswaarnogaanwordtgewerkt">
                       Features van browsers en css waar nog aan wordt gewerkt
                   </a>
               </li>
           
-              <li data-tag="h3">
+              <li data-tag="h4">
                   <a href="#Conclusie">
                       Conclusie
                   </a>
               </li>
           
-              <li data-tag="h2">
+              <li data-tag="h3">
                   <a href="#Reflectie">
                       Reflectie
                   </a>
@@ -213,17 +217,21 @@ Ik gebruik veel chatGPT om mijn code sneller te schrijven, maar dit kijk ik alti
           
       </ul>
   </nav>
-  <a href="../../">⇧<span class="visually-hidden">Back</span></a>
-  </article>
-  <img src="../../images/kilian.webp">
+  
+      <a href="../">⇧<span class="visually-hidden">Back</span></a>
+    </article>
+    <img src="../images/kilian.webp">
+  
 </main>
 <!-- This is where the page content will be injected -->
-   
     <div class="blob"></div>
     <div class="blob"></div>
-    <script src="../../js/changeHeadings.js"></script>
-    <script src="../../js/pageTransition.js"></script>
-    <script src="../../js/cursor.js"></script>
-    <script src="../../js/followHeadings.js"></script>
+
+    
+        <script src="../js/changeHeadings.js"></script>
+        <script src="../js/pageTransition.js"></script>
+        <script src="../js/cursor.js"></script>
+        <script src="../js/followHeadings.js"></script>
+    
 </body>
 </html>

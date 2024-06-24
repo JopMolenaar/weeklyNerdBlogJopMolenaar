@@ -24,9 +24,18 @@ Dit is en foto van onze website, en daaronder kan je de links naar de website en
 ## Reflectie
 
 De beoordeling die ik mijzelf gaf was was een 🏆 uit de [🏆😃🙂😐😢]. Dit komt daardat ik veel moeite in deze website heb gestopt en lange dagen heb gemaakt. 
-
 Ook moesten we reflecteren over welke voorgaande vakken in dit project zitten. Wafs zit in dit project doordat we API's hebben gefetched en bepaalde data hebben laten zien in een grote svg. CSS to the rescue zat ook in dit project. Dit komt doordat we scroll animaties hebben gebruikt om de grafiek mee te laten scrollen op onze jaren die ook op scroll snappen. 
-En natuurlijk zit Browser tech er ook in. Dit komt doordat we hebben gekeken naar progressive enhancement, performance en toegankelijkheid. 
+En natuurlijk zit Browser-tech er ook in. Dit komt doordat we hebben gekeken naar progressive enhancement, performance en toegankelijkheid. 
+
+En natuurlijk moesten we ook reflecteren op een aantal CMD competenties, samen ontwerpen, georganiseerd ontwerpen, vakkundig en onderzoekend ontwerpen. 
+
+**Samen ontwerpen** ging erg goed. We hebben veel gecommuniceerd. Steeds weer dingen voorleggen en overleggen aan en met elkaar. Kwa code conventions hadden we onszelf kunnen helpen om dat eerder op te stellen. We waren natuurlijk zoals altijd weer metreen aan het stoeien met verschillende formatters van iedereen. Dit zorgt voor merge conflicts en deed ons pijn kwa tijd. 
+
+**Georganiseerd ontwerpen** ging ook prima. We misten dus wel een echte designer. Maar uitiendelijk hebben we meerdere keren het design geschetst met elkaar. 
+
+**Vakkundig en onderzoekend ontwerpen** ging ook goed. Telkens googlen of iets mogelijk was en ook zoeken naar feedback kwam vaak voor deze drie dagen. Steeds schakel ik en zoek ik naar verschillende oplossingen en verbeteringen op elk vlak. 
+
+Ons groepje bestond voornamelijk uit technische mensen en niet echt designers. Dit heeft wel effect gehad op onze website. We konden snel beginnen doordat we niet uren eerst in figma een design gingen maken. Maar uiteindelijk was niemand echt heel blij met hoe de website eruit zag. We hebben wel feedback kunnen vragen aan designers uit andere groepjes, maar het was beter geweest om een designer bij ons team te betrekken aan het begin.
 
 ## Prijs
 

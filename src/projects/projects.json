@@ -3,7 +3,8 @@
         "paramId": "notesKilian",
         "link": "src/projects/notesKilian.md",
         "img": "images/kilian.webp",
-        "name": "Kilian Valkhof"
+        "name": "Kilian Valkhof",
+        "date": "07-02-2024"
     },
     {
         "paramId": "notesFenna",
@@ -87,7 +88,8 @@
         "paramId": "Q42",
         "link": "src/projects/q42.md",
         "img": "images/q42.webp",
-        "name": "Q42"
+        "name": "Q42",
+        "date": "22-05-2024"
     },
     {
         "paramId": "LeerdoelenJop",

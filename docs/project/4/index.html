@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../styles/style.css">
-    <link rel="stylesheet" href="../../styles/nav.css">
-    <link rel="stylesheet" href="../../styles/cursor.css">
-    <link rel="stylesheet" href="../../styles/articlePage.css">
+    <title>Article about Nils Binder</title>
+    
+        <link rel="stylesheet" href="../../styles/style.css">
+        <link rel="stylesheet" href="../../styles/nav.css">
+        <link rel="stylesheet" href="../../styles/cursor.css">
+        <link rel="stylesheet" href="../../styles/articlePage.css">
+    
 </head>
 <body>
 
@@ -20,46 +22,47 @@
       
     <div class="content">
       <html><head></head><body><h2 id="NilsBinder">Nils Binder</h2>
-<p>frontend designer</p>
-<p>3 units in company =&gt; </p>
+<p>Nils Binder is a Frontend designer and works at 9elements in Germany.</p>
+<p>They have three units in their company:</p>
 <ul>
 <li>communication design (logo's print work, non coding)</li>
 <li>product dev (developing big apps, data visualitzation)</li>
 <li>web development (web dev, small-medium size websites)</li>
 </ul>
+<p>Nils talked about layouts and how you can create a lot more interesting layouts then only centering containers. </p>
 <h3 id="wrapperelement">wrapper element</h3>
-<p>(container)
-does:</p>
+<p>Many people use a container to catagorize elements.
+A container does or has:</p>
 <ul>
 <li>max-width</li>
 <li>padding</li>
-<li>centers</li>
+<li>centers itself or content</li>
 </ul>
-<p>old school:</p>
+<p>The old school way was:</p>
 <ul>
 <li>max width 75rem</li>
 <li>margin 0 auto</li>
 <li>padding 0 1.5rem</li>
 </ul>
-<p>new way:
-    width: min(100% - 3rem, 75rem); ""
-    margin-inline auto "left and right"</p>
-<p>shorter way:
-    magin-inine max(1.5rem, ((100/75rem)/2));</p>
-<p>why are we making containers?
-posters don't have it</p>
-<p>in the past we used photoshop but now we use figma wich has many features from css
-and you can make variables and use them in the code</p>
-<p>figma came in time where many websites looked the same, to make these kind of websites</p>
-<p>but we need to embrace the flexibility because it will look diff in diff situation</p>
-<p>but figma has so many less units then we have in css</p>
-<p>with grid and 1fr you can make cool dynamic layouts with different white space<br>1fr only gets content when it is big enough
-2fr 3fr auto 1fr
-minmax(0, clamp(24rem, 75%, 44rem)); "explanation:  min 24rem, desirded 75% and max 44rem"</p>
-<p>conclusion:
-use more playfull layouts
-and experiment with the white space use
-don't center everything</p>
+<p>The new way is:</p>
+<ul>
+<li>width: min(100% - 3rem, 75rem); ""</li>
+<li>margin-inline auto "left and right"</li>
+</ul>
+<p>And it has a shorter way:</p>
+<ul>
+<li>magin-inine max(1.5rem, ((100/75rem)/2));</li>
+</ul>
+<h3 id="Why?">Why?</h3>
+<p>But why are we making containers? Posters don't have it.</p>
+<p>In the past we used photoshop but now we use figma wich has many features from css and you can make variables and use them in the code.
+Figma came in a time where many websites looked the same, and now people use fimga to make these kind of websites.</p>
+<p>We need to embrace the flexibility because it will look different in different situations. But figma has so many less units then we have in css so it is very hard to make these new looking websites in figma. </p>
+<p>With grid and 1fr you can make cool dynamic layouts with different white space. Or you can use clamp for the layout like this: minmax(0, clamp(24rem, 75%, 44rem)); Explanation: min 24rem, desirded 75% and max 44rem</p>
+<p>Nils showed a lot of cool examples and ways to make the layout of a website less basic and centered. </p>
+<h3 id="Conclusion:">Conclusion:</h3>
+<p>Use more playfull layouts and experiment with the white space use. And also don't center everything.</p>
+<p>I liked his presentation a lot and it inspired me and opened my eyes that such simple things can boost the UI of your website by a lot.</p>
 </body></html>
     </div>
     <nav class="nav">
@@ -71,19 +74,35 @@ don't center everything</p>
                   </a>
               </li>
           
+              <li data-tag="h3">
+                  <a href="#Why?">
+                      Why?
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Conclusion:">
+                      Conclusion:
+                  </a>
+              </li>
+          
       </ul>
   </nav>
-  <a href="../../">⇧<span class="visually-hidden">Back</span></a>
-  </article>
-  <img src="../../images/nilsBinder.webp">
+  
+      <a href="../../">⇧<span class="visually-hidden">Back</span></a>
+    </article>
+    <img src="../../images/nilsBinder.webp">
+  
 </main>
 <!-- This is where the page content will be injected -->
-   
     <div class="blob"></div>
     <div class="blob"></div>
-    <script src="../../js/changeHeadings.js"></script>
-    <script src="../../js/pageTransition.js"></script>
-    <script src="../../js/cursor.js"></script>
-    <script src="../../js/followHeadings.js"></script>
+
+    
+        <script src="../../js/changeHeadings.js"></script>
+        <script src="../../js/pageTransition.js"></script>
+        <script src="../../js/cursor.js"></script>
+        <script src="../../js/followHeadings.js"></script>
+    
 </body>
 </html>

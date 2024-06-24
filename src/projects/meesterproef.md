@@ -138,7 +138,7 @@ dat de most important persons niet meer worden laten zien in de calculations pop
 
 ### ⏱️ Week 6
 
-**Maandag** ben ik bezg geweest om wat bugs op te lossen. Anchor positioning werkt namelijk niet op safari en chrome en dit moest ik even fixen door te kijken of het gesupport wordt, en dan zo nodig de oude manier gebruiken. Ook zorgte anchor positioning ervoor dat de anchor boven alles komt, zelfs als het element waarop die anchored, niet zichtbaar is. Dit heb ik uitiendleijk kunnen oplossen met `position-visibility: anchors-visible;`. Ook ben ik bezig geweest om de mobiel object oriented te schrijven. Dit hebben we niet gedaan toen we het aan het maken waren dus is het uiteindelijk een onbegonnen zaak geworden om dat om te schrijven. Je hebt namelijk overal variabelen nodig om de functie uit te kunnen voeren en de functies worden op verschillende plaatsen uitgevoerd. Uiteindelijk zijn we hier mee gestopt en hebben we het gelaten. Een goed leermoment voor de volgende keer: als je oop aan het doen bent, MOET je het vanaf het begin ook zo schrijven, en niet denken van ik doe het later wel beter. 
+**Maandag** ben ik bezg geweest om wat bugs op te lossen. Anchor positioning werkt namelijk niet op safari en chrome en dit moest ik even fixen door te kijken of het gesupport wordt, en dan zo nodig de oude manier gebruiken. Ook zorgte anchor positioning ervoor dat de anchor boven alles komt, zelfs als het element waarop die anchored, niet zichtbaar is. Dit heb ik uitiendleijk kunnen oplossen met `position-visibility: anchors-visible;`. Ook ben ik bezig geweest om de mobiel object oriented te schrijven. Dit hebben we niet gedaan toen we het aan het maken waren dus is het uiteindelijk een onbegonnen zaak geworden om dat om te schrijven. Je hebt namelijk overal variabelen nodig om de functie uit te kunnen voeren en de functies worden op verschillende plaatsen uitgevoerd. Uiteindelijk zijn we hier mee gestopt en hebben we het gelaten. Een goed leermoment voor de volgende keer: als je object oriented aan het schrijven bent, MOET je het vanaf het begin ook zo schrijven, en niet denken van ik doe het later wel beter. 
 
 **Dinsdag** zijn we vooral bezig geweest met de laatste dingen op het lijstje. Er komen natuurlijk altijd weer dingen om de hoek kijken dus elke keer dat dat gebeurt overleggen we of we dat gaan fixen. Het doel van vandaag was om kwa code klaar te zijn zodat we het woensdag af kunnen ronden. 
 
@@ -146,9 +146,9 @@ dat de most important persons niet meer worden laten zien in de calculations pop
 
 Ook hebbben we kunnen testen met personen uit de doelgroep. Daaruit kwam dat de toolbar en telefoon pas laat werden gevonden, vonden ze de mobiel onoverzichtelijk, probeerde vaak op posts te drukken en konden het canvas moeilijk leeghalen. Een aantal oplossingen die we daarvoor meteen hadden bedacht waren dat de onboarding moet worden uitgebreid, de telefoon doorzichtig laten zien met een empty state, een algoritme om posts en mogelijke vrienden op de mobiel te laten zien. Dit hebben we ook meteen genoteerd in onze design rationale. 
 
-**Donderdag** in de ochtend heb ik nog twee bugs uit de website kunnen halen en daarna hadden we de eind presentatie bij de klant. Die ging erg goed. We gingen door het design heen, daarna door de website heen om alle features even te laten zien. En als laatste door de documentatie, nog wat uitleg over waar bepaalde dingen staan zoals de variabelen die het netwerk 
+**Donderdag** in de ochtend heb ik nog twee bugs uit de website kunnen halen en daarna hadden we de eind presentatie bij de klant. Die ging erg goed. We gingen door het design heen, daarna door de website heen om alle features even te laten zien. En als laatste door de documentatie, nog wat uitleg over waar bepaalde dingen staan zoals de variabelen die het netwerk.
 
-Uiteindelijke website:
+Dit is de uiteindelijke website die we hebben opgeleverd:
 
 ![Laatste versie website](../../images/finalWebsite.webp)
 

@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../styles/style.css">
-    <link rel="stylesheet" href="../../styles/nav.css">
-    <link rel="stylesheet" href="../../styles/cursor.css">
-    <link rel="stylesheet" href="../../styles/articlePage.css">
+    <title>Article about <%= project.name %></title>
+    <% if (project.id === "notesKilian") { %>
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/nav.css">
+        <link rel="stylesheet" href="../styles/cursor.css">
+        <link rel="stylesheet" href="../styles/articlePage.css">
+    <% } else { %>
+        <link rel="stylesheet" href="../../styles/style.css">
+        <link rel="stylesheet" href="../../styles/nav.css">
+        <link rel="stylesheet" href="../../styles/cursor.css">
+        <link rel="stylesheet" href="../../styles/articlePage.css">
+    <% } %>
 </head>
 <body>
 
     <%- content %><!-- This is where the page content will be injected -->
-   
     <div class="blob"></div>
     <div class="blob"></div>
-    <script src="../../js/changeHeadings.js"></script>
-    <script src="../../js/pageTransition.js"></script>
-    <script src="../../js/cursor.js"></script>
-    <script src="../../js/followHeadings.js"></script>
+
+    <% if (project.id === "notesKilian") { %>
+        <script src="../js/changeHeadings.js"></script>
+        <script src="../js/pageTransition.js"></script>
+        <script src="../js/cursor.js"></script>
+        <script src="../js/followHeadings.js"></script>
+    <% } else { %>
+        <script src="../../js/changeHeadings.js"></script>
+        <script src="../../js/pageTransition.js"></script>
+        <script src="../../js/cursor.js"></script>
+        <script src="../../js/followHeadings.js"></script>
+    <% } %>
 </body>
 </html>

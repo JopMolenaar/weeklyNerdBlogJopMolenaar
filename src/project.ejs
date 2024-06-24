@@ -29,7 +29,13 @@ pagination:
           <% }); %>
       </ul>
   </nav>
-  <a href="../../">⇧<span class="visually-hidden">Back</span></a>
-  </article>
-  <img src="../../<%= project.img %>">
+  <% if (project.id === "notesKilian") { %>
+      <a href="../">⇧<span class="visually-hidden">Back</span></a>
+    </article>
+    <img src="../<%= project.img %>">
+  <% } else { %>
+      <a href="../../">⇧<span class="visually-hidden">Back</span></a>
+    </article>
+    <img src="../../<%= project.img %>">
+  <% } %>
 </main>

@@ -1,73 +1,52 @@
-# Weekly Nerd => Fenna ...
+## Weekly Nerd => Fenna de Wilde
 
-7 Februari 2024
+### Samenvatting van de lezing
 
-## Samenvatting van de lezing
+Fenna is een creative front-end developer en vindt toegankelijkheid erg belangrijk. Haar lezing ging dus ook over toegankelijkheid. Ze zei dat het bedrijfsleven nog heel veel toegankelijkheid mist en dat veel developers, designers en opdrachtgevers weinig geven om toegankelijkheid. Ze zit bij een bedrijf dat dat niet zo belangrijk vindt en dar gaat ze tegen in. Ook leert ze elk project nieuwe aria attributen. Aangezien dat er zo veel zijn wil je dat niet in een keer leren dus kiest ze er een per project. 
 
-Fenna ...  is
-Wat zij gebruikt:
-Next.js
-Emotion CSS library
-Sanity
-Ze heeft hele leuke en mooie dingen gemaakt als creative front-end developer.
+Wat Fenna gebruikt is Next.js, Emotion CSS library en Sanity. 
 
-Haar lezing ging over toegankelijkheid. Ze zei dat het bedrijfsleven nog heel veel toegankelijkheid mist. En dat veel developers, designers en opdrachtgevers weinig geven om toegankelijkheid. 
-
-Ze kwam met een lijst bestaande uit html attributen en css selectors
-
-### focus state voor keyboard gebruikers
+#### Focus state voor keyboard gebruikers
 
 Met `:focus-visible` kan je een focus state voor keyboard gebruikers stylen. En daarbij zei ze ook dat als je een focus state vormgeeft, het het beste is om elk element apart te stylen.
 
-### aria attributen
+#### Aria attributen
 
 Ook had ze een hele lijst met aria attributen:
 
-- aria-label voor images, of button met en icon, logo in de nav
-- aria-controls, bedienings elementen te koppelen aan het element dat het controleert, button link of tab
-- aria-expanded, of het menu uitgeklapt is of niet
-- aria-live, vertelt de screen reader wat de dynamische veranderingen zijn op de website, 
+- aria-label - voor images, of een button met een icon, of logo in de nav
+- aria-controls - is om bedienings elementen te koppelen aan het element dat het controleert, button of link
+- aria-expanded - of het menu uitgeklapt is of niet
+- aria-live - vertelt de screen reader wat de dynamische veranderingen zijn op de website, 
     - off
     - polite
-    - assertive => vrij agressief
-
-- aria-atomic, true => ik wil dat deze hele groep opniew wordt geannounced
+    - assertive (is vrij agressief) 
+- aria-atomic - true => ik wil dat deze hele groep opniew wordt geannounced
 - role=""
 - aria-role-description=""
-- aria-labelledby, geef de id mee
-- aria-label, inhoud 
-- aria-hidden=“” List items neemt ie dus niet mee 
+- aria-labelledby, koppelt een element dat de button laat zien
+- aria-label, gaat over de inhoud 
+- aria-hidden=“” - List items neemt ie dus niet mee 
 
-Nog een tip: 
-Gebruik geen li elements voor slides
+Nog een tip: Gebruik geen li elements voor slides
 
-Carousel controls moet je groeperen met `role="group"` op de parent, een `aria-label` toevoegen want de screen reader kan geen icoontjes herkennen, die ziet alleen een button met een svg. En wanneer je niet verder kan navigeren in de carousel, zet dan op de buttons: `aria-disabled=“true”`.
+Carousel controls moet je groeperen met `role="group"` op de parent, en een `aria-label` toevoegen want de screen reader kan geen icoontjes herkennen, die ziet alleen een button met een svg. En wanneer je niet verder kan navigeren in de carousel, zet dan op de buttons: `aria-disabled=“true”`.
 
-### Kleur contrasten 
+#### Kleur contrasten 
 
-1/21
-Zwart op wit is 21:1
+Zwart op wit is een 21:1 contrast ratio. Met lighthouse-audit om contrast te testen.
+Ook zei ze dat de optimale regellengte van 50 tot 75 tekens is. En met de ch unit in css kan je dat stylen. 1ch is de breedte van de 0.
 
-Lighthouse-audit om contrast te testen
+#### Wat kan je nog meer doen:
 
-Lettergrootte is ook belangrijk
-Minimaal 16px
+Wat je nog meer kan doen om je website nog toegankelijker te maken is het toevoegen van:
 
-Regellengte van 50 tot 75 tekens
-Ch unit in css : 1ch is de breedte van de 0 
+- Skip to content button
+- Prefers reduce motion
+- Autoplay moeten gepauzeerd kunnen worden
+- Zelf een screen reader gebruiken
 
-Alt text 
-Correcte semantiek 
-Nav, h1 tot en met h6, button of a
+### Reflectie
 
-### Wat kan je nog meer doen:
-
-Skip to content button
-Prefers reduce motion
-Autoplay moeten gepauzeerd kunnen worden
-Zelf een screen reader gebruiken
-
-## Reflectie
-
-Deze lezing vond ik ook interessant en belangrijk om ook deze kennis te gebruikein in mijn projecten. 
-Heel veel aria attributen waren nieuw voor mij.
+Deze lezing vond ik interessant en belangrijk om ook deze kennis te gebruiken in mijn projecten. 
+Heel veel aria attributen waren nieuw voor mij, en daarnaast wist ik al wel veel maar herhaling is altijd goed. 

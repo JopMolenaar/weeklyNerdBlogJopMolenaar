@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../styles/style.css">
-    <link rel="stylesheet" href="../../styles/nav.css">
-    <link rel="stylesheet" href="../../styles/cursor.css">
-    <link rel="stylesheet" href="../../styles/articlePage.css">
+    <title>Article about Pre CSS day</title>
+    
+        <link rel="stylesheet" href="../../styles/style.css">
+        <link rel="stylesheet" href="../../styles/nav.css">
+        <link rel="stylesheet" href="../../styles/cursor.css">
+        <link rel="stylesheet" href="../../styles/articlePage.css">
+    
 </head>
 <body>
 
@@ -26,31 +28,26 @@
 <p>Hij liet voorbeelden zien die ik al eerder had gezien maar niet de implementatie die ik al eerder had gezien. Ik had het namelijk zelf al een keer geprobeerd met @keyframes en een delay op de link. </p>
 <h4 id="Implementatie">Implementatie</h4>
 <p>De implementatie is als volgt:</p>
-<!-- TODO add implementatie -->
-
-<pre><code>document.startViewTransition(()=&gt;{
-
-})
+<pre><code>document.startViewTransition(() =&gt; updateTheDOMSomehow());
 </code></pre>
+<p>Zo simpel is het. Nu fade je nieuwe pagina in met de oude.</p>
 <h5 id="tweaktheanimations:">tweak the animations:</h5>
-<p>with css  but you cant use the elements in de snap shots, </p>
-<p>view-transition-name: box
-box is in a different layer</p>
-<p>view-transition-name: none doesnt capture the element</p>
+<p>view-transition-name: box; Box is in een andere laag</p>
+<p>view-transition-name: none;pakt het element niet</p>
 <p>::view-transistion {
-    pointer events: none
+    pointer-events: none
 }</p>
-<p>interrupted view transistions skip to the end (for now)</p>
-<p>identify elements, set the names</p>
-<p>.page1 h2 {
-view-transition-name: name1
+<p>Onderbroken view transitions gaan naar het einde (voor nu)</p>
+<p>Identificeer elementen, stel de namen in. Het onderstaande voorbeeld wordt behandeld als hetzelfde element in de transitie.</p>
+<pre><code>.page1 h2 {
+    view-transition-name: name1
 }
 page2 h1{
-view-transition-name: name1
+    view-transition-name: name1
 }
-same element I think</p>
+</code></pre>
 <p>view-transition-class 
-nmae needs to be unique, class is schared on these elements, </p>
+De naam moet uniek zijn, maar een class wordt gedeeld op deze elementen.</p>
 <h4 id="Hoehetwerkt">Hoe het werkt</h4>
 <p>View transitions zijn niet alleen visueel een upgrade voor je website, maar het is ook handig voor UX. Dit komt doordat de gebruiker ziet dat sommige elementen hetzelfde zijn en daardoor makkelijk weer de link kan leggen met de andere pagina. </p>
 <!-- view transitions for MPA's are here -->
@@ -61,40 +58,40 @@ nmae needs to be unique, class is schared on these elements, </p>
 
 <!-- helpfull for ux -->
 
+<p>Het neemt snapshots en pauzeert de rendering van de nieuwe pagina. Daarna laat hij het oude screenshot zien en rendert hij de andere pagina. En daarna laat hij de screenshots in elkaar faden. Maar je kunt dus elementen overslaan, of de transitie veranderen.</p>
+<!-- user agent stylesheet, is the stylesheet of the browser, if vewtransitions are supporten is says: view-transistion: root -->
 
-
-<p>it takes snapshots and pauses the rendering of the new page
-daarna laat hij de oude screen shot zien en render hij de andere pagina. 
-En daarna laat hij de screenshots in elkaar faden. 
-Maar je kan dus elementen skippen, of de transitie veranderen. </p>
-<p>user agent stylesheet, is the stylesheet of the browser, if vewtransitions are supporten is says: view-transistion: root</p>
-<p>view transistion api (spa same doucment page)</p>
+<p>View transistion api (spa same document page)</p>
 <p> @view-transition {
     navigation: auto
     types: // could assign types here
  }</p>
-<p> if you dont know the tyopes up front: </p>
-<p> pageswap and pagereveal on the window.addEventlistener
- and then you can add the type</p>
-<p>screenshot way ()</p>
-<p>cross document view transition chrome 126: two conditions: same site, same origin &amp; both pages need to have it opt in: @view-transition {navigation: auto}</p>
-<p>they will implement cross origin in the future</p>
+<p>Als je de types niet van tevoren weet: pageswap en pagereveal op de window.addEventListener en dan kun je het type toevoegen.</p>
+<!-- screenshot way () -->
+
+<p>Cross-document view transitions zijn in Chrome 126: maar ze hebben twee voorwaarden:</p>
+<ul>
+<li>Zelfde site, zelfde origin </li>
+<li>Beide pagina's moeten dit in hun CSS hebben: @view-transition {navigation: auto}</li>
+</ul>
+<p>Ze zullen in de toekomst cross-origin implementeren.</p>
 <h4 id="Extrathingshesaid">Extra things he said</h4>
-<p>run a blog he said, expose your work, write about it or something</p>
-<p> a (link) blocking="render" ??? use with caution</p>
+<p>Run een blog, zei hij, expose je werk, schrijf erover of iets dergelijks.</p>
+ <!-- a (link) blocking="render" ??? use with caution -->
+
 <h3 id="MiriamSuzanne(containerqueries)">Miriam Suzanne (container queries)</h3>
 <p>Miriam had het over container queries, zij is namelijk de bedenker daarvan en weet precies hoe het werkt en wilde ons overtuigen dat het geen loops veroorzaakt ook al denken veel mensen dat.</p>
-<p>Veel mensen dachten dus inderdaar dat er loops zouden ontstaan doordat je de parent styled om de kinderen op een bepaalde manier te laten gedragen, en ... </p>
-<p>problems etc</p>
-<p>it was asked for a decade, but they were scared it would cause layout loops</p>
-<p>interinsic and extrinisic
-pushing out and pushing in</p>
-<p>content on the inside need to set the size of the parent and the parent set the sizes of the children = loop</p>
-<p>contain: inline-size and not contain: size
-but it could go wrong if you do display grid and justify-content: center</p>
+<p>Veel mensen dachten dus dat er loops zouden ontstaan doordat je de parent styled om de kinderen op een bepaalde manier te laten gedragen, en ook de kinderen kan stylen om de parent op een bepaalde manier te laten gedragen. </p>
+<!-- It was asked for a decade, but they were scared it would cause layout loops. -->
+<p>Bij layout heb je interinsic and extrinisic. Bij interinsic drukken elementen naar buiten en bij extrinisic naar binnen. </p>
+<!-- Content on the inside need to set the size of the parent and the parent set the sizes of the children = loop -->
+
+<p>contain: inline-size en niet contain: size. Maar het kan misgaan als je display grid doet en justify-content: center.</p>
 <p>Met container style queries kan je elementen stylen aan de hand van welke styling ze hebben. Dit kan je gebruiken met het breedte van het element, andere styling of custom properties. </p>
 <h3 id="Reflectie">Reflectie</h3>
-<!-- TODO BIJ ELKE EEN KORTE REFLECTIE  --></body></html>
+<p>Ik vond de presentatie van Bramus echt heel goed en interessant. Ik had al wel een keer geprobeerd om view transitions te implementeren maar deed dat dus op en hele andere manier dan dat Bramus presenteerde. Dit heb ik uiteindelijk ook geimplementeerd in mijn blog. 
+De presentatie van Miriam vond ik minder interessant en kon ik minder goed mijn aandacht bij houden. </p>
+</body></html>
     </div>
     <nav class="nav">
       <ul>
@@ -143,17 +140,21 @@ but it could go wrong if you do display grid and justify-content: center</p>
           
       </ul>
   </nav>
-  <a href="../../">⇧<span class="visually-hidden">Back</span></a>
-  </article>
-  <img src="../../images/preCssDay.webp">
+  
+      <a href="../../">⇧<span class="visually-hidden">Back</span></a>
+    </article>
+    <img src="../../images/preCssDay.webp">
+  
 </main>
 <!-- This is where the page content will be injected -->
-   
     <div class="blob"></div>
     <div class="blob"></div>
-    <script src="../../js/changeHeadings.js"></script>
-    <script src="../../js/pageTransition.js"></script>
-    <script src="../../js/cursor.js"></script>
-    <script src="../../js/followHeadings.js"></script>
+
+    
+        <script src="../../js/changeHeadings.js"></script>
+        <script src="../../js/pageTransition.js"></script>
+        <script src="../../js/cursor.js"></script>
+        <script src="../../js/followHeadings.js"></script>
+    
 </body>
 </html>
