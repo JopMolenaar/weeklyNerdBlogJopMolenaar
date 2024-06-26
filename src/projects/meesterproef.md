@@ -12,9 +12,9 @@ Dit artikel gaat over mijn proces bij de meesterproef. Bij de meesterproef ben i
 
 ### 🛫 Week 1
 
-**Maandag** hadden we een kickoff van dit vak en kregen we te horen wat voor project we hadden gekregen. Dit was de opdracht Social Network Simulator geworden. Hiervoor zijn we meteen aan de slag gegaan en hebben de eerste dingen alvast kunnen doen zoals OOP alvast een beetje uitschrijven en onderzoek er naar gedaan. Ook hebben we moglijke eerste designs uitgezocht. Ik had vier leerdoelen, maar hiervan waren er 2 minder bruikbaar van geworden. Uiteindelijk heb ik mijn drie leerdoelen iets aangepast.
+**Maandag** hadden we een kickoff van dit vak en kregen we te horen wat voor project we hadden gekregen. Dit was de opdracht Social Network Simulator geworden. Hiervoor zijn we meteen aan de slag gegaan en hebben de eerste dingen alvast kunnen doen zoals OOP alvast een beetje uitschrijven en onderzoek er naar gedaan. Ook hebben we mogelijke eerste designs uitgezocht. Ik had vier leerdoelen, maar hiervan waren er twee minder bruikbaar van geworden. Uiteindelijk heb ik mijn drie leerdoelen iets aangepast.
 
-**Dinsdag** hebben we ons verder ingelezen in het project. Ook hebben we de code die er al was kunnen inzien. We hebben kunnen brainstormen over het eerste design en de features. En hebben dieper in object oriented programming gekeken. 
+**Dinsdag** hebben we ons verder ingelezen in het project. Ook hebben we de code die er al was in kunnen zien. We hebben kunnen brainstormen over het eerste design en de features. En hebben dieper in object oriented programming gekeken. 
 
 Wat we kregen van Yuri was een website waar een in een canvas bolletjes waren getekend, en je kan lijntjes tussen de bolletjes tekenen. De website zag er zo uit:
 
@@ -27,7 +27,7 @@ Donderdag hadden we ook onze eerste design review. Daar kwam uit dat we goed bez
 
 Ook ben ik met ideeen gekomen om bepaalde smooth feels te geven aan de applicatie zoals het verschuiven van de focus balk in de selects, en het eerst openen van de info van de node, en daarna de informatie infaden. Dit hebben we niet meteen gebouwd want we hadden eerst namelijk andere prioriteiten. 
 
-Die prioriteiten waren het vervangen van het canvas. We wilde niet steeds gaan tekenen in het canvas als er iets zou veranderen. En wilde graag het canvas interactief maken. Dus hebben we besloten om het canvas te vervangen door div's in een section. Dit gaf ook andere voordelen namelijk het makkelijker toegankelijk en responsive kunnen maken. Dit was redelijk snel gedaan en daarnaast hebben we heel veel onnodige javascript kunnen weghalen. De dunne lange div's die de connecties moeten voorstellen hebben we uiteindelijk met wiskunde en wat hulp van Sanne de juiste lengte en hoek kunnen geven. 
+Een van die prioriteiten was onder andere het vervangen van het canvas. We wilde niet steeds gaan tekenen in het canvas als er iets zou veranderen. En we wilde graag het canvas interactief maken. Dus hebben we besloten om het canvas te vervangen door div's in een section. Dit gaf ook andere voordelen namelijk het makkelijker toegankelijk en responsive kunnen maken. Dit was redelijk snel gedaan en daarnaast hebben we heel veel onnodige javascript kunnen weghalen. De dunne lange div's die de connecties moeten voorstellen hebben we uiteindelijk met wiskunde en wat hulp van Sanne de juiste lengte en hoek kunnen geven. 
 
 **Vrijdag** zijn we weer bezig geweest met het design en daarna ook verder gegaan met de eerste  features te programmeren.
 

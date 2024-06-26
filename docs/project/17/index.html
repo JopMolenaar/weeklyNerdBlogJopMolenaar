@@ -21,53 +21,24 @@
         <p class="date">07-06-2024</p>
       
     <div class="content">
-      <html><head></head><body><h2 id="cssDay">css Day</h2>
+      <html><head></head><body><h2 id="CSSDay">CSS Day</h2>
 <h3 id="Intro">Intro</h3>
 <p>Omdat we de hackathon hadden gewonnen, kregen wij kaartjes van PPK en Krijn voor CSS DAY. Css day is een conferentie waar sprekers iets gaan vertellen over hun gedachtes over css en nieuwe features of technieken. Het was op 6 en 7 juni en er spraken 14 mensen uit verschillende landen die bijvoorbeeld werken bij Algolia, Google en Apple. Ook zitten sommige in de CSS working group en die bepalen hoe de nieuwe css features eruit komen te zien. </p>
-<h3 id="MatthiasUX,web">Matthias UX, web</h3>
-<p>Matthias werkt bij ... en heft al 18 jaar ervaring. </p>
-<p>Hij hiel een presentatie over ... en de titel was ...</p>
-<p>Hij zei onderandere dat design tools nu minder krachtig zijn dan css en dat dus de creativiteit niet ten goede komt. Dit komt doordat er dus veel meer mogelijkheden zijn dan de designers denken dat kan. </p>
+<h3 id="MatthiasOtt">Matthias Ott</h3>
+<p>Matthias Ott hield een presentatie over web design engineering.</p>
+<p>Hij zei onder andere dat design tools nu minder krachtig zijn dan css en dat dus de creativiteit niet ten goede komt. Dit komt doordat er dus veel meer mogelijkheden zijn dan de designers denken dat mogelijk is. </p>
 <p>Hij liet een aantal voorbeelden zien die ik echt heel gaaf vond en zeker mee wil experimenteren en wil gebruiken in mijn designs. </p>
-<p>Hij liet Fluid web typography zien. Met berekeningen zorgde hij ervoor dat de typografie mee schaalde met de viewport. Dus in plaats van veel white space en een klein font op een grote monitor kan je met het grotere font de hele pagina visueel aantrekkelijk houden. </p>
-<!-- TODO zelf de fluid type maken voor dot artikel -->
-
-<!-- Fluid web typography => fluid type 
-Fonts grow or shrink bc of the vp
-Maybe not really excrssivble
-
-Utopia is a calculator for fluid type
-
-To scale it exponentially it requires a lot of math -->
-
-<p>Ook zei hij dat we css veel vroeger in het design process moeten gebruiken, terug komend op het punt dat de design tools minder krachtig zijn dan css. Ook moeten css dingen laten bepalen over hoe de website zich gedraagd. Denk aan automatische grids etc.
- <!-- // TODO zei hij dit? --></p>
-<!-- TODO foto's -->
+<p>Hij liet namelijk fluid web typography zien. Met berekeningen zorgde hij ervoor dat de typografie mee schaalde met de viewport. Dus in plaats van veel white space en een klein font op een grote monitor kan je met het grotere font de hele pagina visueel aantrekkelijk houden. </p>
+<p>Dit is de regel die ik nu gebruik voor de font-size in dit artikel: <code>font-size: clamp(1rem, calc(1rem * 0.6522) + 0.87vw, 1.4rem);</code></p>
+<p>Utopia is een website waar je berekeningen kan maken voor fluid type en dat dan kopieren in je project. </p>
+<p>Om je font exponentieel je laten groeien heb je wel wat meer nodig can alleen die ene regel. Dit vereist veel wiskunde en liet dit ook zien in zijn presentatie. </p>
+<p>Ook zei hij dat we css veel vroeger in het design process moeten gebruiken, terug komend op het punt dat de design tools minder krachtig zijn dan css. Ook moeten we css dingen laten bepalen over hoe de website zich gedraagd. Denk aan automatische grids etc.</p>
 <p>We kunnen css vroeger in het design process gebruiken door prototypes te bouwen, veel met de designers over en weer overleggen. En uiteindelijk de code uit de prototypes integreren in development.</p>
-<!-- Use css earlier in the design process 
-Let css decide
-Build prototypes -->
-
-
 <h3 id="RachelAndrew">Rachel Andrew</h3>
 <p>Rachel is een developer bij chrome en werkt aan nieuwe features in css. 
 Ze ging het hebben over mansory layout maar voordat ze het daar over had leerde ik al iets nieuws. Ze noemde namelijk subgrid. Ik wist wel wat subgrid deed en hoe het deels werkte, maar ik hed het nog nooit gebruikt, of een goed voorbeeld ervan gezien. Ze gaf een voorbeeld van kaartjes met een titeltje en een afbeelding erachter. Een titel was iets groter dan de andere en daardoor was die aan het wrappen. Daardoor waren de titels in de verschillende kaartjes niet meer mooi uitgelijnd. Dit loste ze op met subgrid en zei dat je subgrid kon gebruiken om een grid neer te zetten op elementen in elementen die in een grid zitten. Dit maakte een hoop duidelijk voor mij en ik snapte meteen hoe en waarvoor het gebruikt kon worden. 
 Later had ze het over mansory en waarom het nog steeds veel issues heeft, en misschien helemaal nooit in css komt. Ze komen er namelijk niet uit waar manroy geplaats moet worden, is het een flex of een grid layout. Ook hebben ze nog problemen met de tab volgorde. Omdat sommige elementen wat langer zijn dan andere en sommige zelfs twee keer zo lang, zijn sommige al gefocused geweest als je de elementen in de volgende rij focused. Ik zou die dan gewoon overslaan, of misschien nog een keer laten focussen, ze zijn eenmaal groter en misschien dus belangrijker. Ook vergeleek ze het met grid: dense. Dit heeft namelijk soms ook nog wat problemen met de tab volgorde. </p>
-<p>Om dit op te lossen werken ze aan <code>Reading-order-items</code> om zo de items te kunnen reorderen. Ze hebben -items erachter gezet omdat ze misschien niet alleen de items willen reorderen. Ik vond dit ook interressant want je ziet dat ze heel goed nadenken voordat ze iets nieuws implementeren. Dit komt door browser backwards compatibility. Alles wat heeft gewerkt moet blijven werken. Anders gaan er namelijk heel weel websites op het web kapot. Ook gaven ze toe dat ze al eerder fouten hebben gemaakt met naamgeving. </p>
-<!-- TODO dit zei iemand anders dacht ik, iets met animations name ofzo-->
-
-<!-- TODO WAT IK ER ZELF VAN VIND FLEX OF GRID EN HOE HET ZOU MOETEN TABBEN -->
-
-<!-- Dev at chrome, working on new features in css -->
-
-<!-- Subgrid fixes the alignment of the  elements inside the elements in the grid  -->
-
-<!-- Talked about Mansory and why it still has problems (weird order etc) -->
-<!-- Same as dense -->
-
-<!-- Reordering items is getting worked on -->
-<!-- Reading-order-items -->
-
+<p>Om dit op te lossen werken ze aan <code>Reading-order-items</code> om zo de items te kunnen reorderen. Ze hebben -items erachter gezet omdat ze misschien niet alleen de items willen reorderen. Ik vond dit ook interressant want je ziet dat ze heel goed nadenken voordat ze iets nieuws implementeren. Dit komt door browser backwards compatibility. Alles wat heeft gewerkt moet blijven werken. Anders gaan er namelijk heel weel websites op het web kapot. Ook gaven ze toe dat ze al eerder fouten hebben gemaakt met naamgeving.</p>
 <h3 id="SarahDayan">Sarah Dayan</h3>
 <p>Sara is een principal engineer bij Algolia. 
 Zij had het over atomic css (utility css)
@@ -77,98 +48,75 @@ Ze zei dingen zoals “Inline styles have a local impact.” En ze zei nog veel 
 <p>We hadden natuurlijk al wat wat gezien van Julia toen ze was uitgenodigd om iets voor de klas te vertellen over wat ze doet. 
 Dit keer ging ze nog iets verder en vertelde onder andere hoe ze light sources bouwde en gebruikte om haar karakters tot leven te brengen. Ook vertelde ze hoe ze 3D karakters bouwde door middel van kubussen. Kubussen zijn vierkant maar om rondingen te maken had ze ook iets op bedacht. De kanten roteerde ze naar binnen of buiten en de overlappende delen snijd ze eraf met clippath (dacht ik). En om het iets echter te maken gebruikt ze Noise. Dit doet ze met SVG filters en liet ook zien hoe het er dan uit zag ik de code. 
 Dit ga ik ook zeker gebruiken. </p>
-<ul>
-<li>Cutting edges =&gt; clippath</li>
-<li>Noise svg filters </li>
-<li>Nothing is impossible quote</li>
-</ul>
 <h3 id="RoelNiskens">Roel Niskens</h3>
 <p>Roel zijn presentatie was ook erg goed. 
 Ik heb zelf niet heel veel met fonts maar wat hij laat zien boeit mij toch wel elke keer weer. Over hoeveel opties zo’n font heeft, dat er logica achter zit, en hoe een font je website vormgeving en toegankelijkheid echt een boost kan geven. </p>
-<ul>
-<li>Opentype layout features</li>
-<li>Curning</li>
-<li>Ligatures</li>
-</ul>
 <h3 id="ElikaEtemad">Elika Etemad</h3>
 <p>Elika werkt bij Apple en gaf een presentatie over de basis van css.
 Haar presentatie kon ik echt niet volgen. Ze gaf 0 context, gebruikte moeilijke termen, sprak ontzettend snel en las haar presentatie voor. </p>
 <!-- Works at apple -->
-<p>De basics van css zijn:
-￼</p>
-<ul>
-<li>understandable </li>
-<li>performant</li>
-<li>international </li>
-<li>integrated<!-- en nog een aantal -> staan op de foto's  --></li>
-</ul>
-<h3 id="Stephenhay">Stephen hay</h3>
-<p>Stephen Hay had het over de geschiedenis van css en layouts en over een soort loop waar je uit moet komen. 
-Use the new features, be creative</p>
-<ul>
-<li>History of css and layouts</li>
-<li>Tips on how te be creative: set constraints for yourself.</li>
-</ul>
+<!-- De basics van css zijn:
+￼
++ understandable 
++ performant
++ international 
++ integrated -->
+<!-- en nog een aantal -> staan op de foto's  -->
+
+<h3 id="StephenHay">Stephen Hay</h3>
+<p>Stephen Hay had het over de geschiedenis van css en layouts en over een soort loop waar je uit moet komen.</p>
+<p>Zijn boodschap was vooral om te experimenteren met css, de nieuwe technieken te gebruiken zoals grid-template die bijvoorbeeld nooit iemand gebruikt. En als je experimenteerd kom je altijd achter iets nieuws.</p>
+<p>Ook gaf hij wat tips en zei dat als je jezelf beperkingen oplegt, je creatievere oplossingen gaat bedenken. </p>
 <h3 id="KevinPowell">Kevin Powell</h3>
-<p>Min(…px, …%)
-Layouts berekenen met variables 
-Calc in media queries</p>
-<p>Ik moet vaker dit doen met custom prop en calc layouts</p>
+<p>Op dag 2 begon Kevin Powell over het over engineren van je css. De titel was echter: "Don't over engineer je css" omdat hij veel boze reacties had gekregen op een youtube short omdat hij een wrapper zijn breedte zogenaamd had over geengineerd. Het ging over deze regel: <code>min(100% - 4rem, 60ch);</code>. Veel mensen vinden dit niet leesbaar, en zeiden daarom dat je het niet moet gebruiken. Kevin zei dat je het juist wel moet gebruiken en mensen mee moeten gaan met de tijd en in de nieuwe features van css moeten duiken. </p>
+<p>Ook liet hij voorbeelden zien van layouts berekenen met custom properties en dat je blijkbaar calc kan gebruiken in media queries.</p>
+<p>Ik snap wel wat die regel betekent en vind hem ook leesbaar. Verder vond ik dat ik vaker met custom properties moet werken en calc in layouts gebruiken. </p>
 <h3 id="Sarahsoueidan">Sarah soueidan</h3>
 <p>Sarah had het over toegankelijkheid met css en noemde veel dingen die je moet en niet moet doen.</p>
+<p>Ze noemde vier informatie bronnen uit de accessibility tree object namelijk:</p>
+<ul>
+<li>Role - wat voor ding is het</li>
+<li>Name - hoe noemen we dit element</li>
+<li>Description - hoe beschrijven we verder dit ding</li>
+<li>State - wat is de huidige staat</li>
+</ul>
 <!-- list style: none => "" -->
 
+<p>Ook noemde ze veel voorbeelden op wat wel accessible is en wat niet. Hoe je elementen kan laten verdwijnen en wat de gevolgen daarvan zijn. En dat dit symbool: ⓘ niet goed wordt opgelezen door screen readers en dit een betere oplossing daarvoor is:</p>
+<pre><code>.info:before {
+    content: "ⓘ" / "info: ";
+}
+</code></pre>
+<!-- 
+List style none op een lijst in de nav haalt niet de hoeveelheid van de list af voor screen reader -->
 
-<p>Extra c in css
-Tree</p>
-<ul>
-<li>role</li>
-<li>Name</li>
-<li>Description </li>
-<li>State</li>
-</ul>
-<p>Lost style none op list in nav haalt niet de hoeveelheid van de list af voor screen reader</p>
+<p>Ook noemde ze dingen die je moet vermijden op je website zoals het laten zien van content als css er is, maar ook dubbele labels enzo.</p>
 <h3 id="TabAtkins">Tab Atkins</h3>
 <p>Tab Atkins ging het hebben over anchor positioning. Maar voordat hij daar over ging vertellen had hij het over position in het algemeen. Ik had geen koffie op en viel vaak bijna even weg. Uiteindelijk kreeg ik mijn aandacht er weer bij toen hij startte met anchor positioning. 
 Dit vond ik erg interessant want dit had ik ook nog nooit gebruikt. Ik wist wel dat het bestond en dat we het wilde gaan gebruiken in het project waar ik mee bezig ben, maar verder was ik er nog niet ingedoken.  </p>
-<!-- Anchor positioning -->
-<!-- TODO Foto’s -->
-
+<p>Uiteindelijk ben ik er dus in gedoken en heb het gebruikt voor de navigatie rechts op de pagina. </p>
 <h3 id="CarmenAnsio">Carmen Ansio</h3>
-<p>Carmen werkt bij lottiefiles en had het over scroll driven animations.</p>
-<!-- TODO fotos -->
-<!-- Scroll driven animations  -->
-
+<p>Carmen werkt bij lottiefiles en had het over scroll driven animations.
+Ik had al wel vaker gewerkt met scroll driven animations en wist al erg veel.</p>
 <h3 id="Romakomarov">Roma komarov</h3>
-<p>Roma is iemand die ontzetten veel experimenteerd met nieuwe css technieken. Hij liet echt ontzettend coole dingen zien en inspireerde mij van wat je er allemaal mee kon. </p>
-<p>Hij liet dingen zien zoals de sticky headings net zoals bij VScode, gemaakt met scroll animations. 
-En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspiratie kreeg. </p>
-<!-- TODO en nog meer -->
-
+<p>Roma is iemand die ontzettend veel experimenteerd met nieuwe css technieken. Hij liet echt ontzettend coole dingen zien en inspireerde mij van wat je er allemaal mee kon. </p>
+<p>Hij liet dingen zien zoals de sticky headings net zoals bij VScode, gemaakt met scroll animations. Hij maakt ook coole dingen met anchor positioning waarvan ik ook weer meteen inspiratie kreeg en natuurlijk de fit text to width wat ik ook heb gebruikt in dit project op de home pagina. </p>
 <p>Ook had hij het over wanneer je zou moeten experimenteren en zei dat je moet experimenteren als er een usecase is en als het impect zou hebben. </p>
-<!-- When to experiment => when there is a isecase and it has a impact! -->
-
-<!-- Lots of cool experiments with anchor positioning -->
-<!-- And scroll driven animations  -->
-
-<!-- TODO SCROLL DRIVEN ANIMATIONS MET DIE HEADINGS MAKEN -->
-<!-- TODO ANCHOR POSTIONING ELEMENT ON THE NAV VAN WAAR JE SCROLLT-->
-
 <h3 id="JoshComeau">Josh Comeau</h3>
-<p>Josh had het over het les geven aan mensen over css. Hij zei dat hij soms dingen tegen komt waarvan hij denkt dat dat heel raar is. Na wat googlen kan hij het oplossen maar Josh gaat op onderzoek uit en kijkt hoe en waarom dat zo werkt. Zo liet hij een voorbeeld zien van een plaatje in een div met een border. Er kwam ruimte onder het plaatje te zitten. Dit kwam uiteindelijk doordat het plaatje op de baseline wordt geplaatst. Je kan dan line height 0 zeggen maar ook wat andere dingen doen </p>
-<!-- TODO FOTOS + MISSCHIEN IN RESET CSS ZETTEN -->
-
-<!-- Teaching css -->
-<!-- Eye opener om te kijken hoe dingen in elkaar zitten,  -->
-
-<h3 id="Nicolesullivan">Nicole sullivan</h3>
-<p>Nicole had het ook over mansory layout.  </p>
-<!-- TODO nog doen.  -->
-
-
-
-
-
+<p>Josh had het over het les geven aan mensen over css. Hij zei dat hij soms dingen tegen komt waarvan hij denkt dat dat heel raar is. Na wat googlen kan hij het oplossen maar Josh gaat op onderzoek uit en kijkt hoe en waarom dat zo werkt. Als mensen dan naar heb toekomen voor vragen over css zegt hij nu niet alleen het antwoord maar ook waarom dat zo werkt. Dit gaf zo veel meer duidelijkheid voor de mensen die naar toe kwamen en liet ze css niet alleen kunnen schrijven, maar ook begrijpen. Hierdoor heeft hij een cursus opgezet "Javascript voor developers" waarbij hij veel mensen heeft kunnen helpen. </p>
+<p>Zo liet hij een voorbeeld zien van een plaatje in een div met een border. Er kwam ruimte onder het plaatje te zitten. Dit kwam uiteindelijk doordat het plaatje op de baseline wordt geplaatst. Je kan dan <code>line-height: 0;</code> zeggen maar ook wat andere dingen daar tegen doen zoals <code>vertical-align: bottom;</code> of <code>display: block;</code> of <code>display: flex;</code> op de parent.</p>
+<p>Maar Josh had het ook over layouts, en bijvoorbeeld waarom z-index soms niet werkt op elementen in andere elementen.</p>
+<h3 id="NicoleSullivan">Nicole Sullivan</h3>
+<p>Nicole werkt aan browsers en ging het hebben over mansory layout. Ze had het over wat het is, welke websites het al een soort van gebruiken, en welke websites geen mansory hebben maar het soms wel lijkt. Dit zie je onderandere bij google images. Dit lijkt een mansory maar dat is het niet want als je items toevoegd gaan die naar onderen en je scrolled verticaal dus het is meer een flex layout. Ook op Flickr lijkt er een mansory te zijn maar dat is het ook niet. Dit komt doordat de rows een vaste breedte hebben. </p>
+<p>Mansory minimaliseerd de verticale ruimte tussen items. Het heeft altijd een soort gescheurde onderkant wat niet mooi uitgelijnd is. En het heeft soms een rare tab volgorde.</p>
+<p>Ook vertelde ze hoe je het later misschien zou kunnen implementeren. Hierover zijn ze nog aan het vergaderen en sommige mensen vinden het meer bij flex passen en sommige bij grid. Nicole zelf liet deze implementatie zien:</p>
+<pre><code class="language-css">main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    grid-template-rows: mansory;
+}
+</code></pre>
+<h3 id="Borrel">Borrel</h3>
 <p>Na de talks op de tweede dag heb ik kunnen praten met Lea verou, Bramus, een backend developer bij werkspot, Roel natuurlijk, iemand van IO België en nog een aantal. Hij moest spreken bij css café en verder raadde hij ons aan om bij vergaderingen te zitten bij W3c community groups. </p>
 <h3 id="Reflectie">Reflectie</h3>
 <p>Induiken of downloaden:</p>
@@ -266,8 +214,8 @@ En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspir
               </li>
           
               <li data-tag="h3">
-                  <a href="#MatthiasUX,web">
-                      Matthias UX, web
+                  <a href="#MatthiasOtt">
+                      Matthias Ott
                   </a>
               </li>
           
@@ -302,8 +250,8 @@ En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspir
               </li>
           
               <li data-tag="h3">
-                  <a href="#Stephenhay">
-                      Stephen hay
+                  <a href="#StephenHay">
+                      Stephen Hay
                   </a>
               </li>
           
@@ -344,8 +292,14 @@ En coole dingen gemaakt met anchor positioning waarvan ik ook weer meteen inspir
               </li>
           
               <li data-tag="h3">
-                  <a href="#Nicolesullivan">
-                      Nicole sullivan
+                  <a href="#NicoleSullivan">
+                      Nicole Sullivan
+                  </a>
+              </li>
+          
+              <li data-tag="h3">
+                  <a href="#Borrel">
+                      Borrel
                   </a>
               </li>
           
