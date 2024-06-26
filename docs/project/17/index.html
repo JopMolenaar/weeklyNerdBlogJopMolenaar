@@ -117,20 +117,14 @@ Ik had al wel vaker gewerkt met scroll driven animations en wist al erg veel.</p
 }
 </code></pre>
 <h3 id="Borrel">Borrel</h3>
-<p>Na de talks op de tweede dag heb ik kunnen praten met Lea verou, Bramus, een backend developer bij werkspot, Roel natuurlijk, iemand van IO België en nog een aantal. Hij moest spreken bij css café en verder raadde hij ons aan om bij vergaderingen te zitten bij W3c community groups. </p>
+<p>Na de talks op de tweede dag heb ik kunnen praten met Lea Verou, Bramus, een (backend developer bij werkspot), Roel natuurlijk, Brecht van IO België en nog een aantal. Dit was ook erg interessant en heb er uiteindelijk wat linkedIn connecties erbij gekregen. </p>
+<p>Ook heb ik meerdere keren Mastodon en frontend social voorbij horen komen en ben hier de dagen erna ook even ingedoken. </p>
 <h3 id="Reflectie">Reflectie</h3>
-<p>Induiken of downloaden:</p>
-<ul>
-<li>Front end social</li>
-<li>mastodon</li>
-</ul>
 <p>Ik was erg onder de indruk hoe veel we al weten en hoe veel mensen we al ontmoet hebben door onze studie. Ook ben ik geïnspireerd door …, ga ik nieuwe dingen gebruiken zoals … en ga ik meer experimenteren met nieuwe technieken want zoals … al zei: </p>
-<p>Uiteindelijk heb ik dus dit artikel gemaakt over css day en wilde ik daarbij de nieuwe geleerde technieken uitproberen. In dit artikel kan je daar een aantal dingen van terug zien namelijk:</p>
-<ul>
-<li>De headings die aan de boven kant blijven hangen en omhoog worden gedrukt door de volgende heading. Dit heb ik gedaan met scroll driven animtions.</li>
-</ul>
-<p>Dit is de code (simplified):</p>
-<pre><code class="language-css">    h2 {--sticky-top: 0rem;}
+<p>Uiteindelijk heb ik dus dit artikel gemaakt over CSS day en wilde ik daarbij de nieuwe geleerde technieken uitproberen. In dit artikel kan je daar een aantal dingen van terug zien namelijk:</p>
+<p>De headings die aan de boven kant blijven hangen en omhoog worden gedrukt door de volgende heading. Dit heb ik gedaan met <strong>scroll driven animtions</strong>. </p>
+<p>Dit is de code (versimpeld):</p>
+<pre><code class="language-scss">    h2 {--sticky-top: 0rem;} // --sticky-top wordt ook gebruikt voor fluid type
     h3 {--sticky-top: 2.1rem;}
     h4 {--sticky-top: 4rem;}
 
@@ -140,8 +134,8 @@ Ik had al wel vaker gewerkt met scroll driven animations en wist al erg veel.</p
         animation-range: calc(90vh - 3em - var(--sticky-top) - 80px) calc(100vh - 10vh - 25px);
     }
 </code></pre>
-<p>Hiervan heb ik ook nog andere dingen meegenomen van de talks namelijk over engineren en met custom properties werken</p>
-<p>Ook heb ik met anchor positioning gespeeld. Dit kan je terug zien bij het hoveren op de navigatie rechts op de pagina. De uitdaging was om het zo generiek moeglijk te schrijven, en daardoor kwam ik tegen wat dingen aan die ik wel in css zou willen zien. Zoals custom properties kunnen gebruiken voor anchor-name. Dus in plaats van de code zo te moeten schrijven voor anchor positioning:</p>
+<p>Hiervan heb ik ook nog andere dingen meegenomen van de talks namelijk over <strong>engineren</strong> en meer met <strong>custom properties</strong> werken</p>
+<p>Ook heb ik met <strong>anchor positioning</strong> gespeeld. Dit kan je terug zien bij het hoveren op de navigatie rechts op de pagina. De uitdaging was om het zo generiek moeglijk te schrijven, en daardoor kwam ik tegen wat dingen aan die ik wel in css zou willen zien. Zoals custom properties kunnen gebruiken voor anchor-name. Dus in plaats van de code zo te moeten schrijven voor anchor positioning:</p>
 <pre><code class="language-css">    /* Hardcoded duplicate code */
     article .nav li:nth-of-type(1) { anchor-name: --1; }
     article .nav li:nth-of-type(2) { anchor-name: --2; }
@@ -193,15 +187,16 @@ Ik had al wel vaker gewerkt met scroll driven animations en wist al erg veel.</p
             anchor(left);
         }
 </code></pre>
-<p>Ook heb ik fluidtype toegevoegd aan mijn  design. Dit opent veel deuren voor mij omdat ik dan minder mijn hofd moet breken over nieuwe layouts creeeren op verschillende scherm groottes. </p>
-<p>Ook heb ik geprobeerd view transitions toe te voegen aan mijn blog. Het lagged best wel erg op mijn computer en weet niet waar dat aan ligt maar dat stopte mij niet om er niet in te duiken. </p>
+<p>Ook heb ik <strong>fluidtype</strong> toegevoegd aan mijn  design. Dit opent veel deuren voor mij omdat ik dan minder mijn hoofd moet breken over nieuwe layouts creeeren op verschillende scherm groottes. </p>
+<p>Ook heb ik geprobeerd <strong>view transitions</strong> toe te voegen aan mijn blog. Het loopt best wel erg vast op mijn computer (behalve als ik een extra scherm er aan koppel) en ik weet niet waar dat aan ligt. Maar dat stopte mij niet om er in te duiken. </p>
 <p>Uiteindelijk lukte het, maar kwam ondertussen wel tot nieuwe dingen die ik terug zou willen zien in css. Je kan namelijk hier ook niet variabelen gebruiken voor <code>view-transition-name</code>, en ik zou ook graag willen dat je de dataset op een element in de html in een custom property kan doen met css. Dit is erg jammer want dan werkt dit namelijk niet. En moet ik voor elk project een <code>view-transition-name</code> aanmaken.</p>
+<p>Dit werkt dus niet:</p>
 <pre><code>.heading {
     --name: attr(project)
     view-transition-name: var(--name);
 }
 </code></pre>
-<p>Ook heb ik nog "fit width to text" geimplemeteerd op de kaartjes op de home pagina. Dit had ik gezien bij Roma komarov en dit is echt een hele coole techniek om dus je text mooi met de breedte uit te lijnen. Meer info over de techniek: <a href="https://kizu.dev/fit-to-width-text/">Zie hier zijn artikel kizu.dev/fit-to-width-text</a></p>
+<p>Ook heb ik nog <strong>fit width to text</strong> geimplemeteerd op de kaartjes op de home pagina. Dit had ik gezien bij Roma komarov en dit is echt een hele coole techniek om dus je text mooi met de breedte uit te lijnen. Meer info over de techniek: <a href="https://kizu.dev/fit-to-width-text/">Zie hier zijn artikel kizu.dev/fit-to-width-text</a></p>
 </body></html>
     </div>
     <nav class="nav">
